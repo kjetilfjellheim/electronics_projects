@@ -8,4 +8,4 @@ It will take some time to document all projects.
 ## Projects
 
 1. 555 Metal detector 
-See documentation [here](555_metal_detector/README.md)
+See documentation - [here](555_metal_detector/README.md)
