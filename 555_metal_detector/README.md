@@ -52,7 +52,7 @@ Probe 1: Vspeaker
 Probe 2: Vl1
 Probe 3: Vc4
 Probe 4: Vc2
-<img src="./images/oscilloscope.png">
+<img src="./analytics/practical/oscilloscope.png">
 
 | Measurements | Value | Remark | 
 | :------------- | :------------- | :--- |
@@ -66,14 +66,14 @@ Probe 4: Vc2
 | VL1 Vmax | 4.88V | |
 | VL1 Vmin | -3.2V | |
 | L1 -Duty | 99.9% | | 
-| L1 +Duty | 0.01% | <img src="./images/oscilloscope2.png"> |
+| L1 +Duty | 0.01% | <img src="./analytics/practical/oscilloscope2.png"> |
 
 #### With magnetic near inductor
 Probe 1: Vspeaker
 Probe 2: Vl1
 Probe 3: Vc4
 Probe 4: Vc2
-<img src="./images/oscilloscope3.png">
+<img src="./analytics/practical/oscilloscope3.png">
 
 | Measurements | Value | Remark | 
 | :------------- | :------------- | :--- |
