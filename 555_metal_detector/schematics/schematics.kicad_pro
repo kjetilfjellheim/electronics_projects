@@ -445,10 +445,10 @@
         "version": 0
       },
       "model_mode": 1,
-      "workbook_filename": "../analytics/schematics.wbk"
+      "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "./",
+    "plot_directory": "/home/kjetil/code/electronics_projects/555_metal_detector/images/",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
