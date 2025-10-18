@@ -25,7 +25,7 @@ Breadboard setup
 | Reference | Value |
 | :------------- | :------------- |
 | C1,C3 and C4 | 2.2u |
-| C2 | 450n |
+| C2 | 450p |
 | J1 | 5V |
 | L1 | 10m |
 | R1 | 91k |
