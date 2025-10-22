@@ -25,7 +25,7 @@ The goal is to implement, analyze and do practical measurements different lowpas
 ## Formulas
 Gain is calculated with this formula.
 ```math
-Gain_db = 20 * log(\frac{V_out}{V_in})
+G_\text{db}=20\log\frac{V_\text{out}}{V_\text{in}}
 ```
 
 ## Circuits
