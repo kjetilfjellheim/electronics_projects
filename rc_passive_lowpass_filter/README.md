@@ -1,4 +1,4 @@
-# Passive lowpass filter
+# RC passive lowpass filter
 
 ## Description
 The goal is to implement, analyze and do practical measurements different lowpass filters.
@@ -23,9 +23,25 @@ The goal is to implement, analyze and do practical measurements different lowpas
 | J1 | ~5V | |
 
 ## Formulas
+Reactance for the capacitor at frequency.
+```math
+X_c=\frac{1}{2*\pi*f*c}
+```
+Impedance for the circuit.
+```math
+Z=\sqrt{X_c^2*R^2}
+```
+Output frequency can be found with this formula.
+```math
+V_{out}=V_{in}*\frac{X_c}{Z}
+```
 Gain is calculated with this formula.
 ```math
 G_\text{db}=20\log\frac{V_\text{out}}{V_\text{in}}
+```
+Phase shift formula.
+```math
+\phi=-arctan(2\pi frc)
 ```
 
 ## Circuits
@@ -56,5 +72,13 @@ Assuming input voltage 5V
 | -10db | 1.58V |
 | -20db | 0.5V |
 | -40db | 0.25V |
+
+| Frequency | Gain 1st order | Phase 1st order |
+| :------------- | :------------- | :------------- |
+| 100Hz | -829u | -0.79 |
+| 500Hz | -0.02 | -3.95 |
+| 1kHz | -0.08 | -7.87 |
+| 10kHz | -4.64 | -54.1 |
+| 20kHz | -9.36 | -70.1 |
 
 ## Practical measurements
