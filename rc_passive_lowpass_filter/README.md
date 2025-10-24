@@ -29,7 +29,7 @@ X_c=\frac{1}{2*\pi*f*c}
 ```
 Impedance for the circuit.
 ```math
-Z=\sqrt{X_c^2*R^2}
+Z=\sqrt{X_c^2+R^2}
 ```
 Output frequency can be found with this formula.
 ```math
