@@ -1,13 +1,17 @@
 # RC passive lowpass filter
 
 ## Description
-The goal is to implement, analyze and do practical measurements different lowpass filters.
+The goal is to implement, analyze and do practical measurements on a RC lowpass filter.
+
 
 ## Goals
 - [x] Document schematic in Kicad
 - [x] Do a theoretical analyis 
+- [x] Calculate 1st order 
 - [ ] Implement schematic on breadboard
 - [ ] Test circuit and do measurements
+- [ ] Calculate 2nd order 
+
 
 ## Equipment used
 | Equipment | Description |
@@ -18,8 +22,8 @@ The goal is to implement, analyze and do practical measurements different lowpas
 ## Components
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
-| 5x capacitor | 22n | |
-| 5x resistor | 1k | |
+| 3x capacitor | 22n | |
+| 3x resistor | 1k | |
 | J1 | ~5V | |
 
 ## Formulas
@@ -82,3 +86,19 @@ Assuming input voltage 5V
 | 20kHz | -9.36 | -70.1 |
 
 ## Practical measurements
+Oscilloscope measurement
+<img src="./images/ocilloscope_1st_order_1khz.png">
+
+Since the resistor and capacitor are not perfect values and the oscilloscope/function generator is not calibrated values should be a bit off.
+| Frequency | Gain 1st order | Gain 2nd order | Gain 3rd order |
+| :------------- | :------------- | :------------- | :------------- |
+| 100Hz | 0(5V) |  0(5V) | 0(5V) |
+| 500Hz | 0(5V) |  0(5V) | -0.72(4.64V) |
+| 1kHz | -0.13(4.96V) |  -0.57(4.72V)| -1.84(4.08V) |
+| 10kHz | -4.62(2.96V) | -12.5(1.2V) | -20.24(0.49V) |
+| 20kHz | -9.43(1.72V) | -20.24(0.49V) | -30.9(0.14V) |
+
+Breadboard setup for 3rd order
+<img src="./images/breadboard.jpg">
+
+
