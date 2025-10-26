@@ -2,7 +2,6 @@
 
 ## Description
 The goal is to implement, analyze and do practical measurements on a RC lowpass filter.
-I am simula
 
 ## Goals
 - [x] Document schematic in Kicad
