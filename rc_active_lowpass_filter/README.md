@@ -33,9 +33,9 @@ The goal is to implement, analyze and do practical measurements on an active low
 | 2 | 2-pole | 1.414 | 0.7071 | | | |
 | 3 | 3-pole | | | 3.546 | 1.392 | 0.2024 | 
 | 4 | 2-pole<br>2-pole | 1.082<br>2.613 | 0.9241<br>0.3825 | | | | 
-| 5 | 3-pole<br>2-pole | <br>3.235 | <br>0.3090 | 1.753<br> | 1.354<br> | 0.4214<br> | 
+| 5 | 3-pole<br>2-pole | &nbsp;<br>3.235 | &nbsp;<br>0.3090 | 1.753<br>&nbsp; | 1.354<br>&nbsp; | 0.4214<br>&nbsp; | 
 | 6 | 2-pole<br>2-pole<br>2-pole | 1.035<br>1.414<br>3.863 | 0.966<br>0.7071<br>0.2588 | | | | 
-| 7 | 3-pole<br>2-pole<br>2-pole | <br>1.604<br>4.493 | <br>0.6235<br>0.2225 | 1.531<br><br> | 1.336<br><br> | 0.4885<br><br> | 
+| 7 | 3-pole<br>2-pole<br>2-pole | <br>1.604<br>4.493 | &nbsp;<br>0.6235<br>0.2225 | 1.531<br>&nbsp;<br>&nbsp; | 1.336<br>&nbsp;<br>&nbsp; | 0.4885<br>&nbsp;<br>&nbsp; | 
 | 8 | 2-pole<br>2-pole<br>2-pole<br>2-pole | 1.020<br>1.202<br>2.000<br>5.758 | 0.9809<br>0.8313<br>0.5557<br>0.1950 | | | | 
 
 ## Formulas
@@ -46,12 +46,12 @@ A_s=\frac{f_s}{f_{3db}}
 
 To calculate the resistor values in the circuit. Rxn is the normalized normalized value = 1. 
 ```math
-R_x=Z*R_{xn}
+R_x=Z \times R_{xn}
 ```
 
 To calculate the capacitor values use the value for the capacitor and calculate the capacitance the capacitors is to use in the circuit.
 ```math
-C_x=\frac{C_{table}}{Z*2*\pi*f_{3db}}
+C_x=\frac{C_{table}}{Z \times 2 \times \pi \times f_{3db}}
 ```
 
 ## Circuits
