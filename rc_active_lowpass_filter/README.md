@@ -37,6 +37,7 @@ The goal is to implement, analyze and do practical measurements on an active low
 | 6 | 2-pole<br>2-pole<br>2-pole | 1.035<br>1.414<br>3.863 | 0.966<br>0.7071<br>0.2588 | | | | 
 | 7 | 3-pole<br>2-pole<br>2-pole | <br>1.604<br>4.493 | &nbsp;<br>0.6235<br>0.2225 | 1.531<br>&nbsp;<br>&nbsp; | 1.336<br>&nbsp;<br>&nbsp; | 0.4885<br>&nbsp;<br>&nbsp; | 
 | 8 | 2-pole<br>2-pole<br>2-pole<br>2-pole | 1.020<br>1.202<br>2.000<br>5.758 | 0.9809<br>0.8313<br>0.5557<br>0.1950 | | | | 
+*Ref (Book: Practical electronics for inventors 3rd edition)
 
 ## Formulas
 Calculates minimum 60db attenuation at frequency Fs. The attenuation result is the total order number of the circuit.
@@ -59,7 +60,37 @@ Circuits for 2nd and 3rd order butterworth filter
 <img src="./schematics/schematics.svg">
 
 ## Simulations
+Ran simulation AC circuit analysis from 1Hz to 100kHz
+<img src="./images/simulation.png">
+
+> [!CAUTION]
+> The simulation for 3-pole looks correct, but the 2-pole looks very wrong. Need to figure out why it's incorrect. The values look correct.
 
 ## Calculations
 
+### Example 1
+
+With a 2-pole circuit with with attenuation of 3db at 1000Hz and an impedance of 10k gives the following values.
+| Component | Value |
+| :-------- | :-------- |
+| C1 | 22.5n|
+| C2 | 11.3n|
+| R1 | 10k |
+| R2 | 10k |
+
+### Example 2
+
+With a 3-pole circuit with with attenuation of 3db at 1000Hz and an impedance of 10k gives the following values.
+| Component | Value |
+| :-------- | :-------- |
+| C1 | 56.5n|
+| C2 | 22.1n|
+| C3 | 3.2n|
+| R1 | 10k |
+| R2 | 10k |
+| R3 | 10k |
+
 ## Practical measurements
+
+> [!NOTE]  
+> Waiting for components
