@@ -7,9 +7,18 @@ It will take some time to document all projects.
 
 ## Projects
 
-1. 555 Metal detector 
-See documentation - [here](555_metal_detector/README.md)
-2. RC acive lowpass filter (Butterworth)
-See documentation - [here](rc_active_lowpass_filter/README.md)
-2. RC passive lowpass filter
-See documentation - [here](rc_passive_lowpass_filter/README.md)
+### Sensor circuits
+| Circuit | Documentation |
+| :--- | :--- |
+| 555 Metal detector | [here](555_metal_detector/README.md) |
+
+### Active filters
+| Circuit | Documentation |
+| :--- | :--- |
+| RC active lowpass filter (Butterworth) | [here](rc_active_lowpass_filter/README.md) |
+
+### Passive filters
+| Circuit | Documentation |
+| :--- | :--- |
+| RC passive lowpass filter | [here](rc_passive_lowpass_filter/README.md) |
+| RLC passive bandpass filter | [here](rlc_passive_bandpass_filter/README.md) |
