@@ -24,21 +24,21 @@ The goal is to implement, analyze and do practical measurements on a RLC bandpas
 | L1 | 10m | |
 
 ## Formulas
-```m̀ath
+```math
 V_{in}=(\jmath \omega L - \frac{1}{\omega C} + R)\times I
 ```
-```m̀ath
+```math
 V_{out}=R\times I 
 ```
 Transfer function without load.
-```m̀ath
+```math
 H=\frac{V_{out}}{V_{in}}=\frac{R}{R+j(\omega L-\frac{1}{\omega C})}
 ```
 Transfer function with load.
-```m̀ath
+```math
 R_{t}=\frac{R\times R_{load}}{R+R_{load}}
 ```
-```m̀ath
+```math
 |H|=\frac{|V_{out}|}{|V_{in}|}=\frac{R_t}{\sqrt{R_t^{2}+[\omega L-\frac{1}{\omega -c}]^{2}]}}
 ```
 ## Circuit
