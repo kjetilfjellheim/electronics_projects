@@ -6,7 +6,7 @@ The goal is to implement, analyze and do practical measurements on a RLC bandpas
 ## Goals
 - [x] Document schematic in Kicad
 - [x] Do a theoretical analyis 
-- [ ] Calculate values for a 1kHz and 15kHz bandpass filter 
+- [x] Calculate values for a 5kHz serial and paralell bandpass filters
 - [ ] Implement schematic on breadboard
 - [ ] Test circuit and do measurements
 
@@ -19,40 +19,68 @@ The goal is to implement, analyze and do practical measurements on a RLC bandpas
 ## Components
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
-| R1 | 500 | |
-| C1 | 2.45u | |
-| L1 | 10m | |
+| R1 | 31 | |
+| R2 | 310 | |
+| R3 | 3100 | |
+| Cx | 100n | |
+| Lx | 10m | |
 
 ## Formulas
+The resonant frequency formula is given by  
 ```math
-V_{in}=(\jmath \omega L - \frac{1}{\omega C} + R)\times I
+f_o=\frac{1}{2\pi \sqrt{LC}}
 ```
+Calculate the Q value
 ```math
-V_{out}=R\times I 
+Q=\frac{X_{lo}}{R_t}=\frac{2\pi f_oL}{R_t}
 ```
-Transfer function without load.
+Calculate the Q value from required bandwidth
 ```math
-H=\frac{V_{out}}{V_{in}}=\frac{R}{R+j(\omega L-\frac{1}{\omega C})}
+Q=\frac{f_o}{Bandwidth}
 ```
-Transfer function with load.
+Calculate capacitor value based on frequency and inductor
 ```math
-R_{t}=\frac{R\times R_{load}}{R+R_{load}}
+C=\frac{1}{f_o^2\times 4\times\pi^2\times L}
 ```
+Calculate resistor value for a specific bandwidth.
 ```math
-|H|=\frac{|V_{out}|}{|V_{in}|}=\frac{R_t}{\sqrt{R_t^{2}+[\omega L-\frac{1}{\omega -c}]^{2}]}}
+R=\frac{f_o}{Q}
 ```
-## Circuit
+## Serial circuit
+
+### Schematics
 Circuit for a 1Khz bandpass filter.
-<img src="./schematics/schematics.svg">
+<img src="./schematics/serial_gain_schematics.svg">
 
-## Simulations
-Simulation with the values in the component list.
-<img src="./images/simulation.png">
+### Simulation
+Simulation AC signal analysis with the values in the component list.
+<img src="./images/serial_gain_simulation.png">
 
-## Calculations
+Simulation transient analysis at 1kHz.
+<img src="./images/serial_transient_1khz_simulation.png">
 
-### Calculations for a 1kHz bandpass filter.
+### Practical measurements
 
-### Calculations for a 15kHz bandpass filter.
+## Paralell circuit
 
-## Practical measurements
+### Schematics
+Circuit for a 5Khz bandpass filter.
+<img src="./schematics/paralell_schematics.svg">
+
+### Simulation
+Simulation AC signal analysis with the values in the component list.
+<img src="./images/paralell_gain_simulation.png">
+
+Simulation transient analysis at 1kHz.
+<img src="./images/paralell_transient_1khz_simulation.png">
+
+## Analysis
+With Q value of 1 the theoretical gain is the same for both the serial and paralell circuits.
+
+Using the AC signal analyis to look at the gain.
+For the serial circuit the bandwidth increases with higher resistor values.
+For the paralell circuit the bandwidth decreases with higher resistor values.
+
+### Practical measurements
+To be done
+
