@@ -15,10 +15,10 @@ It will take some time to document all projects and add proper documentation.
 ### Active filters
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| RC active lowpass filter (Butterworth) | [here](rc_active_lowpass_filter/README.md) | $${\color{orange}In progress}$$ |
+| RC active lowpass filter (Butterworth) | [here](rc_active_lowpass_filter/README.md) | $${\color{orange}In\space progress}$$ |
 
 ### Passive filters
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
 | RC passive lowpass filter | [here](rc_passive_lowpass_filter/README.md) | $${\color{green}Completed}$$ |
-| RLC passive bandpass filter | [here](rlc_passive_bandpass_filter/README.md) | $${\color{orange}In progress}$$ |
+| RLC passive bandpass filter | [here](rlc_passive_bandpass_filter/README.md) | $${\color{orange}In\space progress}$$ |
