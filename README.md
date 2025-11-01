@@ -22,3 +22,10 @@ It will take some time to document all projects and add proper documentation.
 | :--- | :--- | :--- |
 | RC passive lowpass filter | [here](rc_passive_lowpass_filter/README.md) | $${\color{green}Completed}$$ |
 | RLC passive bandpass filter | [here](rlc_passive_bandpass_filter/README.md) | $${\color{orange}In\space progress}$$ |
+
+### Logic gates with transistors
+| Circuit | Documentation | Status |
+| :--- | :--- | :--- |
+| Logic and gate | [here](logic_and_with_transistor/README.md) | $${\color{orange}In\space progress}$$ |
+| Logic or gate | [here](logic_or_with_transistor/README.md) | $${\color{red}Not started}$$ |
+
