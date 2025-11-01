@@ -32,6 +32,6 @@ It will take some time to document all projects and add proper documentation.
 
 ### Understanding integrated circuits
 | Circuit | Type | Documentation | Status |
-| :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | 555 | Timer |  | $${\color{red}Not\space started}$$ |
 | 7555 | Timer |  | $${\color{red}Not\space started}$$ |
