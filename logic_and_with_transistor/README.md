@@ -28,10 +28,10 @@ The goal is to implement a 2 input logic AND circuit with both a bipolar and mos
 <img src="./schematics/schematics.svg">
 
 ### Simulation
-| <img src="./images/simulation_0_0.png"> | 
-| <img src="./images/simulation_1_0.png"> | 
-| <img src="./images/simulation_0_1.png"> | 
-| <img src="./images/simulation_1_1.png"> | 
+<img src="./images/simulation_0_0.png">
+<img src="./images/simulation_1_0.png"> 
+<img src="./images/simulation_0_1.png"> 
+<img src="./images/simulation_1_1.png"> 
 
 ### Practical measurements
 
