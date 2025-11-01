@@ -7,10 +7,11 @@ It will take some time to document all projects and add proper documentation.
 
 ## Projects
 
-### Sensor circuits
+### 555 circuits
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
 | 555 Metal detector | [here](555_metal_detector/README.md) | $${\color{green}Completed}$$ |
+| Charge pump | [here](555_voltage_doubler/README.md) | $${\color{red}Not\space started}$$ |
 
 ### Active filters
 | Circuit | Documentation | Status |
@@ -27,5 +28,10 @@ It will take some time to document all projects and add proper documentation.
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
 | Logic and gate | [here](logic_and_with_transistor/README.md) | $${\color{orange}In\space progress}$$ |
-| Logic or gate | [here](logic_or_with_transistor/README.md) | $${\color{red}Not started}$$ |
+| Logic or gate | [here](logic_or_with_transistor/README.md) | $${\color{red}Not\space started}$$ |
 
+### Understanding integrated circuits
+| Circuit | Type | Documentation | Status |
+| :--- | :--- | :--- |
+| 555 | Timer |  | $${\color{red}Not\space started}$$ |
+| 7555 | Timer |  | $${\color{red}Not\space started}$$ |
