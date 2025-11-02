@@ -10,25 +10,25 @@ It will take some time to document all projects and add proper documentation.
 ### 555 circuits
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| 555 Metal detector | [here](555_metal_detector/README.md) | $${\color{green}Completed}$$ |
-| Charge pump | [here](555_voltage_doubler/README.md) | $${\color{red}Not\space started}$$ |
+| 555 Metal detector | [here](555_circuits/555_metal_detector/README.md) | $${\color{green}Completed}$$ |
+| Charge pump | [here](555_circuits/555_voltage_doubler/README.md) | $${\color{red}Not\space started}$$ |
 
 ### Active filters
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| RC active lowpass filter (Butterworth) | [here](rc_active_lowpass_filter/README.md) | $${\color{orange}In\space progress}$$ |
+| RC active lowpass filter (Butterworth) | [here](filters/rc_active_lowpass_filter/README.md) | $${\color{orange}In\space progress}$$ |
 
 ### Passive filters
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| RC passive lowpass filter | [here](rc_passive_lowpass_filter/README.md) | $${\color{green}Completed}$$ |
-| RLC passive bandpass filter | [here](rlc_passive_bandpass_filter/README.md) | $${\color{green}Completed}$$ |
+| RC passive lowpass filter | [here](filters/rc_passive_lowpass_filter/README.md) | $${\color{green}Completed}$$ |
+| RLC passive bandpass filter | [here](filters/rlc_passive_bandpass_filter/README.md) | $${\color{green}Completed}$$ |
 
 ### Logic gates with transistors
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| Logic and gate | [here](logic_and_with_transistor/README.md) | $${\color{orange}In\space progress}$$ |
-| Logic or gate | [here](logic_or_with_transistor/README.md) | $${\color{red}Not\space started}$$ |
+| Simple logic and gate | [here](analog_logic/simple_and_with_transistor/README.md) | $${\color{orange}In\space progress}$$ |
+| Simple logic or gate | [here](analog_logic/simple_logic_or_with_transistor/README.md) | $${\color{red}Not\space started}$$ |
 
 ### Understanding integrated circuits
 | Circuit | Type | Documentation | Status |
