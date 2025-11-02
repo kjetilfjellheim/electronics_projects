@@ -6,7 +6,7 @@ The goal is to understand and how to use the SE/NE555 and 7555.
 ## Pins
 | Pin | Name | Description |
 | :--- | :--- | :--- |
-| 1 | Ground | | 
+| 1 | Ground | Ground | 
 | 2 | Trigger  | When this pin goes to one third of Vcc, the output goes high. |
 | 3 | Output | Output high is lower than Vcc, and low is around 0V. | 
 | 4 | Reset | The is an inverted input. When it goes low everything resets. In normal  mode this is high. |
@@ -43,7 +43,8 @@ T=1.1\times R1\times C1
 When the trigger goes low, the output goes high and the capacitor C1 starts to charge. When the purple line goes to 2/3 of Vcc the output goes low.
 
 ### Practical measurements
-
+<img src="./images/monostable_mode_oscilloscope.png">
+Cyan is the trigger input, purple is the charge on capacitor C1 and yellow is the output voltage. The values are a little of due to components not being exact. 
 
 ## Astable mode
 

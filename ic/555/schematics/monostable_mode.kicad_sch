@@ -2264,7 +2264,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "6V"
+		(property "Value" "10V"
 			(at 21.59 26.6699 90)
 			(effects
 				(font
