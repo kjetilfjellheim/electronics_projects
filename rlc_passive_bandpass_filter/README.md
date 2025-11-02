@@ -50,7 +50,7 @@ R=\frac{f_o}{Q}
 
 ### Schematics
 Circuit for a 1Khz bandpass filter.
-<img src="./schematics/serial_gain_schematics.svg">
+<img src="./schematics/serial_schematics.svg">
 
 ### Simulation
 Simulation AC signal analysis with the values in the component list.
@@ -60,6 +60,20 @@ Simulation transient analysis at 1kHz.
 <img src="./images/serial_transient_1khz_simulation.png">
 
 ### Practical measurements
+| Frequency | Vpp | Oscilloscope image|
+| :------------- | :------------- | :------------- | 
+| 1Hz | 32mV | |
+| 100Hz | 136mV | [here](images/ocilloscope_serial_100hz.png)  |
+| 1kHz | 1.10V | [here](images/ocilloscope_serial_1khz.png) |
+| 3kHz | 3.28V | |
+| 4kHz | 4.00V | |
+| 5kHz | 4.24V | [here](images/ocilloscope_serial_5khz.png) |
+| 6kHz | 4.10V | |
+| 7kHz | 3.76V | |
+| 10kHz | 2.84V | [here](images/ocilloscope_serial_10khz.png) |
+| 100kHz | 320mV | [here](images/ocilloscope_serial_100khz.png) |
+
+At 1kHz the simulation showed 1.04V and on oscilloscope 1.2V. This difference can be inaccurate values on the components and uncalibrated oscilloscope. 
 
 ## Paralell circuit
 
@@ -74,6 +88,22 @@ Simulation AC signal analysis with the values in the component list.
 Simulation transient analysis at 1kHz.
 <img src="./images/paralell_transient_1khz_simulation.png">
 
+### Practical measurements
+| Frequency | Vpp | Oscilloscope image|
+| :------------- | :------------- | :------------- | 
+| 1Hz | 24mV | |
+| 100Hz | 320mV | [here](images/ocilloscope_paralell_100hz.png)  |
+| 1kHz | 960mV | [here](images/ocilloscope_paralell_1khz.png) |
+| 3kHz | 3.04V | |
+| 4kHz | 4.24V | |
+| 5kHz | 4.96V | [here](images/ocilloscope_paralell_5khz.png) |
+| 6kHz | 4.64V | |
+| 7kHz | 4.08V | |
+| 10kHz | 2.64V | [here](images/ocilloscope_paralell_10khz.png) |
+| 100kHz | 320mV | [here](images/ocilloscope_paralell_100khz.png) |
+
+At 1kHz the simulation showed 1.05V and on oscilloscope 0.96V. This difference can be inaccurate values on the components and uncalibrated oscilloscope.
+
 ## Analysis
 With Q value of 1 the theoretical gain is the same for both the serial and paralell circuits.
 
@@ -81,6 +111,5 @@ Using the AC signal analyis to look at the gain.
 For the serial circuit the bandwidth increases with higher resistor values.
 For the paralell circuit the bandwidth decreases with higher resistor values.
 
-### Practical measurements
-To be done
+
 

@@ -1,9 +1,9 @@
 # Electronics projects
 
 This is a repository of my electronic projects. This is to reorganize all the different repositories. The goal is to document all projects 
-with both code, analysis and schematics. 
+with both code, analysis and schematics. Completed does not mean it won't be updated, I might come back and update the projects if I feel like it.
 
-It will take some time to document all projects and add proper documentation.
+It will take some time to document all projects and add proper documentation. 
 
 ## Projects
 
@@ -22,7 +22,7 @@ It will take some time to document all projects and add proper documentation.
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
 | RC passive lowpass filter | [here](rc_passive_lowpass_filter/README.md) | $${\color{green}Completed}$$ |
-| RLC passive bandpass filter | [here](rlc_passive_bandpass_filter/README.md) | $${\color{orange}In\space progress}$$ |
+| RLC passive bandpass filter | [here](rlc_passive_bandpass_filter/README.md) | $${\color{green}Completed}$$ |
 
 ### Logic gates with transistors
 | Circuit | Documentation | Status |
