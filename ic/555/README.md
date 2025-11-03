@@ -15,7 +15,12 @@ The goal is to understand and how to use the SE/NE555 and 7555.
 | 7 | Discharge | When output is low the discharge is connected to 0V.  |
 | 8 | Vcc | Positive power supply |
 
-# Componenets
+## Monostable mode
+
+### Description
+This circuit makes a single pulse when triggered. This causes the output to held high for the pulse duration formula then return low.
+
+### Componenets
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
 | C1 | 2u | Electrolytic capacitor |
@@ -23,11 +28,6 @@ The goal is to understand and how to use the SE/NE555 and 7555.
 | R1 | 470k | |
 | R2 | 4.7k | Replace this with a smaller resistor and led | 
 | U1 | 7555 https://www.alldatasheet.com/datasheet-pdf/pdf/17796/PHILIPS/ICM7555.html | 555 should also work fine |
-
-## Monostable mode
-
-### Description
-This circuit makes a single pulse when triggered. This causes the output to held high for the pulse duration formula then return low.
 
 ### Formulas
 Pulse duration can be calculated with the formula.
@@ -48,8 +48,57 @@ Cyan is the trigger input, purple is the charge on capacitor C1 and yellow is th
 
 ## Astable mode
 
-### Circuit
+### Description
+When in astable mode the circuit will self trigger and cause continous pulses out.
+
+### Componenets
+| Reference | Value | Remarks |
+| :------------- | :------------- | :------------- |
+| C1 | 2u | Electrolytic capacitor |
+| C2 | 10n | |
+| R1, R2 | 470k | |
+| R3 | 4.7k | Replace this with a smaller resistor and led | 
+| U1 | 7555 https://www.alldatasheet.com/datasheet-pdf/pdf/17796/PHILIPS/ICM7555.html | 555 should also work fine |
 
 ### Formulas
+The frequency of the output oscillation is given by the formula.
+```math
+F=\frac{1}{0.693\times(R_1+ 2\times R2)\times C_1}
+```
+The duty cycle is given by the formula.
+```math
+Duty\space cycle=\frac{R_1+R_2}{R_1+2\times R_2}
+```
 
-### Output
+### Circuit
+<img src="./schematics/astable_mode.svg">
+
+### Simulation
+<img src="./images/astable_mode.png">
+
+### Practical measurements
+
+## Improved astable mode
+
+### Description
+This is an updated version of the astable mode. 
+
+### Componenets
+Same components as astable mode, but with the following added components.
+| Reference | Value | Remarks |
+| :------------- | :------------- | :------------- |
+| D1,D2 | 1N4001 | Diodes |
+
+### Formulas
+New duty cycle formula.
+```math
+Duty\space cycle=\frac{R_1}{R_1+R_2}
+```
+### Circuit
+The following change is needed.
+<img src="./images/improved_555_circuit.png">
+
+### Simulation
+<img src="./images/improved_astable_mode.png">
+
+### Practical measurements
