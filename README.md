@@ -35,3 +35,8 @@ It will take some time to document all projects and add proper documentation.
 | :--- | :--- | :--- | :--- |
 | 555 | Timer | [here](ic/555/README.md) | $${\color{orange}In\space progress}$$ |
 | 7555 | Timer | [here](ic/555/README.md) | $${\color{orange}In\space progress}$$ |
+
+### Voltage doublers
+| Circuit | Documentation | Status |
+| :--- | :--- | :--- |
+| Villard doubler | [here](voltage_doublers/villard_doubler/README.md) | $${\color{orange}In\space progress}$$ |
