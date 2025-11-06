@@ -7,11 +7,10 @@ It will take some time to document all projects and add proper documentation.
 
 ## Projects
 
-### 555 circuits
+### Sensor circuits
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| 555 Metal detector | [here](555_circuits/555_metal_detector/README.md) | $${\color{green}Completed}$$ |
-| Charge pump | [here](555_circuits/555_voltage_doubler/README.md) | $${\color{red}Not\space started}$$ |
+| 555 Metal detector | [here](sensor_circuits/555_metal_detector/README.md) | $${\color{green}Completed}$$ |
 
 ### Active filters
 | Circuit | Documentation | Status |
@@ -36,7 +35,7 @@ It will take some time to document all projects and add proper documentation.
 | 555 | Timer | [here](ic/555/README.md) | $${\color{orange}In\space progress}$$ |
 | 7555 | Timer | [here](ic/555/README.md) | $${\color{orange}In\space progress}$$ |
 
-### Voltage doublers
+### Voltage doublers and charge pumps
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
 | Villard doubler | [here](voltage_doublers/villard_doubler/README.md) | $${\color{orange}In\space progress}$$ |
