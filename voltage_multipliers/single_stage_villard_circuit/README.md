@@ -1,13 +1,13 @@
-# Villard voltage doubler
+# Single stage Villard circuit
 
 ## Description
-The goal is is to understand, simulate and do practical measurements on a Villard voltage doubler.
+The goal is is to understand, simulate and do practical measurements on a single stage Villard voltage doubler.
 
 ## Goals
-- [x] Document schematic in Kicad
-- [x] Do a theoretical analyis 
-- [ ] Implement schematic on breadboard
-- [ ] Test circuit and do measurements
+- [x] Document schematic of single stage in Kicad
+- [x] Do a theoretical analyis on single stage 
+- [ ] Implement single stage schematic on breadboard
+- [ ] Test single stage circuit and do measurements
 
 ## Equipment used
 | Equipment | Description |
@@ -19,7 +19,7 @@ The goal is is to understand, simulate and do practical measurements on a Villar
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
 | C1 | 1n, 10n, 100n, 1u, 10u and 100u | |
-| R1 | 4.7k | |
+| R1 | 1M | |
 | D1 | 1N4001 | |
 
 ## Schematics

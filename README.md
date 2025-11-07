@@ -38,4 +38,5 @@ It will take some time to document all projects and add proper documentation.
 ### Voltage doublers and charge pumps
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| Villard doubler | [here](voltage_doublers/villard_doubler/README.md) | $${\color{orange}In\space progress}$$ |
+| Single-stage Villard circuit | [here](voltage_multipliers/single_stage_villard_circuit/README.md) | $${\color{orange}In\space progress}$$ |
+| Single-stage Greinacher circuit | [here](voltage_multipliers/single_stage_greinacher_circuit/README.md) | $${\color{orange}In\space progress}$$ |
