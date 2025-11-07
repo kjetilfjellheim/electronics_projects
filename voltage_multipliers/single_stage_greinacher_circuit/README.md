@@ -18,9 +18,9 @@ The goal is is to understand, simulate and do practical measurements on a Greina
 ## Components
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
-| C1-C8 | 1, 10n, 100n, 1u | Only two of each is required |
-| R1-R4 | 1M | Only one required for load |
-| D1-D8 | 1N4001 | Only two are required |
+| C1, C2 | 1, 10n, 100n, 1u | Two of each is required |
+| R1 | 1M | |
+| D1, D2 | 1N4001 | |
 
 ## Schematics
 <img src="./schematics/greinacher_circuit.svg">
