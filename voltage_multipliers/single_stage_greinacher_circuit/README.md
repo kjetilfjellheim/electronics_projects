@@ -26,22 +26,23 @@ The goal is is to understand, simulate and do practical measurements on a Greina
 <img src="./schematics/greinacher_circuit.svg">
 
 ## Simulation
-All simulations have the following capacitor values.
-Vout1=1nF
-Vout2=10nF
-Vout3=100nF
-Vout4=1uF
-
+All simulations have the following capacitor values.<br>
+Vout1=1nF<br>
+Vout2=10nF<br>
+Vout3=100nF<br>
+Vout4=1uF<br>
+<br>
+<br>
 <img src="./images/simulation_100hz.png">
-Simulation done on 100Hz AC with multiple capacitor values.
-
+Simulation done on 100Hz AC with multiple capacitor values.<br>
+<br>
 <img src="./images/simulation_1khz.png">
-Simulation done on 1kHz AC with multiple capacitor values.
-
+Simulation done on 1kHz AC with multiple capacitor values.<br>
+<br>
 <img src="./images/simulation_10khz.png">
-Simulation done on 10kHz AC with multiple capacitor values.
-
-<ins>Conclusion</ins>
+Simulation done on 10kHz AC with multiple capacitor values.<br>
+<br>
+<ins>Conclusion</ins><br>
 This circuit have AC as input, but output ideally is DC voltage higher than the max voltage of the input.
 The lower the frequency the higher the capacitance of the capacitors is required to get a proper DC 
 output. The DC output voltage is about 8.73V for ideal output when input is 5Vpp.

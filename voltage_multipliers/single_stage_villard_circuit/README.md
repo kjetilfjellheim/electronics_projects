@@ -27,22 +27,24 @@ The goal is is to understand, simulate and do practical measurements on a single
 
 ## Simulation
 <img src="./images/simulation_100hz.png">
-This is a simulation done on 100Hz.
-V1=With 1nF capacitor gives -14.8mV to 14.8mV
-V2=With 10nF capacitor gives -148mV to 148mV 
-V3=With 100n capacitor gives -611mV to 1.42V (Not quite sine wave at lower voltages)
-V4=With 1uF capacitor gives -683mV to 4.81V (Very flat at lowest voltages, not at all sine)
-V5=With 10uF capacitor gives -726mV to 8.91V (More sine wave again)
-V6=With 100uF capacitor gives -742mV to 9.24V (Pretty sine again)
-
+This is a simulation done on 100Hz.<br>
+V1=With 1nF capacitor gives -14.8mV to 14.8mV<br>
+V2=With 10nF capacitor gives -148mV to 148mV<br>
+V3=With 100n capacitor gives -611mV to 1.42V (Not quite sine wave at lower voltages)<br>
+V4=With 1uF capacitor gives -683mV to 4.81V (Very flat at lowest voltages, not at all sine)<br>
+V5=With 10uF capacitor gives -726mV to 8.91V (More sine wave again)<br>
+V6=With 100uF capacitor gives -742mV to 9.24V (Pretty sine again)<br>
+<br>
+<br>
 <img src="./images/simulation_1khz.png">
-V1=With 1nF capacitor gives -148mV to 148mV
-V2=With 10nF capacitor gives -611mV to 1.42V (Flat at lower voltage)
-V3=With 100n capacitor gives -683mV to 6.27V (Flat at lower voltages)
-V4=With 1uF capacitor gives -715mV to 8.90V
-V5=With 10uF capacitor gives -742mV to 9.24V
-
-<ins>Conclusion</ins>
+V1=With 1nF capacitor gives -148mV to 148mV<br>
+V2=With 10nF capacitor gives -611mV to 1.42V (Flat at lower voltage)<br>
+V3=With 100n capacitor gives -683mV to 6.27V (Flat at lower voltages)<br>
+V4=With 1uF capacitor gives -715mV to 8.90V<br>
+V5=With 10uF capacitor gives -742mV to 9.24V<br>
+<br>
+<br>
+<ins>Conclusion</ins><br>
 The lower the frequency a higher capacitance is required to reach higher voltages. 
 The circuit itself does not double the voltage, but moves the offset. So instead 
 of -5V to 5V it changes to -0.7V to 9.1V. 
