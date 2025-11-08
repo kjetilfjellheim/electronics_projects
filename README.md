@@ -39,4 +39,5 @@ It will take some time to document all projects and add proper documentation.
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
 | Single-stage Villard circuit | [here](voltage_multipliers/single_stage_villard_circuit/README.md) | $${\color{orange}In\space progress}$$ |
+| Multi-stage Villard circuit | [here](voltage_multipliers/multi_stage_villard_circuit/README.md) | $${\color{orange}In\space progress}$$ |
 | Single-stage Greinacher circuit | [here](voltage_multipliers/single_stage_greinacher_circuit/README.md) | $${\color{orange}In\space progress}$$ |

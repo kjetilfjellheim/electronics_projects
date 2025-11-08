@@ -19,7 +19,7 @@ The goal is is to understand, simulate and do practical measurements on a Greina
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
 | C1, C2 | 1n, 10n, 100n, 1u | Two of each is required |
-| R1 | 1M | |
+| R1 | 1M | To simulate load |
 | D1, D2 | 1N4001 | |
 
 ## Schematics

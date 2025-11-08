@@ -19,7 +19,7 @@ The goal is is to understand, simulate and do practical measurements on a single
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
 | C1 | 1n, 10n, 100n, 1u, 10u and 100u | |
-| R1 | 1M | |
+| R1 | 1M | To simulate load |
 | D1 | 1N4001 | |
 
 ## Schematics
