@@ -32,8 +32,8 @@ It will take some time to document all projects and add proper documentation.
 ### Understanding integrated circuits
 | Circuit | Type | Documentation | Status |
 | :--- | :--- | :--- | :--- |
-| 555 | Timer | [here](ic/555/README.md) | $${\color{orange}In\space progress}$$ |
-| 7555 | Timer | [here](ic/555/README.md) | $${\color{orange}In\space progress}$$ |
+| 555 | Timer | [here](ic/555/README.md) | $${\color{green}Completed}$$ |
+| 7555 | Timer | [here](ic/555/README.md) | $${\color{green}Completed}$$ |
 
 ### Voltage doublers and charge pumps
 | Circuit | Documentation | Status |

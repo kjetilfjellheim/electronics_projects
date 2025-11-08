@@ -77,6 +77,23 @@ Duty\space cycle=\frac{R_1+R_2}{R_1+2\times R_2}
 <img src="./images/astable_mode.png">
 
 ### Practical measurements
+<img src="./images/astable_mode_oscilloscope.png">
+Measured values are<br>
+F=0.466Hz<br>
+Duty cycle=0.64<br>
+<br>
+<br>
+Calculated duty cycle is 
+```math
+Duty\space cycle=\frac{R_1+R_2}{R_1+2\times R_2}=\frac{470k+470k}{470k+2\times 470k}=0.66
+```
+The value is as close as expected.<br>
+<br>
+The calculated frequency is
+```math
+F=\frac{1}{0.693\times(R_1+ 2\times R2)\times C_1}=\frac{1}{0.693\times (470\times 10^3 + 2\times 470\times 10^3)\times 2\times 10^{-6}}=0.511Hz
+```
+Again the value calculated is as close to the measured value as expected.
 
 ## Improved astable mode
 
@@ -102,3 +119,14 @@ The following change is needed.
 <img src="./images/improved_astable_mode.png">
 
 ### Practical measurements
+Had to use 1N4148 diode instead of 1N4001.
+<br>
+<img src="./images/improved_astable_mode_oscilloscope.png">
+<img src="./images/astable_mode_oscilloscope.png">
+Measured value for duty cycle is<br>
+Duty cycle=0.47<br>
+<br>
+<br>
+```math
+Duty\space cycle=\frac{R_1}{R_1+R_2}=\frac{470*10^3}{470*10^3+470*10^3}=0.5
+```
