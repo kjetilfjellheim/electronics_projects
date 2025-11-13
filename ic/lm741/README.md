@@ -52,7 +52,7 @@ Measurements
 | 2.20V | 2.14V | 14.40V |
 
 Calculated gain
-```math'
+```math
 Gain=1+\frac{R2}{R1}=1+\frac{980k}{5.556k}=1.176
 ```
 *Measurements of resistors done using LCR
