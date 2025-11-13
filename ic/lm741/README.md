@@ -26,7 +26,7 @@ This circuit amplifies the input
   
 ### Formulas
 Calculated gain
-```math'
+```math
 Gain=1+\frac{R2}{R1}
 ```
 
