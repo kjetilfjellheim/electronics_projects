@@ -34,6 +34,7 @@ It will take some time to document all projects and add proper documentation.
 | :--- | :--- | :--- | :--- |
 | 555 | Timer | [here](ic/555/README.md) | $${\color{green}Completed}$$ |
 | 7555 | Timer | [here](ic/555/README.md) | $${\color{green}Completed}$$ |
+| LM741 | Operational amplifier | [here](ic/lm741/README.md) | $${\color{orange}In\space progress}$$ |
 
 ### Voltage doublers and charge pumps
 | Circuit | Documentation | Status |

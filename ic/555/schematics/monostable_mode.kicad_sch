@@ -1795,7 +1795,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PULSE(10V 0V 50MS 1MS 1MS 20MS 30MS 1)"
+		(property "Value" "PULSE(10V 0V 50MS 1MS 1MS 50MS 60MS 1)"
 			(at 20.066 63.5 0)
 			(effects
 				(font
