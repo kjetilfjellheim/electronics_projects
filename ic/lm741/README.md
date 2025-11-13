@@ -53,6 +53,6 @@ Measurements
 
 Calculated gain
 ```math
-Gain=1+\frac{R2}{R1}=1+\frac{980k}{5.556k}=1.176
+Gain=1+\frac{R2}{R1}=1+\frac{980}{5.556k}=1.176
 ```
 *Measurements of resistors done using LCR
