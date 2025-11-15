@@ -1,0 +1,728 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta
+            name="description"
+            content="RC active lowpass filter"
+        >
+    <title>Electronics projects</title>
+
+    <style media="screen">
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <style media="print">
+      * {
+        -webkit-transition:none!important;
+        transition:none!important;
+      }
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #586e75;
+}
+.highlight .err {
+  color: #002b36;
+  background-color: #dc322f;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #657b83;
+}
+.highlight .cp {
+  color: #b58900;
+}
+.highlight .nt {
+  color: #b58900;
+}
+.highlight .o, .highlight .ow {
+  color: #93a1a1;
+}
+.highlight .p, .highlight .pi {
+  color: #93a1a1;
+}
+.highlight .gi {
+  color: #859900;
+}
+.highlight .gd {
+  color: #dc322f;
+}
+.highlight .gh {
+  color: #268bd2;
+  background-color: #002b36;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #6c71c4;
+}
+.highlight .kc {
+  color: #cb4b16;
+}
+.highlight .kt {
+  color: #cb4b16;
+}
+.highlight .kd {
+  color: #cb4b16;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #859900;
+}
+.highlight .sa {
+  color: #6c71c4;
+}
+.highlight .sr {
+  color: #2aa198;
+}
+.highlight .si {
+  color: #d33682;
+}
+.highlight .se {
+  color: #d33682;
+}
+.highlight .nn {
+  color: #b58900;
+}
+.highlight .nc {
+  color: #b58900;
+}
+.highlight .no {
+  color: #b58900;
+}
+.highlight .na {
+  color: #268bd2;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #859900;
+}
+.highlight .ss {
+  color: #859900;
+}
+    </style>
+    <link href="../../stylesheets/screen-b0bc66d7.css" rel="stylesheet" media="screen" />
+    <link href="../../stylesheets/print-966d6edc.css" rel="stylesheet" media="print" />
+      <script src="../../javascripts/all_nosearch-53bdb4f3.js"></script>
+
+  </head>
+
+  <body class="filters filters_rc_passive_lowpass_filter filters_rc_passive_lowpass_filter_index" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="../../images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="../../images/logo-e6ae0498.png" class="logo" alt="" />
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#rc-passive-lowpass-filter" class="toc-h1 toc-link" data-title="RC passive lowpass filter">RC passive lowpass filter</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#description" class="toc-h2 toc-link" data-title="Description">Description</a>
+                  </li>
+                  <li>
+                    <a href="#goals" class="toc-h2 toc-link" data-title="Goals">Goals</a>
+                  </li>
+                  <li>
+                    <a href="#equipment-used" class="toc-h2 toc-link" data-title="Equipment used">Equipment used</a>
+                  </li>
+                  <li>
+                    <a href="#components" class="toc-h2 toc-link" data-title="Components">Components</a>
+                  </li>
+                  <li>
+                    <a href="#formulas" class="toc-h2 toc-link" data-title="Formulas">Formulas</a>
+                  </li>
+                  <li>
+                    <a href="#circuits" class="toc-h2 toc-link" data-title="Circuits">Circuits</a>
+                  </li>
+                  <li>
+                    <a href="#simulations" class="toc-h2 toc-link" data-title="Simulations">Simulations</a>
+                  </li>
+                  <li>
+                    <a href="#calculations" class="toc-h2 toc-link" data-title="Calculations">Calculations</a>
+                  </li>
+                  <li>
+                    <a href="#practical-measurements" class="toc-h2 toc-link" data-title="Practical measurements">Practical measurements</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='rc-passive-lowpass-filter'>RC passive lowpass filter</h1><h2 id='description'>Description</h2>
+<p>The goal is to implement, analyze and do practical measurements on a RC lowpass filter.</p>
+<h2 id='goals'>Goals</h2>
+<ul>
+<li>[x] Document schematic in Kicad</li>
+<li>[x] Do a theoretical analyis </li>
+<li>[x] Calculate 1st order </li>
+<li>[x] Implement schematic on breadboard</li>
+<li>[x] Test circuit and do measurements</li>
+<li>[ ] Calculate 2nd order </li>
+</ul>
+<h2 id='equipment-used'>Equipment used</h2>
+<table><thead>
+<tr>
+<th style="text-align: left">Equipment</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">Peaktech 4055</td>
+<td style="text-align: left">AC power supply</td>
+</tr>
+<tr>
+<td style="text-align: left">RS Pro RSDS 1204X-E</td>
+<td style="text-align: left">Oscilloscope</td>
+</tr>
+</tbody></table>
+<h2 id='components'>Components</h2>
+<table><thead>
+<tr>
+<th style="text-align: left">Reference</th>
+<th style="text-align: left">Value</th>
+<th style="text-align: left">Remarks</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">3x capacitor</td>
+<td style="text-align: left">22n</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">3x resistor</td>
+<td style="text-align: left">1k</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">J1</td>
+<td style="text-align: left">~5V</td>
+<td style="text-align: left"></td>
+</tr>
+</tbody></table>
+<h2 id='formulas'>Formulas</h2>
+<p>Reactance for the capacitor at frequency.
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow data-mjx-texclass="ORD">
+      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+        <mtr>
+          <mtd>
+            <msub>
+              <mi>X</mi>
+              <mi>c</mi>
+            </msub>
+            <mo>=</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mn>2</mn>
+                <mo>&#x2217;</mo>
+                <mi>&#x3C0;</mi>
+                <mo>&#x2217;</mo>
+                <mi>f</mi>
+                <mo>&#x2217;</mo>
+                <mi>c</mi>
+              </mrow>
+            </mfrac>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mrow>
+  </mstyle>
+</math></p>
+
+<p>Impedance for the circuit.
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow data-mjx-texclass="ORD">
+      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+        <mtr>
+          <mtd>
+            <mi>Z</mi>
+            <mo>=</mo>
+            <msqrt>
+              <msubsup>
+                <mi>X</mi>
+                <mi>c</mi>
+                <mn>2</mn>
+              </msubsup>
+              <mo>+</mo>
+              <msup>
+                <mi>R</mi>
+                <mn>2</mn>
+              </msup>
+            </msqrt>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mrow>
+  </mstyle>
+</math></p>
+
+<p>Output frequency can be found with this formula.
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow data-mjx-texclass="ORD">
+      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+        <mtr>
+          <mtd>
+            <msub>
+              <mi>V</mi>
+              <mrow data-mjx-texclass="ORD">
+                <mi>o</mi>
+                <mi>u</mi>
+                <mi>t</mi>
+              </mrow>
+            </msub>
+            <mo>=</mo>
+            <msub>
+              <mi>V</mi>
+              <mrow data-mjx-texclass="ORD">
+                <mi>i</mi>
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo>&#x2217;</mo>
+            <mfrac>
+              <msub>
+                <mi>X</mi>
+                <mi>c</mi>
+              </msub>
+              <mi>Z</mi>
+            </mfrac>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mrow>
+  </mstyle>
+</math></p>
+
+<p>Gain is calculated with this formula.
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow data-mjx-texclass="ORD">
+      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+        <mtr>
+          <mtd>
+            <msub>
+              <mi>G</mi>
+              <mtext>db</mtext>
+            </msub>
+            <mo>=</mo>
+            <mn>20</mn>
+            <mi>log</mi>
+            <mo data-mjx-texclass="NONE">&#x2061;</mo>
+            <mfrac>
+              <msub>
+                <mi>V</mi>
+                <mtext>out</mtext>
+              </msub>
+              <msub>
+                <mi>V</mi>
+                <mtext>in</mtext>
+              </msub>
+            </mfrac>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mrow>
+  </mstyle>
+</math></p>
+
+<p>Phase shift formula.
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow data-mjx-texclass="ORD">
+      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+        <mtr>
+          <mtd>
+            <mi>&#x3D5;</mi>
+            <mo>=</mo>
+            <mo>&#x2212;</mo>
+            <mi>a</mi>
+            <mi>r</mi>
+            <mi>c</mi>
+            <mi>t</mi>
+            <mi>a</mi>
+            <mi>n</mi>
+            <mo stretchy="false">(</mo>
+            <mn>2</mn>
+            <mi>&#x3C0;</mi>
+            <mi>f</mi>
+            <mi>r</mi>
+            <mi>c</mi>
+            <mo stretchy="false">)</mo>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mrow>
+  </mstyle>
+</math></p>
+<h2 id='circuits'>Circuits</h2>
+<p>Circuits for 1st to 5th order.</p>
+
+<blockquote>
+<p><img src="schematics/rc_filter-689f6705.svg"></p>
+</blockquote>
+
+<p>Schematics generated from KIcad. The schematics can be downloaded from the repository.</p>
+
+<aside class="notice">
+    More description will come later.
+</aside>
+<h2 id='simulations'>Simulations</h2>
+<p>Gain for 1st to 5th order filter
+<img src="images/rc_lowpass_filter_gain_simulation-351d42df.png"></p>
+
+<p>Phase for 1st to 5th order filter
+<img src="images/rc_lowpass_filter_phase_simulation-0bfa2235.png"></p>
+
+<p>Simulation values</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Order</th>
+<th style="text-align: left">-3db</th>
+<th style="text-align: left">-20db</th>
+<th style="text-align: left">-40db</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">1</td>
+<td style="text-align: left">7.19KHz</td>
+<td style="text-align: left">71.9KHz</td>
+<td style="text-align: left">Not measureable</td>
+</tr>
+<tr>
+<td style="text-align: left">2</td>
+<td style="text-align: left">2.69KHz</td>
+<td style="text-align: left">19.2KHz</td>
+<td style="text-align: left">71.2KHz</td>
+</tr>
+<tr>
+<td style="text-align: left">3</td>
+<td style="text-align: left">1.40KHz</td>
+<td style="text-align: left">9.82KHz</td>
+<td style="text-align: left">30.2KHz</td>
+</tr>
+<tr>
+<td style="text-align: left">4</td>
+<td style="text-align: left">852Hz</td>
+<td style="text-align: left">6.12KHz</td>
+<td style="text-align: left">18.2KHz</td>
+</tr>
+<tr>
+<td style="text-align: left">5</td>
+<td style="text-align: left">575Hz</td>
+<td style="text-align: left">4.10KHz</td>
+<td style="text-align: left">12.3KHz</td>
+</tr>
+</tbody></table>
+<h2 id='calculations'>Calculations</h2>
+<p>Assuming input voltage 5V</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Gain</th>
+<th style="text-align: left">Voltage</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">-3db</td>
+<td style="text-align: left">3.53V</td>
+</tr>
+<tr>
+<td style="text-align: left">-10db</td>
+<td style="text-align: left">1.58V</td>
+</tr>
+<tr>
+<td style="text-align: left">-20db</td>
+<td style="text-align: left">0.5V</td>
+</tr>
+<tr>
+<td style="text-align: left">-40db</td>
+<td style="text-align: left">0.25V</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Frequency</th>
+<th style="text-align: left">Gain 1st order</th>
+<th style="text-align: left">Phase 1st order</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">100Hz</td>
+<td style="text-align: left">-829u</td>
+<td style="text-align: left">-0.79</td>
+</tr>
+<tr>
+<td style="text-align: left">500Hz</td>
+<td style="text-align: left">-0.02</td>
+<td style="text-align: left">-3.95</td>
+</tr>
+<tr>
+<td style="text-align: left">1kHz</td>
+<td style="text-align: left">-0.08</td>
+<td style="text-align: left">-7.87</td>
+</tr>
+<tr>
+<td style="text-align: left">10kHz</td>
+<td style="text-align: left">-4.64</td>
+<td style="text-align: left">-54.1</td>
+</tr>
+<tr>
+<td style="text-align: left">20kHz</td>
+<td style="text-align: left">-9.36</td>
+<td style="text-align: left">-70.1</td>
+</tr>
+</tbody></table>
+<h2 id='practical-measurements'>Practical measurements</h2>
+<p>Oscilloscope measurement</p>
+
+<p><img src="images/ocilloscope_1st_order_1khz-8da1b989.png"></p>
+
+<p>Since the resistor and capacitor are not perfect values and the oscilloscope/function generator is not calibrated values should be a bit off.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Frequency</th>
+<th style="text-align: left">Gain 1st order</th>
+<th style="text-align: left">Gain 2nd order</th>
+<th style="text-align: left">Gain 3rd order</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">100Hz</td>
+<td style="text-align: left">0(5V)</td>
+<td style="text-align: left">0(5V)</td>
+<td style="text-align: left">0(5V)</td>
+</tr>
+<tr>
+<td style="text-align: left">500Hz</td>
+<td style="text-align: left">0(5V)</td>
+<td style="text-align: left">0(5V)</td>
+<td style="text-align: left">-0.72(4.64V)</td>
+</tr>
+<tr>
+<td style="text-align: left">1kHz</td>
+<td style="text-align: left">-0.13(4.96V)</td>
+<td style="text-align: left">-0.57(4.72V)</td>
+<td style="text-align: left">-1.84(4.08V)</td>
+</tr>
+<tr>
+<td style="text-align: left">10kHz</td>
+<td style="text-align: left">-4.62(2.96V)</td>
+<td style="text-align: left">-12.5(1.2V)</td>
+<td style="text-align: left">-20.24(0.49V)</td>
+</tr>
+<tr>
+<td style="text-align: left">20kHz</td>
+<td style="text-align: left">-9.43(1.72V)</td>
+<td style="text-align: left">-20.24(0.49V)</td>
+<td style="text-align: left">-30.9(0.14V)</td>
+</tr>
+</tbody></table>
+
+<p>Breadboard setup for 3rd order</p>
+
+<p><img src="images/breadboard-80334407.jpg"></p>
+
+      </div>
+      <div class="dark-box">
+      </div>
+    </div>
+  </body>
+</html>

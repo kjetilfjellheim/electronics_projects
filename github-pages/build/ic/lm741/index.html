@@ -1,0 +1,534 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta
+            name="description"
+            content="LM741 integrated circuit"
+        >
+    <title>Electronics projects</title>
+
+    <style media="screen">
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <style media="print">
+      * {
+        -webkit-transition:none!important;
+        transition:none!important;
+      }
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #586e75;
+}
+.highlight .err {
+  color: #002b36;
+  background-color: #dc322f;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #657b83;
+}
+.highlight .cp {
+  color: #b58900;
+}
+.highlight .nt {
+  color: #b58900;
+}
+.highlight .o, .highlight .ow {
+  color: #93a1a1;
+}
+.highlight .p, .highlight .pi {
+  color: #93a1a1;
+}
+.highlight .gi {
+  color: #859900;
+}
+.highlight .gd {
+  color: #dc322f;
+}
+.highlight .gh {
+  color: #268bd2;
+  background-color: #002b36;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #6c71c4;
+}
+.highlight .kc {
+  color: #cb4b16;
+}
+.highlight .kt {
+  color: #cb4b16;
+}
+.highlight .kd {
+  color: #cb4b16;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #859900;
+}
+.highlight .sa {
+  color: #6c71c4;
+}
+.highlight .sr {
+  color: #2aa198;
+}
+.highlight .si {
+  color: #d33682;
+}
+.highlight .se {
+  color: #d33682;
+}
+.highlight .nn {
+  color: #b58900;
+}
+.highlight .nc {
+  color: #b58900;
+}
+.highlight .no {
+  color: #b58900;
+}
+.highlight .na {
+  color: #268bd2;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #859900;
+}
+.highlight .ss {
+  color: #859900;
+}
+    </style>
+    <link href="../../stylesheets/screen-b0bc66d7.css" rel="stylesheet" media="screen" />
+    <link href="../../stylesheets/print-966d6edc.css" rel="stylesheet" media="print" />
+      <script src="../../javascripts/all_nosearch-53bdb4f3.js"></script>
+
+  </head>
+
+  <body class="ic ic_lm741 ic_lm741_index" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="../../images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="../../images/logo-e6ae0498.png" class="logo" alt="" />
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#lm741" class="toc-h1 toc-link" data-title="LM741">LM741</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#description" class="toc-h2 toc-link" data-title="Description">Description</a>
+                  </li>
+                  <li>
+                    <a href="#pins" class="toc-h2 toc-link" data-title="Pins">Pins</a>
+                  </li>
+                  <li>
+                    <a href="#non-inverting-differential-amplifier-dc" class="toc-h2 toc-link" data-title="Non inverting differential amplifier (DC)">Non inverting differential amplifier (DC)</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='lm741'>LM741</h1><h2 id='description'>Description</h2>
+<p>The goal is to understand and how to use the LM741. </p>
+<h2 id='pins'>Pins</h2>
+<table><thead>
+<tr>
+<th style="text-align: left">Pin</th>
+<th style="text-align: left">Name</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">1</td>
+<td style="text-align: left">Offset null</td>
+<td style="text-align: left">Offset null pin used to eliminate the offset voltage and balance the input voltages</td>
+</tr>
+<tr>
+<td style="text-align: left">2</td>
+<td style="text-align: left">Inverting input</td>
+<td style="text-align: left">Inverting signal input</td>
+</tr>
+<tr>
+<td style="text-align: left">3</td>
+<td style="text-align: left">Noninverting input</td>
+<td style="text-align: left">Noninverting signal input</td>
+</tr>
+<tr>
+<td style="text-align: left">4</td>
+<td style="text-align: left">V-</td>
+<td style="text-align: left">Negative supply voltage</td>
+</tr>
+<tr>
+<td style="text-align: left">5</td>
+<td style="text-align: left">Offset null</td>
+<td style="text-align: left">Offset null pin used to eliminate the offset voltage and balance the input voltages</td>
+</tr>
+<tr>
+<td style="text-align: left">6</td>
+<td style="text-align: left">Output</td>
+<td style="text-align: left">Amplified output</td>
+</tr>
+<tr>
+<td style="text-align: left">7</td>
+<td style="text-align: left">V+</td>
+<td style="text-align: left">Positive supply voltage</td>
+</tr>
+<tr>
+<td style="text-align: left">8</td>
+<td style="text-align: left">NC</td>
+<td style="text-align: left">Should be left floating</td>
+</tr>
+</tbody></table>
+<h2 id='non-inverting-differential-amplifier-dc'>Non inverting differential amplifier (DC)</h2><h3 id='description-2'>Description</h3>
+<p>This describes the LM741 as a noninverting differential amplifier.</p>
+<h3 id='circuit'>Circuit</h3>
+<blockquote>
+<p><img src="schematics/differential_amplifier-3b358809.svg"></p>
+</blockquote>
+
+<p>Schematics generated from KIcad. The schematics can be downloaded from the repository.</p>
+
+<aside class="notice">
+    More description will come later.
+</aside>
+<h3 id='formulas'>Formulas</h3>
+<p>Calculated gain
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow data-mjx-texclass="ORD">
+      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+        <mtr>
+          <mtd>
+            <mi>G</mi>
+            <mi>a</mi>
+            <mi>i</mi>
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+            <mo>+</mo>
+            <mfrac>
+              <mrow>
+                <mi>R</mi>
+                <mn>2</mn>
+              </mrow>
+              <mrow>
+                <mi>R</mi>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mrow>
+  </mstyle>
+</math></p>
+<h3 id='practical-measurements'>Practical measurements</h3>
+<p>For all measurements </p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Probe</th>
+<th style="text-align: left">Measurement</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">Yellow</td>
+<td style="text-align: left">Vin+</td>
+</tr>
+<tr>
+<td style="text-align: left">Purple</td>
+<td style="text-align: left">Vin-</td>
+</tr>
+<tr>
+<td style="text-align: left">Cyan</td>
+<td style="text-align: left">Vout</td>
+</tr>
+</tbody></table>
+
+<p><img src="images/non_inverting_oscilloscope_1-b6884655.png">
+<img src="images/non_inverting_oscilloscope_2-3c5d5630.png">
+<img src="images/non_inverting_oscilloscope_3-9804aafb.png">
+<img src="images/non_inverting_oscilloscope_4-dae2fe4e.png">
+<img src="images/non_inverting_oscilloscope_5-26beb91b.png"></p>
+
+<p>Oscilloscope measurements are not accurate as they are done with only 8bit vertical resolution.</p>
+
+<p>Measurements</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Vin+</th>
+<th style="text-align: left">Vin-</th>
+<th style="text-align: left">Vout</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">1.80V</td>
+<td style="text-align: left">1.98V</td>
+<td style="text-align: left">13.20V</td>
+</tr>
+<tr>
+<td style="text-align: left">1.90V</td>
+<td style="text-align: left">1.98V</td>
+<td style="text-align: left">13.40V</td>
+</tr>
+<tr>
+<td style="text-align: left">2.00V</td>
+<td style="text-align: left">2.02V</td>
+<td style="text-align: left">13.60V</td>
+</tr>
+<tr>
+<td style="text-align: left">2.10V</td>
+<td style="text-align: left">2.12V</td>
+<td style="text-align: left">14.20V</td>
+</tr>
+<tr>
+<td style="text-align: left">2.20V</td>
+<td style="text-align: left">2.14V</td>
+<td style="text-align: left">14.40V</td>
+</tr>
+</tbody></table>
+
+<p>Calculated gain
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow data-mjx-texclass="ORD">
+      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+        <mtr>
+          <mtd>
+            <mi>G</mi>
+            <mi>a</mi>
+            <mi>i</mi>
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+            <mo>+</mo>
+            <mfrac>
+              <mrow>
+                <mi>R</mi>
+                <mn>2</mn>
+              </mrow>
+              <mrow>
+                <mi>R</mi>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+            <mo>=</mo>
+            <mn>1</mn>
+            <mo>+</mo>
+            <mfrac>
+              <mn>980</mn>
+              <mrow>
+                <mn>5.556</mn>
+                <mi>k</mi>
+              </mrow>
+            </mfrac>
+            <mo>=</mo>
+            <mn>1.176</mn>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mrow>
+  </mstyle>
+</math>
+*Measurements of resistors done using LCR</p>
+
+      </div>
+      <div class="dark-box">
+      </div>
+    </div>
+  </body>
+</html>
