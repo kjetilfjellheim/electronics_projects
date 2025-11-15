@@ -38,8 +38,10 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
 </aside>
 
 # Simulation
+> <img src="./images/simulation_1-4_stages.png">
+
 This simulates the output from a 1-4 stage Villard circuit where input comes from a 5Vpp AC input.
-<img src="./images/simulation_1-4_stages.png">
+<br>
 
 | Stages | V- | V+ | Time to init* |
 | :------------- | :------------- | :------------- | :------------- |
@@ -48,8 +50,9 @@ This simulates the output from a 1-4 stage Villard circuit where input comes fro
 | 3 | 17.1V | 27.1V | 40m |
 | 4 | 25.6V | 35.6V | 65ms |
 
-*Time to init is the time the V out reaches 95% of Vmax.
-
+<br>
+* Time to init is the time the V out reaches 95% of Vmax.
+<br>
 For each stage the DC component of the output voltage increases about the same amount.
 
 # Practical measurements

@@ -202,11 +202,12 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
 </aside>
 
 # Simulations
-Gain for 1st to 5th order filter
-<img src="./images/rc_lowpass_filter_gain_simulation.png">
+> Gain for 1st to 5th order filter
+> <img src="./images/rc_lowpass_filter_gain_simulation.png">
+<br><br>
+> Phase for 1st to 5th order filter
+> <img src="./images/rc_lowpass_filter_phase_simulation.png">
 
-Phase for 1st to 5th order filter
-<img src="./images/rc_lowpass_filter_phase_simulation.png">
 
 Simulation values
 
@@ -237,9 +238,12 @@ Assuming input voltage 5V
 | 20kHz | -9.36 | -70.1 |
 
 # Practical measurements
+> Oscilloscope 1st order 1khz<br>
+> <img src="./images/ocilloscope_1st_order_1khz.png">
+<br><br>
+> Breadboard setup for 3rd order<br>
+> <img src="./images/breadboard.jpg">
 Oscilloscope measurements
-
-<img src="./images/ocilloscope_1st_order_1khz.png">
 
 Since the resistor and capacitor are not perfect values and the oscilloscope/function generator is not calibrated values should be a bit off.
 
@@ -250,10 +254,6 @@ Since the resistor and capacitor are not perfect values and the oscilloscope/fun
 | 1kHz | -0.13(4.96V) |  -0.57(4.72V)| -1.84(4.08V) |
 | 10kHz | -4.62(2.96V) | -12.5(1.2V) | -20.24(0.49V) |
 | 20kHz | -9.43(1.72V) | -20.24(0.49V) | -30.9(0.14V) |
-
-Breadboard setup for 3rd order
-
-<img src="./images/breadboard.jpg">
 
 # Changelog
 | Date | Change |

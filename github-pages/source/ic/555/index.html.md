@@ -69,12 +69,12 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
 </aside>
 
 ## Simulation
-<img src="./images/monostable_mode.png">
+> <img src="./images/monostable_mode.png">
 
 When the trigger goes low, the output goes high and the capacitor C1 starts to charge. When the purple line goes to 2/3 of Vcc the output goes low.
 
 ## Practical measurements
-<img src="./images/monostable_mode_oscilloscope.png">
+> <img src="./images/monostable_mode_oscilloscope.png">
 
 Cyan is the trigger input, purple is the charge on capacitor C1 and yellow is the output voltage. The values are a little of due to components not being exact. 
 
@@ -192,10 +192,10 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
 </aside>
 
 ## Simulation
-<img src="./images/astable_mode.png">
+> <img src="./images/astable_mode.png">
 
 ## Practical measurements
-<img src="./images/astable_mode_oscilloscope.png">
+> <img src="./images/astable_mode_oscilloscope.png">
 
 Measured values are
 
@@ -424,13 +424,13 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
 </aside>
 
 ## Simulation
-<img src="./images/improved_astable_mode.png">
+> <img src="./images/improved_astable_mode.png">
 
 ## Practical measurements
-Had to use 1N4148 diode instead of 1N4001.
+> <img src="./images/improved_astable_mode_oscilloscope.png">
+> <img src="./images/astable_mode_oscilloscope.png">
 
-<img src="./images/improved_astable_mode_oscilloscope.png">
-<img src="./images/astable_mode_oscilloscope.png">
+Had to use 1N4148 diode instead of 1N4001.
 
 Measured value for duty cycle is
 

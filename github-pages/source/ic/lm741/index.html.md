@@ -68,6 +68,12 @@ Calculated gain
 </math>
 
 ## Practical measurements
+> <img src="./images/non_inverting_oscilloscope_1.png">
+> <img src="./images/non_inverting_oscilloscope_2.png">
+> <img src="./images/non_inverting_oscilloscope_3.png">
+> <img src="./images/non_inverting_oscilloscope_4.png">
+> <img src="./images/non_inverting_oscilloscope_5.png">
+
 For all measurements 
 
 | Probe | Measurement |
@@ -75,12 +81,6 @@ For all measurements
 | Yellow | Vin+ |
 | Purple | Vin- |
 | Cyan | Vout |
-
-<img src="./images/non_inverting_oscilloscope_1.png">
-<img src="./images/non_inverting_oscilloscope_2.png">
-<img src="./images/non_inverting_oscilloscope_3.png">
-<img src="./images/non_inverting_oscilloscope_4.png">
-<img src="./images/non_inverting_oscilloscope_5.png">
 
 Oscilloscope measurements are not accurate as they are done with only 8bit vertical resolution.
 

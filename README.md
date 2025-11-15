@@ -21,7 +21,6 @@ Ruby
 Gems
 Bundle
 
-
 ### Testing Github pages locally
 bundle exec middleman serve
 

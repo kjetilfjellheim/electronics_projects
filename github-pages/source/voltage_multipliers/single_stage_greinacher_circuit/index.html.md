@@ -38,6 +38,15 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
 </aside>
 
 # Simulation
+> Simulation done on 100Hz AC with multiple capacitor values.<br>
+> <img src="./images/simulation_100hz.png">
+<br><br>
+> Simulation done on 1kHz AC with multiple capacitor values.<br>
+> <img src="./images/simulation_1khz.png">
+<br><br>
+> Simulation done on 10kHz AC with multiple capacitor values.<br>
+> <img src="./images/simulation_10khz.png">
+
 All simulations have the following capacitor values.
 
 | Output | Capacitor |
@@ -47,14 +56,6 @@ All simulations have the following capacitor values.
 | Vout3 | 100nF |
 | Vout4 | 1uF |
 
-Simulation done on 100Hz AC with multiple capacitor values.<br>
-<img src="./images/simulation_100hz.png">
-
-Simulation done on 1kHz AC with multiple capacitor values.<br>
-<img src="./images/simulation_1khz.png">
-
-Simulation done on 10kHz AC with multiple capacitor values.<br>
-<img src="./images/simulation_10khz.png">
 
 <ins>Conclusion</ins><br>
 This circuit have AC as input, but output ideally is DC voltage higher than the max voltage of the input.

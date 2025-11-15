@@ -174,8 +174,9 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
 </aside>
 
 # Simulations
+> <img src="./images/simulation.png">
+
 Ran simulation AC circuit analysis from 1Hz to 100kHz.
-<img src="./images/simulation.png">
 
 <aside class="warning">
     The simulation for 3-pole looks correct, but the 2-pole looks very wrong. Need to figure out why it's incorrect. The component values look correct.

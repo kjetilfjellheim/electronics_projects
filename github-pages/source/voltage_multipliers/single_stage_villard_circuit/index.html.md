@@ -38,8 +38,13 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
 </aside>
 
 # Simulation
-This is a simulation done on 100Hz.
-<img src="./images/simulation_100hz.png">
+> This is a simulation done on 100Hz.
+> <img src="./images/simulation_100hz.png">
+<br><br>
+> This is a simulation done on 1kHz.
+> <img src="./images/simulation_1khz.png">
+
+Simulated values at 100Hz 
 
 | V | Simulated value |
 | :------------- | :------------- | :------------- | :------------- |
@@ -50,8 +55,7 @@ This is a simulation done on 100Hz.
 | V5 | With 10uF capacitor gives -726mV to 8.91V (More sine wave again) |
 | V6 | With 100uF capacitor gives -742mV to 9.24V (Pretty sine again) |
 
-This is a simulation done on 1kHz.
-<img src="./images/simulation_1khz.png">
+Simulated values at 1khz
 
 | V | Simulated value |
 | :------------- | :------------- | :------------- | :------------- |
@@ -60,8 +64,7 @@ This is a simulation done on 1kHz.
 | V3 | With 100n capacitor gives -683mV to 6.27V (Flat at lower voltages) |
 | V4 | With 1uF capacitor gives -715mV to 8.90V |
 | V5 | With 10uF capacitor gives -742mV to 9.24V |
-
-<ins>Conclusion</ins><br>
+<br>
 The lower the frequency a higher capacitance is required to reach higher voltages. 
 The circuit itself does not double the voltage, but moves the offset. So instead 
 of -5V to 5V it changes to -0.7V to 9.1V. 

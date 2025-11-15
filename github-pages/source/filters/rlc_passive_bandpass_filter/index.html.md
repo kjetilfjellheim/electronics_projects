@@ -200,7 +200,7 @@ Calculate resistor value for a specific bandwidth.
 
 # Serial circuit
 ## Schematics
-Circuit for a 1Khz bandpass filter.
+> Circuit for a 1Khz bandpass filter.<br>
 > <img src="./schematics/serial_schematics.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
@@ -210,11 +210,16 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
 </aside>
 
 ## Simulation
-Simulation AC signal analysis with the values in the component list.
-<img src="./images/serial_gain_simulation.png">
+> Simulation AC signal analysis with the values in the component list.<br>
+> <img src="./images/serial_gain_simulation.png">
+<br><br>
+> Simulation transient analysis at 1kHz.
+> <img src="./images/serial_transient_1khz_simulation.png">
 
-Simulation transient analysis at 1kHz.
-<img src="./images/serial_transient_1khz_simulation.png">
+
+<aside class="notice">
+    More description will come later.
+</aside>
 
 ## Practical measurements
 | Frequency | Vpp | Oscilloscope image|
@@ -232,17 +237,25 @@ Simulation transient analysis at 1kHz.
 
 At 1kHz the simulation showed 1.04V and on oscilloscope 1.2V. This cause for the difference can be inaccurate values on the components and uncalibrated oscilloscope. 
 
-# Paralell circuit
+# Parallell circuit
 ## Schematics
-Circuit for a 5Khz bandpass filter.
+> Circuit for a 5Khz bandpass filter.<br>
 > <img src="./schematics/paralell_schematics.svg">
 
-## Simulation
-Simulation AC signal analysis with the values in the component list.
-<img src="./images/paralell_gain_simulation.png">
+<aside class="notice">
+    More description will come later.
+</aside>
 
-Simulation transient analysis at 1kHz.
-<img src="./images/paralell_transient_1khz_simulation.png">
+## Simulation
+> Simulation AC signal analysis with the values in the component list.
+> <img src="./images/paralell_gain_simulation.png">
+<br><br>
+> Simulation transient analysis at 1kHz.
+> <img src="./images/paralell_transient_1khz_simulation.png">
+
+<aside class="notice">
+    More description will come later.
+</aside>
 
 ## Practical measurements
 | Frequency | Vpp | Oscilloscope image|
