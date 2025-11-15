@@ -304,44 +304,42 @@
       <ul id="toc" class="toc-list-h1">
           <li>
             <a href="#rc-passive-lowpass-filter" class="toc-h1 toc-link" data-title="RC passive lowpass filter">RC passive lowpass filter</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#description" class="toc-h2 toc-link" data-title="Description">Description</a>
-                  </li>
-                  <li>
-                    <a href="#goals" class="toc-h2 toc-link" data-title="Goals">Goals</a>
-                  </li>
-                  <li>
-                    <a href="#equipment-used" class="toc-h2 toc-link" data-title="Equipment used">Equipment used</a>
-                  </li>
-                  <li>
-                    <a href="#components" class="toc-h2 toc-link" data-title="Components">Components</a>
-                  </li>
-                  <li>
-                    <a href="#formulas" class="toc-h2 toc-link" data-title="Formulas">Formulas</a>
-                  </li>
-                  <li>
-                    <a href="#circuits" class="toc-h2 toc-link" data-title="Circuits">Circuits</a>
-                  </li>
-                  <li>
-                    <a href="#simulations" class="toc-h2 toc-link" data-title="Simulations">Simulations</a>
-                  </li>
-                  <li>
-                    <a href="#calculations" class="toc-h2 toc-link" data-title="Calculations">Calculations</a>
-                  </li>
-                  <li>
-                    <a href="#practical-measurements" class="toc-h2 toc-link" data-title="Practical measurements">Practical measurements</a>
-                  </li>
-              </ul>
+          </li>
+          <li>
+            <a href="#goals" class="toc-h1 toc-link" data-title="Goals">Goals</a>
+          </li>
+          <li>
+            <a href="#equipment-used" class="toc-h1 toc-link" data-title="Equipment used">Equipment used</a>
+          </li>
+          <li>
+            <a href="#components" class="toc-h1 toc-link" data-title="Components">Components</a>
+          </li>
+          <li>
+            <a href="#formulas" class="toc-h1 toc-link" data-title="Formulas">Formulas</a>
+          </li>
+          <li>
+            <a href="#circuits" class="toc-h1 toc-link" data-title="Circuits">Circuits</a>
+          </li>
+          <li>
+            <a href="#simulations" class="toc-h1 toc-link" data-title="Simulations">Simulations</a>
+          </li>
+          <li>
+            <a href="#calculations" class="toc-h1 toc-link" data-title="Calculations">Calculations</a>
+          </li>
+          <li>
+            <a href="#practical-measurements" class="toc-h1 toc-link" data-title="Practical measurements">Practical measurements</a>
+          </li>
+          <li>
+            <a href="#changelog" class="toc-h1 toc-link" data-title="Changelog">Changelog</a>
           </li>
       </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='rc-passive-lowpass-filter'>RC passive lowpass filter</h1><h2 id='description'>Description</h2>
+        <h1 id='rc-passive-lowpass-filter'>RC passive lowpass filter</h1>
 <p>The goal is to implement, analyze and do practical measurements on a RC lowpass filter.</p>
-<h2 id='goals'>Goals</h2>
+<h1 id='goals'>Goals</h1>
 <ul>
 <li>[x] Document schematic in Kicad</li>
 <li>[x] Do a theoretical analyis </li>
@@ -350,7 +348,7 @@
 <li>[x] Test circuit and do measurements</li>
 <li>[ ] Calculate 2nd order </li>
 </ul>
-<h2 id='equipment-used'>Equipment used</h2>
+<h1 id='equipment-used'>Equipment used</h1>
 <table><thead>
 <tr>
 <th style="text-align: left">Equipment</th>
@@ -366,7 +364,7 @@
 <td style="text-align: left">Oscilloscope</td>
 </tr>
 </tbody></table>
-<h2 id='components'>Components</h2>
+<h1 id='components'>Components</h1>
 <table><thead>
 <tr>
 <th style="text-align: left">Reference</th>
@@ -390,7 +388,7 @@
 <td style="text-align: left"></td>
 </tr>
 </tbody></table>
-<h2 id='formulas'>Formulas</h2>
+<h1 id='formulas'>Formulas</h1>
 <p>Reactance for the capacitor at frequency.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0">
@@ -549,7 +547,7 @@
     </mrow>
   </mstyle>
 </math></p>
-<h2 id='circuits'>Circuits</h2>
+<h1 id='circuits'>Circuits</h1>
 <p>Circuits for 1st to 5th order.</p>
 
 <blockquote>
@@ -561,7 +559,7 @@
 <aside class="notice">
     More description will come later.
 </aside>
-<h2 id='simulations'>Simulations</h2>
+<h1 id='simulations'>Simulations</h1>
 <p>Gain for 1st to 5th order filter
 <img src="images/rc_lowpass_filter_gain_simulation-351d42df.png"></p>
 
@@ -609,7 +607,7 @@
 <td style="text-align: left">12.3KHz</td>
 </tr>
 </tbody></table>
-<h2 id='calculations'>Calculations</h2>
+<h1 id='calculations'>Calculations</h1>
 <p>Assuming input voltage 5V</p>
 
 <table><thead>
@@ -669,8 +667,8 @@
 <td style="text-align: left">-70.1</td>
 </tr>
 </tbody></table>
-<h2 id='practical-measurements'>Practical measurements</h2>
-<p>Oscilloscope measurement</p>
+<h1 id='practical-measurements'>Practical measurements</h1>
+<p>Oscilloscope measurements</p>
 
 <p><img src="images/ocilloscope_1st_order_1khz-8da1b989.png"></p>
 
@@ -719,6 +717,18 @@
 <p>Breadboard setup for 3rd order</p>
 
 <p><img src="images/breadboard-80334407.jpg"></p>
+<h1 id='changelog'>Changelog</h1>
+<table><thead>
+<tr>
+<th style="text-align: left">Date</th>
+<th style="text-align: left">Change</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">2025-11-01</td>
+<td style="text-align: left">Simulation and practical results added</td>
+</tr>
+</tbody></table>
 
       </div>
       <div class="dark-box">

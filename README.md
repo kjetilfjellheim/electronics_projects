@@ -13,3 +13,17 @@ https://kjetilfjellheim.github.com/electronics_projects
 ## Goals
 The goal is to eventually document all ICs, circuits and microcontroller code done here. I also plan to go back to relearn some of the electronics stuff I
 have forgotten.
+
+## Github pages
+
+### Requirements
+Ruby
+Gems
+Bundle
+
+
+### Testing Github pages locally
+bundle exec middleman serve
+
+### Build Github pages locally
+bundle exec middleman build

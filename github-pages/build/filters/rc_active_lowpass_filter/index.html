@@ -304,47 +304,56 @@
       <ul id="toc" class="toc-list-h1">
           <li>
             <a href="#rc-active-lowpass-filter" class="toc-h1 toc-link" data-title="RC active lowpass filter">RC active lowpass filter</a>
+          </li>
+          <li>
+            <a href="#goals" class="toc-h1 toc-link" data-title="Goals">Goals</a>
+          </li>
+          <li>
+            <a href="#equipment-used" class="toc-h1 toc-link" data-title="Equipment used">Equipment used</a>
+          </li>
+          <li>
+            <a href="#components" class="toc-h1 toc-link" data-title="Components">Components</a>
+          </li>
+          <li>
+            <a href="#butterworth-filter-values" class="toc-h1 toc-link" data-title="Butterworth filter values">Butterworth filter values</a>
+          </li>
+          <li>
+            <a href="#formulas" class="toc-h1 toc-link" data-title="Formulas">Formulas</a>
+          </li>
+          <li>
+            <a href="#circuits" class="toc-h1 toc-link" data-title="Circuits">Circuits</a>
+          </li>
+          <li>
+            <a href="#simulations" class="toc-h1 toc-link" data-title="Simulations">Simulations</a>
+          </li>
+          <li>
+            <a href="#calculations" class="toc-h1 toc-link" data-title="Calculations">Calculations</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#description" class="toc-h2 toc-link" data-title="Description">Description</a>
+                    <a href="#example-1" class="toc-h2 toc-link" data-title="Example 1">Example 1</a>
                   </li>
                   <li>
-                    <a href="#goals" class="toc-h2 toc-link" data-title="Goals">Goals</a>
+                    <a href="#example-2" class="toc-h2 toc-link" data-title="Example 2">Example 2</a>
                   </li>
                   <li>
-                    <a href="#equipment-used" class="toc-h2 toc-link" data-title="Equipment used">Equipment used</a>
-                  </li>
-                  <li>
-                    <a href="#components" class="toc-h2 toc-link" data-title="Components">Components</a>
-                  </li>
-                  <li>
-                    <a href="#butterworth-filter-values" class="toc-h2 toc-link" data-title="Butterworth filter values">Butterworth filter values</a>
-                  </li>
-                  <li>
-                    <a href="#formulas" class="toc-h2 toc-link" data-title="Formulas">Formulas</a>
-                  </li>
-                  <li>
-                    <a href="#circuits" class="toc-h2 toc-link" data-title="Circuits">Circuits</a>
-                  </li>
-                  <li>
-                    <a href="#simulations" class="toc-h2 toc-link" data-title="Simulations">Simulations</a>
-                  </li>
-                  <li>
-                    <a href="#calculations" class="toc-h2 toc-link" data-title="Calculations">Calculations</a>
-                  </li>
-                  <li>
-                    <a href="#practical-measurements" class="toc-h2 toc-link" data-title="Practical measurements">Practical measurements</a>
+                    <a href="#example-3" class="toc-h2 toc-link" data-title="Example 3">Example 3</a>
                   </li>
               </ul>
+          </li>
+          <li>
+            <a href="#practical-measurements" class="toc-h1 toc-link" data-title="Practical measurements">Practical measurements</a>
+          </li>
+          <li>
+            <a href="#changelog" class="toc-h1 toc-link" data-title="Changelog">Changelog</a>
           </li>
       </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='rc-active-lowpass-filter'>RC active lowpass filter</h1><h2 id='description'>Description</h2>
+        <h1 id='rc-active-lowpass-filter'>RC active lowpass filter</h1>
 <p>The goal is to implement, analyze and do practical measurements on an active lowpass filter (butterworth).</p>
-<h2 id='goals'>Goals</h2>
+<h1 id='goals'>Goals</h1>
 <ul>
 <li>[x] Document schematic in Kicad</li>
 <li>[x] Do a theoretical analyis </li>
@@ -352,7 +361,7 @@
 <li>[ ] Implement schematic on breadboard</li>
 <li>[ ] Test circuit and do measurements</li>
 </ul>
-<h2 id='equipment-used'>Equipment used</h2>
+<h1 id='equipment-used'>Equipment used</h1>
 <table><thead>
 <tr>
 <th style="text-align: left">Equipment</th>
@@ -372,7 +381,7 @@
 <td style="text-align: left">Oscilloscope</td>
 </tr>
 </tbody></table>
-<h2 id='components'>Components</h2>
+<h1 id='components'>Components</h1>
 <table><thead>
 <tr>
 <th style="text-align: left">Reference</th>
@@ -441,7 +450,7 @@
 <td style="text-align: left">Operational amplifier</td>
 </tr>
 </tbody></table>
-<h2 id='butterworth-filter-values'>Butterworth filter values</h2>
+<h1 id='butterworth-filter-values'>Butterworth filter values</h1>
 <table><thead>
 <tr>
 <th style="text-align: left">Order</th>
@@ -521,7 +530,7 @@
 <aside class="notice">
     Ref (Book: Practical electronics for inventors 3rd edition)
 </aside>
-<h2 id='formulas'>Formulas</h2>
+<h1 id='formulas'>Formulas</h1>
 <p>Calculates minimum 60db attenuation at frequency Fs. The attenuation result is the total order number of the circuit.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0">
@@ -629,7 +638,7 @@
     </mrow>
   </mstyle>
 </math></p>
-<h2 id='circuits'>Circuits</h2>
+<h1 id='circuits'>Circuits</h1>
 <p>Circuits for 2nd and 3rd order butterworth filter.</p>
 
 <blockquote>
@@ -641,14 +650,14 @@
 <aside class="notice">
     More description will come later.
 </aside>
-<h2 id='simulations'>Simulations</h2>
+<h1 id='simulations'>Simulations</h1>
 <p>Ran simulation AC circuit analysis from 1Hz to 100kHz.
 <img src="images/simulation-efef5f98.png"></p>
 
 <aside class="warning">
     The simulation for 3-pole looks correct, but the 2-pole looks very wrong. Need to figure out why it's incorrect. The component values look correct.
 </aside>
-<h2 id='calculations'>Calculations</h2><h3 id='example-1'>Example 1</h3>
+<h1 id='calculations'>Calculations</h1><h2 id='example-1'>Example 1</h2>
 <p>With a 2-pole circuit with with attenuation of 3db at 1000Hz and an impedance of 10k gives the following values.</p>
 
 <table><thead>
@@ -674,7 +683,7 @@
 <td style="text-align: left">10k</td>
 </tr>
 </tbody></table>
-<h3 id='example-2'>Example 2</h3>
+<h2 id='example-2'>Example 2</h2>
 <p>With a 3-pole circuit with with attenuation of 3db at 1000Hz and an impedance of 10k gives the following values.</p>
 
 <table><thead>
@@ -708,7 +717,7 @@
 <td style="text-align: left">10k</td>
 </tr>
 </tbody></table>
-<h3 id='example-3'>Example 3</h3>
+<h2 id='example-3'>Example 3</h2>
 <p>With a 5th order 3-pole circuit + 2-pole with with attenuation of 3db at 1000Hz and an impedance of 10k gives the following values.</p>
 
 <table><thead>
@@ -758,11 +767,23 @@
 <td style="text-align: left">10k</td>
 </tr>
 </tbody></table>
-<h2 id='practical-measurements'>Practical measurements</h2>
+<h1 id='practical-measurements'>Practical measurements</h1>
 <blockquote>
 <p>[!NOTE]<br>
 Waiting for components</p>
 </blockquote>
+<h1 id='changelog'>Changelog</h1>
+<table><thead>
+<tr>
+<th style="text-align: left">Date</th>
+<th style="text-align: left">Change</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">2025-11-01</td>
+<td style="text-align: left">Simulation results added</td>
+</tr>
+</tbody></table>
 
       </div>
       <div class="dark-box">

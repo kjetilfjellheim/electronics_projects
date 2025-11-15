@@ -304,41 +304,61 @@
       <ul id="toc" class="toc-list-h1">
           <li>
             <a href="#rlc-passive-bandpass-filter" class="toc-h1 toc-link" data-title="RLC passive bandpass filter">RLC passive bandpass filter</a>
+          </li>
+          <li>
+            <a href="#goals" class="toc-h1 toc-link" data-title="Goals">Goals</a>
+          </li>
+          <li>
+            <a href="#equipment-used" class="toc-h1 toc-link" data-title="Equipment used">Equipment used</a>
+          </li>
+          <li>
+            <a href="#components" class="toc-h1 toc-link" data-title="Components">Components</a>
+          </li>
+          <li>
+            <a href="#formulas" class="toc-h1 toc-link" data-title="Formulas">Formulas</a>
+          </li>
+          <li>
+            <a href="#serial-circuit" class="toc-h1 toc-link" data-title="Serial circuit">Serial circuit</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#description" class="toc-h2 toc-link" data-title="Description">Description</a>
+                    <a href="#schematics" class="toc-h2 toc-link" data-title="Schematics">Schematics</a>
                   </li>
                   <li>
-                    <a href="#goals" class="toc-h2 toc-link" data-title="Goals">Goals</a>
+                    <a href="#simulation" class="toc-h2 toc-link" data-title="Simulation">Simulation</a>
                   </li>
                   <li>
-                    <a href="#equipment-used" class="toc-h2 toc-link" data-title="Equipment used">Equipment used</a>
-                  </li>
-                  <li>
-                    <a href="#components" class="toc-h2 toc-link" data-title="Components">Components</a>
-                  </li>
-                  <li>
-                    <a href="#formulas" class="toc-h2 toc-link" data-title="Formulas">Formulas</a>
-                  </li>
-                  <li>
-                    <a href="#serial-circuit" class="toc-h2 toc-link" data-title="Serial circuit">Serial circuit</a>
-                  </li>
-                  <li>
-                    <a href="#paralell-circuit" class="toc-h2 toc-link" data-title="Paralell circuit">Paralell circuit</a>
-                  </li>
-                  <li>
-                    <a href="#analysis" class="toc-h2 toc-link" data-title="Analysis">Analysis</a>
+                    <a href="#practical-measurements" class="toc-h2 toc-link" data-title="Practical measurements">Practical measurements</a>
                   </li>
               </ul>
+          </li>
+          <li>
+            <a href="#paralell-circuit" class="toc-h1 toc-link" data-title="Paralell circuit">Paralell circuit</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#schematics-2" class="toc-h2 toc-link" data-title="Schematics">Schematics</a>
+                  </li>
+                  <li>
+                    <a href="#simulation-2" class="toc-h2 toc-link" data-title="Simulation">Simulation</a>
+                  </li>
+                  <li>
+                    <a href="#practical-measurements-2" class="toc-h2 toc-link" data-title="Practical measurements">Practical measurements</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#analysis" class="toc-h1 toc-link" data-title="Analysis">Analysis</a>
+          </li>
+          <li>
+            <a href="#changelog" class="toc-h1 toc-link" data-title="Changelog">Changelog</a>
           </li>
       </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='rlc-passive-bandpass-filter'>RLC passive bandpass filter</h1><h2 id='description'>Description</h2>
+        <h1 id='rlc-passive-bandpass-filter'>RLC passive bandpass filter</h1>
 <p>The goal is to implement, analyze and do practical measurements on a RLC bandpass filter.</p>
-<h2 id='goals'>Goals</h2>
+<h1 id='goals'>Goals</h1>
 <ul>
 <li>[x] Document schematic in Kicad</li>
 <li>[x] Do a theoretical analyis </li>
@@ -346,7 +366,7 @@
 <li>[ ] Implement schematic on breadboard</li>
 <li>[ ] Test circuit and do measurements</li>
 </ul>
-<h2 id='equipment-used'>Equipment used</h2>
+<h1 id='equipment-used'>Equipment used</h1>
 <table><thead>
 <tr>
 <th style="text-align: left">Equipment</th>
@@ -362,7 +382,7 @@
 <td style="text-align: left">Oscilloscope</td>
 </tr>
 </tbody></table>
-<h2 id='components'>Components</h2>
+<h1 id='components'>Components</h1>
 <table><thead>
 <tr>
 <th style="text-align: left">Reference</th>
@@ -396,7 +416,7 @@
 <td style="text-align: left"></td>
 </tr>
 </tbody></table>
-<h2 id='formulas'>Formulas</h2>
+<h1 id='formulas'>Formulas</h1>
 <p>The resonant frequency formula is given by<br>
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0">
@@ -562,7 +582,7 @@
     </mrow>
   </mstyle>
 </math></p>
-<h2 id='serial-circuit'>Serial circuit</h2><h3 id='schematics'>Schematics</h3>
+<h1 id='serial-circuit'>Serial circuit</h1><h2 id='schematics'>Schematics</h2>
 <p>Circuit for a 1Khz bandpass filter.</p>
 
 <blockquote>
@@ -574,13 +594,13 @@
 <aside class="notice">
     More description will come later.
 </aside>
-<h3 id='simulation'>Simulation</h3>
+<h2 id='simulation'>Simulation</h2>
 <p>Simulation AC signal analysis with the values in the component list.
 <img src="images/serial_gain_simulation-bcf4234c.png"></p>
 
 <p>Simulation transient analysis at 1kHz.
 <img src="images/serial_transient_1khz_simulation-1d36be93.png"></p>
-<h3 id='practical-measurements'>Practical measurements</h3>
+<h2 id='practical-measurements'>Practical measurements</h2>
 <table><thead>
 <tr>
 <th style="text-align: left">Frequency</th>
@@ -641,19 +661,19 @@
 </tbody></table>
 
 <p>At 1kHz the simulation showed 1.04V and on oscilloscope 1.2V. This cause for the difference can be inaccurate values on the components and uncalibrated oscilloscope. </p>
-<h2 id='paralell-circuit'>Paralell circuit</h2><h3 id='schematics-2'>Schematics</h3>
+<h1 id='paralell-circuit'>Paralell circuit</h1><h2 id='schematics-2'>Schematics</h2>
 <p>Circuit for a 5Khz bandpass filter.</p>
 
 <blockquote>
 <p><img src="./schematics/paralell_schematics.svg"></p>
 </blockquote>
-<h3 id='simulation-2'>Simulation</h3>
+<h2 id='simulation-2'>Simulation</h2>
 <p>Simulation AC signal analysis with the values in the component list.
 <img src="images/paralell_gain_simulation-4bc95080.png"></p>
 
 <p>Simulation transient analysis at 1kHz.
 <img src="images/paralell_transient_1khz_simulation-005f6deb.png"></p>
-<h3 id='practical-measurements-2'>Practical measurements</h3>
+<h2 id='practical-measurements-2'>Practical measurements</h2>
 <table><thead>
 <tr>
 <th style="text-align: left">Frequency</th>
@@ -714,12 +734,24 @@
 </tbody></table>
 
 <p>At 1kHz the simulation showed 1.05V and on oscilloscope 0.96V. This cause for the difference can be inaccurate values of the components and uncalibrated oscilloscope.</p>
-<h2 id='analysis'>Analysis</h2>
+<h1 id='analysis'>Analysis</h1>
 <p>With Q value of 1 the theoretical gain is the same for both the serial and paralell circuits.</p>
 
 <p>Using the AC signal analyis to look at the gain.
 For the serial circuit the bandwidth increases with higher resistor values.
 For the paralell circuit the bandwidth decreases with higher resistor values.</p>
+<h1 id='changelog'>Changelog</h1>
+<table><thead>
+<tr>
+<th style="text-align: left">Date</th>
+<th style="text-align: left">Change</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">2025-11-01</td>
+<td style="text-align: left">Simulation and practical results added</td>
+</tr>
+</tbody></table>
 
       </div>
       <div class="dark-box">

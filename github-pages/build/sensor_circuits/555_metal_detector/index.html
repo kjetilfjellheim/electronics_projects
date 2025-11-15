@@ -304,54 +304,60 @@
       <ul id="toc" class="toc-list-h1">
           <li>
             <a href="#555-metal-detector" class="toc-h1 toc-link" data-title="555 metal detector">555 metal detector</a>
+          </li>
+          <li>
+            <a href="#source" class="toc-h1 toc-link" data-title="Source">Source</a>
+          </li>
+          <li>
+            <a href="#goals" class="toc-h1 toc-link" data-title="Goals">Goals</a>
+          </li>
+          <li>
+            <a href="#schematics" class="toc-h1 toc-link" data-title="Schematics">Schematics</a>
+          </li>
+          <li>
+            <a href="#breadboard" class="toc-h1 toc-link" data-title="Breadboard">Breadboard</a>
+          </li>
+          <li>
+            <a href="#equipment-used" class="toc-h1 toc-link" data-title="Equipment used">Equipment used</a>
+          </li>
+          <li>
+            <a href="#components" class="toc-h1 toc-link" data-title="Components">Components</a>
+          </li>
+          <li>
+            <a href="#measurements" class="toc-h1 toc-link" data-title="Measurements">Measurements</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#description" class="toc-h2 toc-link" data-title="Description">Description</a>
+                    <a href="#with-no-metallic-object-near-inductor" class="toc-h2 toc-link" data-title="With no metallic object near inductor">With no metallic object near inductor</a>
                   </li>
                   <li>
-                    <a href="#source" class="toc-h2 toc-link" data-title="Source">Source</a>
-                  </li>
-                  <li>
-                    <a href="#goals" class="toc-h2 toc-link" data-title="Goals">Goals</a>
-                  </li>
-                  <li>
-                    <a href="#schematics" class="toc-h2 toc-link" data-title="Schematics">Schematics</a>
-                  </li>
-                  <li>
-                    <a href="#breadboard" class="toc-h2 toc-link" data-title="Breadboard">Breadboard</a>
-                  </li>
-                  <li>
-                    <a href="#equipment-used" class="toc-h2 toc-link" data-title="Equipment used">Equipment used</a>
-                  </li>
-                  <li>
-                    <a href="#components" class="toc-h2 toc-link" data-title="Components">Components</a>
-                  </li>
-                  <li>
-                    <a href="#measurements" class="toc-h2 toc-link" data-title="Measurements">Measurements</a>
+                    <a href="#with-magnetic-object-near-inductor" class="toc-h2 toc-link" data-title="With magnetic object near inductor">With magnetic object near inductor</a>
                   </li>
               </ul>
+          </li>
+          <li>
+            <a href="#changelog" class="toc-h1 toc-link" data-title="Changelog">Changelog</a>
           </li>
       </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='555-metal-detector'>555 metal detector</h1><h2 id='description'>Description</h2>
+        <h1 id='555-metal-detector'>555 metal detector</h1>
 <p>The 555 will oscillate based on the LCR circuit. When metal comes in contact with the inductor the oscillation will change due to it affecting the
 magnetic field around the inductor. The output is the sent to the speaker which will change tone when metallic (Magnetic) objects comes near.</p>
 
 <p>This is not a particularly powerful metal detector, for that a greater voltage/current is requred for the inductor so that it generates a larger magnetic field.
 Using a coil rather than a simple inductor would also make the metal detector better as it would cover a larger area.</p>
-<h2 id='source'>Source</h2>
+<h1 id='source'>Source</h1>
 <p>Original source: Unknown</p>
-<h2 id='goals'>Goals</h2>
+<h1 id='goals'>Goals</h1>
 <ul>
 <li>[x] Document schematic in Kicad</li>
 <li>[x] Do a theoretical analyis </li>
 <li>[x] Implement schematic on breadboard</li>
 <li>[x] Test circuit and do measurements</li>
 </ul>
-<h2 id='schematics'>Schematics</h2>
+<h1 id='schematics'>Schematics</h1>
 <blockquote>
 <p><img src="schematics/schematics-c60b03af.svg"></p>
 </blockquote>
@@ -361,13 +367,13 @@ Using a coil rather than a simple inductor would also make the metal detector be
 <aside class="notice">
     More description will come later.
 </aside>
-<h2 id='breadboard'>Breadboard</h2>
+<h1 id='breadboard'>Breadboard</h1>
 <blockquote>
 <p><img src="images/breadboard-1d92e7e3.jpg"></p>
 </blockquote>
 
 <p>Breadboard setup.</p>
-<h2 id='equipment-used'>Equipment used</h2>
+<h1 id='equipment-used'>Equipment used</h1>
 <table><thead>
 <tr>
 <th style="text-align: left">Equipment</th>
@@ -387,7 +393,7 @@ Using a coil rather than a simple inductor would also make the metal detector be
 <td style="text-align: left">LCR meter</td>
 </tr>
 </tbody></table>
-<h2 id='components'>Components</h2>
+<h1 id='components'>Components</h1>
 <table><thead>
 <tr>
 <th style="text-align: left">Reference</th>
@@ -438,7 +444,7 @@ Using a coil rather than a simple inductor would also make the metal detector be
 </tbody></table>
 
 <p>I have tried this circuit with voltage levels from 3V to 9V. It should work above this.</p>
-<h2 id='measurements'>Measurements</h2>
+<h1 id='measurements'>Measurements</h1>
 <p>Power supply settings</p>
 
 <table><thead>
@@ -456,7 +462,7 @@ Using a coil rather than a simple inductor would also make the metal detector be
 <ul>
 <li>Reported current by power supply 4mA.</li>
 </ul>
-<h3 id='with-no-metallic-object-near-inductor'>With no metallic object near inductor</h3>
+<h2 id='with-no-metallic-object-near-inductor'>With no metallic object near inductor</h2>
 <blockquote>
 <p>With no metallic object near inductor</p>
 
@@ -555,7 +561,7 @@ Using a coil rather than a simple inductor would also make the metal detector be
 <td style="text-align: left"></td>
 </tr>
 </tbody></table>
-<h3 id='with-magnetic-object-near-inductor'>With magnetic object near inductor</h3>
+<h2 id='with-magnetic-object-near-inductor'>With magnetic object near inductor</h2>
 <blockquote>
 <p>With magnetic object near inductor</p>
 
@@ -652,6 +658,18 @@ Using a coil rather than a simple inductor would also make the metal detector be
 <td style="text-align: left">L1 +Duty</td>
 <td style="text-align: left">Unmeasurable</td>
 <td style="text-align: left"></td>
+</tr>
+</tbody></table>
+<h1 id='changelog'>Changelog</h1>
+<table><thead>
+<tr>
+<th style="text-align: left">Date</th>
+<th style="text-align: left">Change</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">2025-11-01</td>
+<td style="text-align: left">Simulation and practical results added</td>
 </tr>
 </tbody></table>
 
