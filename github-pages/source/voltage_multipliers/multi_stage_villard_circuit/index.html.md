@@ -7,29 +7,28 @@ meta:
 ---
 
 # Multi stage Villard circuit
-## Description
 The goal is is to understand, simulate and do practical measurements on a multi stage Villard circuit.
 
-## Goals
+# Goals
 - [x] Document schematic of 1-4 stages in Kicad
 - [x] Do a theoretical analyis on stages 1-4
 - [ ] Implement multi stages schematic on breadboard
 - [ ] Test multi stages circuit and do measurements
 
-## Equipment used
+# Equipment used
 | Equipment | Description |
 | :------------- | :------------- |
 | Peaktech 4055 | AC power supply |
 | RS Pro RSDS 1204X-E | Oscilloscope |
 
-## Components
+# Components
 | Reference | Value | Remaxrks |
 | :------------- | :------------- | :------------- |
 | Cx | 1u | Only eight needed for 4 stage |
 | Rx | 1M | To simulate load |
 | Dx | 1N4001 | Only eight needed for 4 stage |
 
-## Schematics
+# Schematics
 > <img src="./schematics/multi_stage_villard.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
@@ -38,7 +37,7 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
     More description will come later.
 </aside>
 
-## Simulation
+# Simulation
 This simulates the output from a 1-4 stage Villard circuit where input comes from a 5Vpp AC input.
 <img src="./images/simulation_1-4_stages.png">
 
@@ -53,4 +52,9 @@ This simulates the output from a 1-4 stage Villard circuit where input comes fro
 
 For each stage the DC component of the output voltage increases about the same amount.
 
-## Practical measurements
+# Practical measurements
+
+# Changelog
+| Date | Change |
+| :---- | :---- |
+| 2025-11-01 | Simulation results added |

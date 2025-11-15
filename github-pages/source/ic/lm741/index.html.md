@@ -8,10 +8,9 @@ meta:
 ---
 
 # LM741
-## Description
 The goal is to understand and how to use the LM741. 
 
-## Pins
+# Pins
 | Pin | Name | Description |
 | :--- | :--- | :--- |
 | 1 | Offset null | Offset null pin used to eliminate the offset voltage and balance the input voltages | 
@@ -23,11 +22,11 @@ The goal is to understand and how to use the LM741.
 | 7 | V+ | Positive supply voltage |
 | 8 | NC | Should be left floating |
 
-## Non inverting differential amplifier (DC)
-### Description
+# Non inverting differential amplifier (DC)
+## Description
 This describes the LM741 as a noninverting differential amplifier.
 
-### Circuit
+## Circuit
 > <img src="./schematics/differential_amplifier.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
@@ -36,7 +35,7 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
     More description will come later.
 </aside>
 
-### Formulas
+## Formulas
 Calculated gain
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0">
@@ -68,7 +67,7 @@ Calculated gain
   </mstyle>
 </math>
 
-### Practical measurements
+## Practical measurements
 For all measurements 
 
 | Probe | Measurement |
@@ -139,3 +138,7 @@ Calculated gain
 </math>
 *Measurements of resistors done using LCR
 
+# Changelog
+| Date | Change |
+| :---- | :---- |
+| 2025-11-01 | Simulation and practical results added |

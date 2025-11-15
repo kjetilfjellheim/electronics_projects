@@ -7,24 +7,23 @@ meta:
 ---
 
 # RC active lowpass filter
-## Description
 The goal is to implement, analyze and do practical measurements on an active lowpass filter (butterworth).
 
-## Goals
+# Goals
 - [x] Document schematic in Kicad
 - [x] Do a theoretical analyis 
 - [x] Calculate 2nd,3rd and 5th order 
 - [ ] Implement schematic on breadboard
 - [ ] Test circuit and do measurements
 
-## Equipment used
+# Equipment used
 | Equipment | Description |
 | :------------- | :------------- |
 | Peaktech 6075 | DC power supply |
 | Peaktech 4055 | AC power supply |
 | RS Pro RSDS 1204X-E | Oscilloscope |
 
-## Components
+# Components
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
 | 1x capacitor | 3.2n | |
@@ -40,7 +39,7 @@ The goal is to implement, analyze and do practical measurements on an active low
 | 5x resistor | 10k | |
 | 2x LM741 | | Operational amplifier|
 
-## Butterworth filter values
+# Butterworth filter values
 | Order | Sections | C1 | C2 | C3 | C4 | C5 |
 | :------------- | :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
 | 2 | 2-pole | 1.414 | 0.7071 | | | |
@@ -55,8 +54,7 @@ The goal is to implement, analyze and do practical measurements on an active low
     Ref (Book: Practical electronics for inventors 3rd edition)
 </aside>
 
-
-## Formulas
+# Formulas
 Calculates minimum 60db attenuation at frequency Fs. The attenuation result is the total order number of the circuit.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0">
@@ -165,7 +163,7 @@ To calculate the capacitor values use the value for the capacitor and calculate 
   </mstyle>
 </math>
 
-## Circuits
+# Circuits
 Circuits for 2nd and 3rd order butterworth filter.
 > <img src="./schematics/schematics.svg">
 
@@ -175,7 +173,7 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
     More description will come later.
 </aside>
 
-## Simulations
+# Simulations
 Ran simulation AC circuit analysis from 1Hz to 100kHz.
 <img src="./images/simulation.png">
 
@@ -183,8 +181,8 @@ Ran simulation AC circuit analysis from 1Hz to 100kHz.
     The simulation for 3-pole looks correct, but the 2-pole looks very wrong. Need to figure out why it's incorrect. The component values look correct.
 </aside>
 
-## Calculations
-### Example 1
+# Calculations
+## Example 1
 With a 2-pole circuit with with attenuation of 3db at 1000Hz and an impedance of 10k gives the following values.
 
 | Component | Value |
@@ -194,7 +192,7 @@ With a 2-pole circuit with with attenuation of 3db at 1000Hz and an impedance of
 | R1 | 10k |
 | R2 | 10k |
 
-### Example 2
+## Example 2
 With a 3-pole circuit with with attenuation of 3db at 1000Hz and an impedance of 10k gives the following values.
 
 | Component | Value |
@@ -206,7 +204,7 @@ With a 3-pole circuit with with attenuation of 3db at 1000Hz and an impedance of
 | R4 | 10k |
 | R5 | 10k |
 
-### Example 3
+## Example 3
 With a 5th order 3-pole circuit + 2-pole with with attenuation of 3db at 1000Hz and an impedance of 10k gives the following values.
 
 | Component | Value |
@@ -222,7 +220,12 @@ With a 5th order 3-pole circuit + 2-pole with with attenuation of 3db at 1000Hz 
 | R9 | 10k |
 | R10 | 10k |
 
-## Practical measurements
+# Practical measurements
 
 > [!NOTE]  
 > Waiting for components
+
+# Changelog
+| Date | Change |
+| :---- | :---- |
+| 2025-11-01 | Simulation results added |

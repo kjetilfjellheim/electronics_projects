@@ -7,29 +7,28 @@ meta:
 ---
 
 # Single stage Villard circuit
-## Description
 The goal is is to understand, simulate and do practical measurements on a single stage Villard voltage doubler.
 
-## Goals
+# Goals
 - [x] Document schematic of single stage in Kicad
 - [x] Do a theoretical analyis on single stage 
 - [ ] Implement single stage schematic on breadboard
 - [ ] Test single stage circuit and do measurements
 
-## Equipment used
+# Equipment used
 | Equipment | Description |
 | :------------- | :------------- |
 | Peaktech 4055 | AC power supply |
 | RS Pro RSDS 1204X-E | Oscilloscope |
 
-## Components
+# Components
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
 | C1 | 1n, 10n, 100n, 1u, 10u and 100u | |
 | R1 | 1M | To simulate load |
 | D1 | 1N4001 | |
 
-## Schematics
+# Schematics
 > <img src="./schematics/villard.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
@@ -38,7 +37,7 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
     More description will come later.
 </aside>
 
-## Simulation
+# Simulation
 This is a simulation done on 100Hz.
 <img src="./images/simulation_100hz.png">
 
@@ -67,4 +66,9 @@ The lower the frequency a higher capacitance is required to reach higher voltage
 The circuit itself does not double the voltage, but moves the offset. So instead 
 of -5V to 5V it changes to -0.7V to 9.1V. 
 
-## Practical measurements
+# Practical measurements
+
+# Changelog
+| Date | Change |
+| :---- | :---- |
+| 2025-11-01 | Simulation results added |

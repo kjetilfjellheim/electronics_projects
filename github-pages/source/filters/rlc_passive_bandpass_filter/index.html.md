@@ -7,23 +7,22 @@ meta:
 ---
 
 # RLC passive bandpass filter
-## Description
 The goal is to implement, analyze and do practical measurements on a RLC bandpass filter.
  
-## Goals
+# Goals
 - [x] Document schematic in Kicad
 - [x] Do a theoretical analyis 
 - [x] Calculate values for a 5kHz serial and paralell bandpass filters
 - [ ] Implement schematic on breadboard
 - [ ] Test circuit and do measurements
 
-## Equipment used
+# Equipment used
 | Equipment | Description |
 | :------------- | :------------- |
 | Peaktech 4055 | AC power supply |
 | RS Pro RSDS 1204X-E | Oscilloscope |
 
-## Components
+# Components
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
 | R1 | 31 | |
@@ -32,7 +31,7 @@ The goal is to implement, analyze and do practical measurements on a RLC bandpas
 | Cx | 100n | |
 | Lx | 10m | |
 
-## Formulas
+# Formulas
 The resonant frequency formula is given by  
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0">
@@ -199,8 +198,8 @@ Calculate resistor value for a specific bandwidth.
   </mstyle>
 </math>
 
-## Serial circuit
-### Schematics
+# Serial circuit
+## Schematics
 Circuit for a 1Khz bandpass filter.
 > <img src="./schematics/serial_schematics.svg">
 
@@ -210,14 +209,14 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
     More description will come later.
 </aside>
 
-### Simulation
+## Simulation
 Simulation AC signal analysis with the values in the component list.
 <img src="./images/serial_gain_simulation.png">
 
 Simulation transient analysis at 1kHz.
 <img src="./images/serial_transient_1khz_simulation.png">
 
-### Practical measurements
+## Practical measurements
 | Frequency | Vpp | Oscilloscope image|
 | :------------- | :------------- | :------------- | 
 | 1Hz | 32mV | |
@@ -233,19 +232,19 @@ Simulation transient analysis at 1kHz.
 
 At 1kHz the simulation showed 1.04V and on oscilloscope 1.2V. This cause for the difference can be inaccurate values on the components and uncalibrated oscilloscope. 
 
-## Paralell circuit
-### Schematics
+# Paralell circuit
+## Schematics
 Circuit for a 5Khz bandpass filter.
 > <img src="./schematics/paralell_schematics.svg">
 
-### Simulation
+## Simulation
 Simulation AC signal analysis with the values in the component list.
 <img src="./images/paralell_gain_simulation.png">
 
 Simulation transient analysis at 1kHz.
 <img src="./images/paralell_transient_1khz_simulation.png">
 
-### Practical measurements
+## Practical measurements
 | Frequency | Vpp | Oscilloscope image|
 | :------------- | :------------- | :------------- | 
 | 1Hz | 24mV | |
@@ -261,12 +260,15 @@ Simulation transient analysis at 1kHz.
 
 At 1kHz the simulation showed 1.05V and on oscilloscope 0.96V. This cause for the difference can be inaccurate values of the components and uncalibrated oscilloscope.
 
-## Analysis
+# Analysis
 With Q value of 1 the theoretical gain is the same for both the serial and paralell circuits.
 
 Using the AC signal analyis to look at the gain.
 For the serial circuit the bandwidth increases with higher resistor values.
 For the paralell circuit the bandwidth decreases with higher resistor values.
 
-
+# Changelog
+| Date | Change |
+| :---- | :---- |
+| 2025-11-01 | Simulation and practical results added |
 

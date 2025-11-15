@@ -10,26 +10,29 @@ meta:
 ## Description
 The goal is to implement a 2 input logic OR circuit with both a bipolar and mosfet transistors.
  
-## Goals
+# Goals
 - [ ] Document schematic in Kicad
 - [ ] Do a theoretical analyis 
 - [ ] Implement schematic on breadboard
 - [ ] Test circuit and do measurements
 
-## Equipment used
+# Equipment used
 | Equipment | Description |
 | :------------- | :------------- |
 | Peaktech 6075 | DC power supply |
 | RS Pro RSDS 1204X-E | Oscilloscope |
 
-## Components
+# Components
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
 
-## With bipolar transistor
-### Schematics
+# With bipolar transistor
+## Schematics
 
-### Simulation
+## Simulation
 
-### Practical measurements
+## Practical measurements
 
+# Changelog
+| Date | Change |
+| :---- | :---- |

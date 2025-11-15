@@ -7,10 +7,9 @@ meta:
 ---
 
 # RC passive lowpass filter
-## Description
 The goal is to implement, analyze and do practical measurements on a RC lowpass filter.
 
-## Goals
+# Goals
 - [x] Document schematic in Kicad
 - [x] Do a theoretical analyis 
 - [x] Calculate 1st order 
@@ -19,20 +18,20 @@ The goal is to implement, analyze and do practical measurements on a RC lowpass 
 - [ ] Calculate 2nd order 
 
 
-## Equipment used
+# Equipment used
 | Equipment | Description |
 | :------------- | :------------- |
 | Peaktech 4055 | AC power supply |
 | RS Pro RSDS 1204X-E | Oscilloscope |
 
-## Components
+# Components
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
 | 3x capacitor | 22n | |
 | 3x resistor | 1k | |
 | J1 | ~5V | |
 
-## Formulas
+# Formulas
 Reactance for the capacitor at frequency.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0">
@@ -192,7 +191,7 @@ Phase shift formula.
   </mstyle>
 </math>
 
-## Circuits
+# Circuits
 Circuits for 1st to 5th order.
 > <img src="./schematics/rc_filter.svg">
 
@@ -202,7 +201,7 @@ Schematics generated from KIcad. The schematics can be downloaded from the repos
     More description will come later.
 </aside>
 
-## Simulations
+# Simulations
 Gain for 1st to 5th order filter
 <img src="./images/rc_lowpass_filter_gain_simulation.png">
 
@@ -219,7 +218,7 @@ Simulation values
 | 4 | 852Hz | 6.12KHz | 18.2KHz |
 | 5 | 575Hz | 4.10KHz | 12.3KHz |
 
-## Calculations
+# Calculations
 Assuming input voltage 5V
 
 | Gain | Voltage |
@@ -237,8 +236,8 @@ Assuming input voltage 5V
 | 10kHz | -4.64 | -54.1 |
 | 20kHz | -9.36 | -70.1 |
 
-## Practical measurements
-Oscilloscope measurement
+# Practical measurements
+Oscilloscope measurements
 
 <img src="./images/ocilloscope_1st_order_1khz.png">
 
@@ -256,4 +255,7 @@ Breadboard setup for 3rd order
 
 <img src="./images/breadboard.jpg">
 
-
+# Changelog
+| Date | Change |
+| :---- | :---- |
+| 2025-11-01 | Simulation and practical results added |
