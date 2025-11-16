@@ -3,12 +3,12 @@ title: Electronics projects
 
 meta:
   - name: description
-    content: Non inverting amplifier
+    content: Inverting amplifier
 
 ---
 
-# Non inverting amplifier
-The goal is to understand a non inverting amplifier. 
+# Inverting amplifier
+The goal is to understand an inverting amplifier. 
 
 # Goals
 - [x] Document schematic in Kicad
@@ -33,10 +33,9 @@ The goal is to understand a non inverting amplifier.
 # Circuit
 > <img src="./schematics/schematics.svg">
 
-The opamp works by trying to make both inputs equal. As the input voltage on Vin+ increases the Vout increases. This again increases the voltage on Vin- because a portion of the output voltage feeds back to the negative input.
+The opamp works by trying to make both inputs equal because of the negative feedback. As the input voltage on Vin- increases the Vout decreases. 
 The feedback is given by the feedback network with R1 and R2. 
 <br><br>
-The output of the signal will have the same polarity as the input voltage on Vin+.
 
 # Formulas
 Calculated gain
@@ -51,16 +50,15 @@ Calculated gain
             <mi>i</mi>
             <mi>n</mi>
             <mo>=</mo>
-            <mn>1</mn>
-            <mo>+</mo>
+            <mo>&#x2212;</mo>
             <mfrac>
               <mrow>
                 <mi>R</mi>
-                <mn>2</mn>
+                <mn>1</mn>
               </mrow>
               <mrow>
                 <mi>R</mi>
-                <mn>1</mn>
+                <mn>2</mn>
               </mrow>
             </mfrac>
           </mtd>
@@ -83,8 +81,7 @@ Calculated gain with the resistor values given in the component list.
             <mi>i</mi>
             <mi>n</mi>
             <mo>=</mo>
-            <mn>1</mn>
-            <mo>+</mo>
+            <mo>&#x2212;</mo>
             <mfrac>
               <mrow>
                 <mi>R</mi>
@@ -96,14 +93,20 @@ Calculated gain with the resistor values given in the component list.
               </mrow>
             </mfrac>
             <mo>=</mo>
-            <mn>1</mn>
-            <mo>+</mo>
+            <mo>&#x2212;</mo>
             <mfrac>
-              <mn>5600</mn>
-              <mn>1000</mn>
+              <mrow>
+                <mn>5.6</mn>
+                <mi>k</mi>
+              </mrow>
+              <mrow>
+                <mn>1</mn>
+                <mi>k</mi>
+              </mrow>
             </mfrac>
             <mo>=</mo>
-            <mn>6.6</mn>
+            <mo>&#x2212;</mo>
+            <mn>5.6</mn>
           </mtd>
         </mtr>
       </mtable>
@@ -112,36 +115,49 @@ Calculated gain with the resistor values given in the component list.
 </math>
 
 # Practical measurements
-> Measurements done on oscilloscope with Vin+ at 1.8V - 2.3V<br>
+> Measurements done on oscilloscope with Vin- at 0.6V - 2.3V<br>
 > <img src="./images/oscilloscope_measurement.png">
 > <br><br>
+> Measurements done with multimeter<br>
+> <img src="./images/practical_measurements.png">
 
 For all measurements 
 
 | Probe | Measurement |
 | :--- | :--- | :--- |
-| Yellow | Vin+ |
-| Purple | Vin- |
-| Cyan | Vout |
+| Yellow | Vin- |
+| Purple | Vout- |
 
 Oscilloscope measurements are not accurate as they are done with only 8bit vertical resolution.
 <br><br>
 Measurements
 
-| Vin+ | Vin- | Vout |
-| :--- | :--- | :--- |
-| 1.790V | 1.937V | 12.89V |
-| 1.894V | 1.942V | 12.95V |
-| 1.997V | 2.000V | 13.35V |
-| 2.092V | 2.092V | 13.95V |
-| 2.196V | 2.116V | 14.11V |
+Vsupply | Vin+ | Vin- | Vout |
+| :--- | :--- | :--- | :--- |
+| 0.6V | 0V | 1.932V | 8.260V | 
+| 0.7V | 0V | 1.933V | 8.260V |
+| 0.8V | 0V | 1.933V | 8.260V |
+| 0.9V | 0V | 1.933V | 7.830V | 
+| 1.0V | 0V | 1.933V | 7.240V |
+| 1.1V | 0V | 1.933V | 6.700V | 
+| 1.2V | 0V | 1.933V | 6.117V | 
+| 1.3V | 0V | 1.934V | 5.535V | 
+| 1.4V | 0V | 1.934V | 5.001V | 
+| 1.5V | 0V | 1.935V | 4.421V | 
+| 1.6V | 0V | 1.935V | 3.886V | 
+| 1.7V | 0V | 1.936V | 3.302V | 
+| 1.8V | 0V | 1.936V | 2.769V | 
+| 1.9V | 0V | 1.937V | 2.188V | 
+| 2.0V | 0V | 1.938V | 1.608V | 
+| 2.1V | 0V | 1.981V | 1.360V | 
+| 2.2V | 0V | 2.065V | 1.328V | 
+| 2.3V | 0V | 2.146V | 1.330V | 
 
 Measurements done using multimeter.
 
-As we increase the Vin+ voltage this slowly also increases the Vin- voltage because of the feedback network. 
+As we increase the Vsupply voltage the Vout decreases as expected.
 
 # Changelog
 | Date | Change |
 | :---- | :---- |
-| 2025-11-15 | Added theory and calculations |
-| 2025-11-16 | Added practical measurements |
+| 2025-11-16 | Added both theoretical and practical analysis |

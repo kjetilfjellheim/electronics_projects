@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta
             name="description"
-            content="Non inverting amplifier"
+            content="Inverting amplifier"
         >
     <title>Electronics projects</title>
 
@@ -292,7 +292,7 @@
 
   </head>
 
-  <body class="amplifiers amplifiers_non_inverting amplifiers_non_inverting_index" data-languages="[]">
+  <body class="amplifiers amplifiers_inverting amplifiers_inverting_index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -303,7 +303,7 @@
       <img src="../../images/logo-e6ae0498.png" class="logo" alt="" />
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#non-inverting-amplifier" class="toc-h1 toc-link" data-title="Non inverting amplifier">Non inverting amplifier</a>
+            <a href="#inverting-amplifier" class="toc-h1 toc-link" data-title="Inverting amplifier">Inverting amplifier</a>
           </li>
           <li>
             <a href="#goals" class="toc-h1 toc-link" data-title="Goals">Goals</a>
@@ -334,8 +334,8 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='non-inverting-amplifier'>Non inverting amplifier</h1>
-<p>The goal is to understand a non inverting amplifier. </p>
+        <h1 id='inverting-amplifier'>Inverting amplifier</h1>
+<p>The goal is to understand an inverting amplifier. </p>
 <h1 id='goals'>Goals</h1>
 <ul>
 <li>[x] Document schematic in Kicad</li>
@@ -389,13 +389,12 @@
 </tbody></table>
 <h1 id='circuit'>Circuit</h1>
 <blockquote>
-<p><img src="schematics/schematics-0676110e.svg"></p>
+<p><img src="schematics/schematics-cff6cc70.svg"></p>
 </blockquote>
 
-<p>The opamp works by trying to make both inputs equal. As the input voltage on Vin+ increases the Vout increases. This again increases the voltage on Vin- because a portion of the output voltage feeds back to the negative input.
+<p>The opamp works by trying to make both inputs equal because of the negative feedback. As the input voltage on Vin- increases the Vout decreases. 
 The feedback is given by the feedback network with R1 and R2. 
-<br><br>
-The output of the signal will have the same polarity as the input voltage on Vin+.</p>
+<br><br></p>
 <h1 id='formulas'>Formulas</h1>
 <p>Calculated gain
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
@@ -409,16 +408,15 @@ The output of the signal will have the same polarity as the input voltage on Vin
             <mi>i</mi>
             <mi>n</mi>
             <mo>=</mo>
-            <mn>1</mn>
-            <mo>+</mo>
+            <mo>&#x2212;</mo>
             <mfrac>
               <mrow>
                 <mi>R</mi>
-                <mn>2</mn>
+                <mn>1</mn>
               </mrow>
               <mrow>
                 <mi>R</mi>
-                <mn>1</mn>
+                <mn>2</mn>
               </mrow>
             </mfrac>
           </mtd>
@@ -440,8 +438,7 @@ The output of the signal will have the same polarity as the input voltage on Vin
             <mi>i</mi>
             <mi>n</mi>
             <mo>=</mo>
-            <mn>1</mn>
-            <mo>+</mo>
+            <mo>&#x2212;</mo>
             <mfrac>
               <mrow>
                 <mi>R</mi>
@@ -453,14 +450,20 @@ The output of the signal will have the same polarity as the input voltage on Vin
               </mrow>
             </mfrac>
             <mo>=</mo>
-            <mn>1</mn>
-            <mo>+</mo>
+            <mo>&#x2212;</mo>
             <mfrac>
-              <mn>5600</mn>
-              <mn>1000</mn>
+              <mrow>
+                <mn>5.6</mn>
+                <mi>k</mi>
+              </mrow>
+              <mrow>
+                <mn>1</mn>
+                <mi>k</mi>
+              </mrow>
             </mfrac>
             <mo>=</mo>
-            <mn>6.6</mn>
+            <mo>&#x2212;</mo>
+            <mn>5.6</mn>
           </mtd>
         </mtr>
       </mtable>
@@ -469,9 +472,11 @@ The output of the signal will have the same polarity as the input voltage on Vin
 </math></p>
 <h1 id='practical-measurements'>Practical measurements</h1>
 <blockquote>
-<p>Measurements done on oscilloscope with Vin+ at 1.8V - 2.3V<br>
-<img src="images/oscilloscope_measurement-5b414133.png">
-<br><br></p>
+<p>Measurements done on oscilloscope with Vin- at 0.6V - 2.3V<br>
+<img src="images/oscilloscope_measurement-e2e8dc21.png">
+<br><br>
+Measurements done with multimeter<br>
+<img src="images/practical_measurements-1a5abb32.png"></p>
 </blockquote>
 
 <p>For all measurements </p>
@@ -484,15 +489,11 @@ The output of the signal will have the same polarity as the input voltage on Vin
 </thead><tbody>
 <tr>
 <td style="text-align: left">Yellow</td>
-<td style="text-align: left">Vin+</td>
-</tr>
-<tr>
-<td style="text-align: left">Purple</td>
 <td style="text-align: left">Vin-</td>
 </tr>
 <tr>
-<td style="text-align: left">Cyan</td>
-<td style="text-align: left">Vout</td>
+<td style="text-align: left">Purple</td>
+<td style="text-align: left">Vout-</td>
 </tr>
 </tbody></table>
 
@@ -502,41 +503,125 @@ Measurements</p>
 
 <table><thead>
 <tr>
+<th style="text-align: left">Vsupply</th>
 <th style="text-align: left">Vin+</th>
 <th style="text-align: left">Vin-</th>
 <th style="text-align: left">Vout</th>
 </tr>
 </thead><tbody>
 <tr>
-<td style="text-align: left">1.790V</td>
+<td style="text-align: left">0.6V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.932V</td>
+<td style="text-align: left">8.260V</td>
+</tr>
+<tr>
+<td style="text-align: left">0.7V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.933V</td>
+<td style="text-align: left">8.260V</td>
+</tr>
+<tr>
+<td style="text-align: left">0.8V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.933V</td>
+<td style="text-align: left">8.260V</td>
+</tr>
+<tr>
+<td style="text-align: left">0.9V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.933V</td>
+<td style="text-align: left">7.830V</td>
+</tr>
+<tr>
+<td style="text-align: left">1.0V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.933V</td>
+<td style="text-align: left">7.240V</td>
+</tr>
+<tr>
+<td style="text-align: left">1.1V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.933V</td>
+<td style="text-align: left">6.700V</td>
+</tr>
+<tr>
+<td style="text-align: left">1.2V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.933V</td>
+<td style="text-align: left">6.117V</td>
+</tr>
+<tr>
+<td style="text-align: left">1.3V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.934V</td>
+<td style="text-align: left">5.535V</td>
+</tr>
+<tr>
+<td style="text-align: left">1.4V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.934V</td>
+<td style="text-align: left">5.001V</td>
+</tr>
+<tr>
+<td style="text-align: left">1.5V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.935V</td>
+<td style="text-align: left">4.421V</td>
+</tr>
+<tr>
+<td style="text-align: left">1.6V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.935V</td>
+<td style="text-align: left">3.886V</td>
+</tr>
+<tr>
+<td style="text-align: left">1.7V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.936V</td>
+<td style="text-align: left">3.302V</td>
+</tr>
+<tr>
+<td style="text-align: left">1.8V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.936V</td>
+<td style="text-align: left">2.769V</td>
+</tr>
+<tr>
+<td style="text-align: left">1.9V</td>
+<td style="text-align: left">0V</td>
 <td style="text-align: left">1.937V</td>
-<td style="text-align: left">12.89V</td>
+<td style="text-align: left">2.188V</td>
 </tr>
 <tr>
-<td style="text-align: left">1.894V</td>
-<td style="text-align: left">1.942V</td>
-<td style="text-align: left">12.95V</td>
+<td style="text-align: left">2.0V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.938V</td>
+<td style="text-align: left">1.608V</td>
 </tr>
 <tr>
-<td style="text-align: left">1.997V</td>
-<td style="text-align: left">2.000V</td>
-<td style="text-align: left">13.35V</td>
+<td style="text-align: left">2.1V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">1.981V</td>
+<td style="text-align: left">1.360V</td>
 </tr>
 <tr>
-<td style="text-align: left">2.092V</td>
-<td style="text-align: left">2.092V</td>
-<td style="text-align: left">13.95V</td>
+<td style="text-align: left">2.2V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">2.065V</td>
+<td style="text-align: left">1.328V</td>
 </tr>
 <tr>
-<td style="text-align: left">2.196V</td>
-<td style="text-align: left">2.116V</td>
-<td style="text-align: left">14.11V</td>
+<td style="text-align: left">2.3V</td>
+<td style="text-align: left">0V</td>
+<td style="text-align: left">2.146V</td>
+<td style="text-align: left">1.330V</td>
 </tr>
 </tbody></table>
 
 <p>Measurements done using multimeter.</p>
 
-<p>As we increase the Vin+ voltage this slowly also increases the Vin- voltage because of the feedback network. </p>
+<p>As we increase the Vsupply voltage the Vout decreases as expected.</p>
 <h1 id='changelog'>Changelog</h1>
 <table><thead>
 <tr>
@@ -545,12 +630,8 @@ Measurements</p>
 </tr>
 </thead><tbody>
 <tr>
-<td style="text-align: left">2025-11-15</td>
-<td style="text-align: left">Added theory and calculations</td>
-</tr>
-<tr>
 <td style="text-align: left">2025-11-16</td>
-<td style="text-align: left">Added practical measurements</td>
+<td style="text-align: left">Added both theoretical and practical analysis</td>
 </tr>
 </tbody></table>
 

@@ -52,3 +52,4 @@ It will take some time to document all projects and add proper documentation as 
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
 | Non-inverting| [here](amplifiers/non_inverting/) | <p style="color:green;">Completed</p> |
+| Inverting| [here](amplifiers/inverting/) | <p style="color:green;">Completed</p> |
