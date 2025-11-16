@@ -48,3 +48,7 @@ It will take some time to document all projects and add proper documentation as 
 | Multi-stage Villard circuit | [here](voltage_multipliers/multi_stage_villard_circuit/) | <p style="color:orange;">In progress</p> |
 | Single-stage Greinacher circuit | [here](voltage_multipliers/single_stage_greinacher_circuit/) | <p style="color:orange;">In progress</p> |
 
+## Amplifiers
+| Circuit | Documentation | Status |
+| :--- | :--- | :--- |
+| Non-inverting| [here](amplifiers/non_inverting/) | <p style="color:green;">Completed</p> |

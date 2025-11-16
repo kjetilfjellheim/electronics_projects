@@ -1311,7 +1311,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1cf70517-4462-48cf-a2e5-77910926bb2c")
-		(property "Reference" "R3"
+		(property "Reference" "R2"
 			(at 35.052 62.484 90)
 			(effects
 				(font
@@ -1363,7 +1363,7 @@
 		(instances
 			(project "differential_amplifier"
 				(path "/872f1d81-1815-459b-9f9e-3f0909be5d1a"
-					(reference "R3")
+					(reference "R2")
 					(unit 1)
 				)
 			)

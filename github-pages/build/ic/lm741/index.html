@@ -309,23 +309,6 @@
             <a href="#pins" class="toc-h1 toc-link" data-title="Pins">Pins</a>
           </li>
           <li>
-            <a href="#non-inverting-differential-amplifier-dc" class="toc-h1 toc-link" data-title="Non inverting differential amplifier (DC)">Non inverting differential amplifier (DC)</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#description" class="toc-h2 toc-link" data-title="Description">Description</a>
-                  </li>
-                  <li>
-                    <a href="#circuit" class="toc-h2 toc-link" data-title="Circuit">Circuit</a>
-                  </li>
-                  <li>
-                    <a href="#formulas" class="toc-h2 toc-link" data-title="Formulas">Formulas</a>
-                  </li>
-                  <li>
-                    <a href="#practical-measurements" class="toc-h2 toc-link" data-title="Practical measurements">Practical measurements</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
             <a href="#changelog" class="toc-h1 toc-link" data-title="Changelog">Changelog</a>
           </li>
       </ul>
@@ -384,161 +367,6 @@
 <td style="text-align: left">Should be left floating</td>
 </tr>
 </tbody></table>
-<h1 id='non-inverting-differential-amplifier-dc'>Non inverting differential amplifier (DC)</h1><h2 id='description'>Description</h2>
-<p>This describes the LM741 as a noninverting differential amplifier.</p>
-<h2 id='circuit'>Circuit</h2>
-<blockquote>
-<p><img src="schematics/differential_amplifier-3b358809.svg"></p>
-</blockquote>
-
-<p>Schematics generated from KIcad. The schematics can be downloaded from the repository.</p>
-
-<aside class="notice">
-    More description will come later.
-</aside>
-<h2 id='formulas'>Formulas</h2>
-<p>Calculated gain
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
-    <mrow data-mjx-texclass="ORD">
-      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
-        <mtr>
-          <mtd>
-            <mi>G</mi>
-            <mi>a</mi>
-            <mi>i</mi>
-            <mi>n</mi>
-            <mo>=</mo>
-            <mn>1</mn>
-            <mo>+</mo>
-            <mfrac>
-              <mrow>
-                <mi>R</mi>
-                <mn>2</mn>
-              </mrow>
-              <mrow>
-                <mi>R</mi>
-                <mn>1</mn>
-              </mrow>
-            </mfrac>
-          </mtd>
-        </mtr>
-      </mtable>
-    </mrow>
-  </mstyle>
-</math></p>
-<h2 id='practical-measurements'>Practical measurements</h2>
-<blockquote>
-<p><img src="images/non_inverting_oscilloscope_1-b6884655.png">
-<img src="images/non_inverting_oscilloscope_2-3c5d5630.png">
-<img src="images/non_inverting_oscilloscope_3-9804aafb.png">
-<img src="images/non_inverting_oscilloscope_4-dae2fe4e.png">
-<img src="images/non_inverting_oscilloscope_5-26beb91b.png"></p>
-</blockquote>
-
-<p>For all measurements </p>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Probe</th>
-<th style="text-align: left">Measurement</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">Yellow</td>
-<td style="text-align: left">Vin+</td>
-</tr>
-<tr>
-<td style="text-align: left">Purple</td>
-<td style="text-align: left">Vin-</td>
-</tr>
-<tr>
-<td style="text-align: left">Cyan</td>
-<td style="text-align: left">Vout</td>
-</tr>
-</tbody></table>
-
-<p>Oscilloscope measurements are not accurate as they are done with only 8bit vertical resolution.</p>
-
-<p>Measurements</p>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Vin+</th>
-<th style="text-align: left">Vin-</th>
-<th style="text-align: left">Vout</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">1.80V</td>
-<td style="text-align: left">1.98V</td>
-<td style="text-align: left">13.20V</td>
-</tr>
-<tr>
-<td style="text-align: left">1.90V</td>
-<td style="text-align: left">1.98V</td>
-<td style="text-align: left">13.40V</td>
-</tr>
-<tr>
-<td style="text-align: left">2.00V</td>
-<td style="text-align: left">2.02V</td>
-<td style="text-align: left">13.60V</td>
-</tr>
-<tr>
-<td style="text-align: left">2.10V</td>
-<td style="text-align: left">2.12V</td>
-<td style="text-align: left">14.20V</td>
-</tr>
-<tr>
-<td style="text-align: left">2.20V</td>
-<td style="text-align: left">2.14V</td>
-<td style="text-align: left">14.40V</td>
-</tr>
-</tbody></table>
-
-<p>Calculated gain
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
-    <mrow data-mjx-texclass="ORD">
-      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
-        <mtr>
-          <mtd>
-            <mi>G</mi>
-            <mi>a</mi>
-            <mi>i</mi>
-            <mi>n</mi>
-            <mo>=</mo>
-            <mn>1</mn>
-            <mo>+</mo>
-            <mfrac>
-              <mrow>
-                <mi>R</mi>
-                <mn>2</mn>
-              </mrow>
-              <mrow>
-                <mi>R</mi>
-                <mn>1</mn>
-              </mrow>
-            </mfrac>
-            <mo>=</mo>
-            <mn>1</mn>
-            <mo>+</mo>
-            <mfrac>
-              <mn>980</mn>
-              <mrow>
-                <mn>5.556</mn>
-                <mi>k</mi>
-              </mrow>
-            </mfrac>
-            <mo>=</mo>
-            <mn>1.176</mn>
-          </mtd>
-        </mtr>
-      </mtable>
-    </mrow>
-  </mstyle>
-</math>
-*Measurements of resistors done using LCR</p>
 <h1 id='changelog'>Changelog</h1>
 <table><thead>
 <tr>
@@ -549,6 +377,10 @@
 <tr>
 <td style="text-align: left">2025-11-01</td>
 <td style="text-align: left">Simulation and practical results added</td>
+</tr>
+<tr>
+<td style="text-align: left">2025-11-15</td>
+<td style="text-align: left">Moved amplifier circuit to amplifiers</td>
 </tr>
 </tbody></table>
 
