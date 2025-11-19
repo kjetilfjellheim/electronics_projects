@@ -1,6 +1,7 @@
 name: Deploy
 
 on:
+  workflow_dispatch:
   push:
     branches: [ 'main' ]
 
@@ -8,43 +9,27 @@ jobs:
   deploy:
     permissions:
       contents: write
-
     runs-on: ubuntu-latest
     env:
       ruby-version: 2.6
-
+    defaults:
+      run:
+        working-directory: ./github-pages
     steps:
     - uses: actions/checkout@v3
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ env.ruby-version }}
-
-    - uses: actions/cache@v3
-      with:
-        path: vendor/bundle
-        key: gems-${{ runner.os }}-${{ env.ruby-version }}-${{ hashFiles('**/Gemfile.lock') }}
-        restore-keys: |
-          gems-${{ runner.os }}-${{ env.ruby-version }}-
-          gems-${{ runner.os }}-
-
+    - run: gem update --system  ${{ env.ruby-version }}
     - run: bundle config set deployment 'true'
-    - name: bundle install
-      working-directory: github-pages
-      run: |
-        bundle config path vendor/bundle
-        bundle install --jobs 4 --retry 3
-
-    - run: cp -R projects github-pages/source/
-
-    - name: Build site
-      working-directory: github-pages
-      run: /
-        bundle exec middleman build
-
+    - run: bundle config path vendor/bundle
+    - run: bundle install --jobs 4 --retry 3
+    - run: cp -R ../projects ./source/
+    - run: bundle exec middleman build
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./github-pages/build
+        publish_dir: ./build
         keep_files: true
