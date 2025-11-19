@@ -15,43 +15,43 @@ It will take some time to document all projects and add proper documentation as 
 ## Sensor circuits
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| 555 Metal detector | [here](sensor_circuits/555_metal_detector/) | <p style="color:green;">Completed</p> |
+| 555 Metal detector | [here](projects/sensor_circuits/555_metal_detector/) | <p style="color:green;">Completed</p> |
 
 ## Active filters
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| RC active lowpass filter (Butterworth) | [here](filters/rc_active_lowpass_filter/) | <p style="color:orange;">In progress</p> |
+| RC active lowpass filter (Butterworth) | [here](projects/filters/rc_active_lowpass_filter/) | <p style="color:orange;">In progress</p> |
 
 ## Passive filters
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| RC passive lowpass filter | [here](filters/rc_passive_lowpass_filter/) | <p style="color:green;">Completed</p> |
-| RLC passive bandpass filter | [here](filters/rlc_passive_bandpass_filter/) | <p style="color:green;">Completed</p> |
+| RC passive lowpass filter | [here](projects/filters/rc_passive_lowpass_filter/) | <p style="color:green;">Completed</p> |
+| RLC passive bandpass filter | [here](projects/filters/rlc_passive_bandpass_filter/) | <p style="color:green;">Completed</p> |
 
 ## Logic gates with transistors
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| Simple logic and gate | [here](analog_logic/simple_and_with_transistor/) | <p style="color:orange;">In progress</p> |
-| Simple logic or gate | [here](analog_logic/simple_or_with_transistor/) | <p style="color:red;">Not started</p> |
+| Simple logic and gate | [here](projects/analog_logic/simple_and_with_transistor/) | <p style="color:orange;">In progress</p> |
+| Simple logic or gate | [here](projects/analog_logic/simple_or_with_transistor/) | <p style="color:red;">Not started</p> |
 
 ## Understanding integrated circuits
 | Circuit | Type | Documentation | Status |
 | :--- | :--- | :--- | :--- |
-| 555 | Timer | [here](ic/555/) | <p style="color:green;">Completed</p> |
-| 7555 | Timer | [here](ic/555/) | <p style="color:green;">Completed</p> |
-| LM741 | Operational amplifier | [here](ic/lm741/) | <p style="color:orange;">In progress</p> |
+| 555 | Timer | [here](projects/ic/555/) | <p style="color:green;">Completed</p> |
+| 7555 | Timer | [here](projects/ic/555/) | <p style="color:green;">Completed</p> |
+| LM741 | Operational amplifier | [here](projects/ic/lm741/) | <p style="color:orange;">In progress</p> |
 
 ## Voltage doublers and charge pumps
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| Single-stage Villard circuit | [here](voltage_multipliers/single_stage_villard_circuit/) | <p style="color:orange;">In progress</p> |
-| Multi-stage Villard circuit | [here](voltage_multipliers/multi_stage_villard_circuit/) | <p style="color:orange;">In progress</p> |
-| Single-stage Greinacher circuit | [here](voltage_multipliers/single_stage_greinacher_circuit/) | <p style="color:orange;">In progress</p> |
+| Single-stage Villard circuit | [here](projects/voltage_multipliers/single_stage_villard_circuit/) | <p style="color:orange;">In progress</p> |
+| Multi-stage Villard circuit | [here](projects/voltage_multipliers/multi_stage_villard_circuit/) | <p style="color:orange;">In progress</p> |
+| Single-stage Greinacher circuit | [here](projects/voltage_multipliers/single_stage_greinacher_circuit/) | <p style="color:orange;">In progress</p> |
 
 ## Amplifiers
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| Theory| [here](amplifiers/theory/) | <p style="color:orange;">In progress</p> |
-| Non-inverting| [here](amplifiers/non_inverting/) | <p style="color:green;">Completed</p> |
-| Inverting| [here](amplifiers/inverting/) | <p style="color:green;">Completed</p> |
-| Unity-gain| [here](amplifiers/unity_gain/) | <p style="color:orange;">In progress</p> |
+| Theory| [here](projects/amplifiers/theory/) | <p style="color:orange;">In progress</p> |
+| Non-inverting| [here](projects/amplifiers/non_inverting/) | <p style="color:green;">Completed</p> |
+| Inverting| [here](projects/amplifiers/inverting/) | <p style="color:green;">Completed</p> |
+| Unity-gain| [here](projects/amplifiers/unity_gain/) | <p style="color:orange;">In progress</p> |
