@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta
             name="description"
-            content="Op-amps theory"
+            content="Unity gain"
         >
     <title>Electronics projects</title>
 
@@ -292,7 +292,7 @@
 
   </head>
 
-  <body class="amplifiers amplifiers_theory amplifiers_theory_index" data-languages="[]">
+  <body class="amplifiers amplifiers_unity_gain amplifiers_unity_gain_index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -303,18 +303,25 @@
       <a href="/"><img src="../../images/logo-e6ae0498.png" class="logo" alt="" /></a>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#op-amps-theory" class="toc-h1 toc-link" data-title="Op-amps theory">Op-amps theory</a>
+            <a href="#unity-gain" class="toc-h1 toc-link" data-title="Unity-gain">Unity-gain</a>
           </li>
           <li>
-            <a href="#theory" class="toc-h1 toc-link" data-title="Theory">Theory</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#rules" class="toc-h2 toc-link" data-title="Rules">Rules</a>
-                  </li>
-              </ul>
+            <a href="#goals" class="toc-h1 toc-link" data-title="Goals">Goals</a>
           </li>
           <li>
-            <a href="#rule-for-feedback-loops" class="toc-h1 toc-link" data-title="Rule for feedback loops">Rule for feedback loops</a>
+            <a href="#equipment-used" class="toc-h1 toc-link" data-title="Equipment used">Equipment used</a>
+          </li>
+          <li>
+            <a href="#components" class="toc-h1 toc-link" data-title="Components">Components</a>
+          </li>
+          <li>
+            <a href="#circuit" class="toc-h1 toc-link" data-title="Circuit">Circuit</a>
+          </li>
+          <li>
+            <a href="#formulas" class="toc-h1 toc-link" data-title="Formulas">Formulas</a>
+          </li>
+          <li>
+            <a href="#practical-measurements" class="toc-h1 toc-link" data-title="Practical measurements">Practical measurements</a>
           </li>
           <li>
             <a href="#changelog" class="toc-h1 toc-link" data-title="Changelog">Changelog</a>
@@ -324,113 +331,66 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='op-amps-theory'>Op-amps theory</h1>
-<p>The goal is to understand the theory of an op-amp. </p>
-<h1 id='theory'>Theory</h1>
-<p>The theoretical amplification of an op-amp is given by the following formula.
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
-    <mrow data-mjx-texclass="ORD">
-      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
-        <mtr>
-          <mtd>
-            <msub>
-              <mi>V</mi>
-              <mrow data-mjx-texclass="ORD">
-                <mi>o</mi>
-                <mi>u</mi>
-                <mi>t</mi>
-              </mrow>
-            </msub>
-            <mo>=</mo>
-            <mi>A</mi>
-            <mo>&#xD7;</mo>
-            <mo stretchy="false">(</mo>
-            <msub>
-              <mi>V</mi>
-              <mo>+</mo>
-            </msub>
-            <mo>&#x2212;</mo>
-            <msub>
-              <mi>V</mi>
-              <mo>&#x2212;</mo>
-            </msub>
-            <mo stretchy="false">)</mo>
-          </mtd>
-        </mtr>
-      </mtable>
-    </mrow>
-  </mstyle>
-</math>
-<br><br>
-Which gives the following formula for gain.</p>
-<h2 id='rules'>Rules</h2>
-<p>The rules of op-amps.</p>
-
-<ol>
-<li>The open-loop gain of an ideal op-amp is infinite. Open-loop in this case means without any feedback.</li>
-<li>The input impedance for an ideal op-amp is infinite.</li>
-<li>The input of an ideal op-amp is zero amp.</li>
-</ol>
-
-<p><br>
-<ins>Example</ins>
-<br>
-When the input signal is on V+ and V- is grounded the formula for Vout is.
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
-    <mrow data-mjx-texclass="ORD">
-      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
-        <mtr>
-          <mtd>
-            <msub>
-              <mi>V</mi>
-              <mrow data-mjx-texclass="ORD">
-                <mi>o</mi>
-                <mi>u</mi>
-                <mi>t</mi>
-              </mrow>
-            </msub>
-            <mo>=</mo>
-            <mi>A</mi>
-            <mo>&#xD7;</mo>
-            <mo stretchy="false">(</mo>
-            <msub>
-              <mi>V</mi>
-              <mo>+</mo>
-            </msub>
-            <mo>&#x2212;</mo>
-            <msub>
-              <mi>V</mi>
-              <mo>&#x2212;</mo>
-            </msub>
-            <mo stretchy="false">)</mo>
-            <mo>=</mo>
-            <mi>A</mi>
-            <mo>&#xD7;</mo>
-            <mo stretchy="false">(</mo>
-            <msub>
-              <mi>V</mi>
-              <mo>+</mo>
-            </msub>
-            <mo>&#x2212;</mo>
-            <mn>0</mn>
-            <mo stretchy="false">)</mo>
-            <mo>=</mo>
-            <mi>A</mi>
-            <mo>&#xD7;</mo>
-            <msub>
-              <mi>V</mi>
-              <mo>+</mo>
-            </msub>
-          </mtd>
-        </mtr>
-      </mtable>
-    </mrow>
-  </mstyle>
-</math>
-<br>
-Which gives the given formula for gain.
+        <h1 id='unity-gain'>Unity-gain</h1>
+<p>The goal is to understand a unity gain amplifier.</p>
+<h1 id='goals'>Goals</h1>
+<ul>
+<li>[x] Document schematic in Kicad</li>
+<li>[ ] Do a theoretical analyis </li>
+<li>[ ] Implement schematic on breadboard</li>
+<li>[ ] Test circuit and do measurements</li>
+</ul>
+<h1 id='equipment-used'>Equipment used</h1>
+<table><thead>
+<tr>
+<th style="text-align: left">Equipment</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">Peaktech 6075</td>
+<td style="text-align: left">DC power supply</td>
+</tr>
+<tr>
+<td style="text-align: left">RS Pro RSDS 1204X-E</td>
+<td style="text-align: left">Oscilloscope</td>
+</tr>
+<tr>
+<td style="text-align: left">Uni-T UT161D</td>
+<td style="text-align: left">Multimeter</td>
+</tr>
+</tbody></table>
+<h1 id='components'>Components</h1>
+<table><thead>
+<tr>
+<th style="text-align: left">Reference</th>
+<th style="text-align: left">Value</th>
+<th style="text-align: left">Remarks</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">R1</td>
+<td style="text-align: left">100k</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">R2</td>
+<td style="text-align: left">1k</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">1x LM741CN</td>
+<td style="text-align: left"></td>
+<td style="text-align: left">Operational amplifier</td>
+</tr>
+</tbody></table>
+<h1 id='circuit'>Circuit</h1>
+<blockquote>
+<p><img src="schematics/schematics-b5b3cee3.svg"></p>
+</blockquote>
+<h1 id='formulas'>Formulas</h1>
+<p>Using rule 4 from the theory that the difference between V- and V+ is 0. This would mean that Vout=V- and Vin=V+.
+So the formula becomes.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0">
     <mrow data-mjx-texclass="ORD">
@@ -450,108 +410,21 @@ Which gives the given formula for gain.
               </msub>
               <msub>
                 <mi>V</mi>
-                <mo>+</mo>
-              </msub>
-            </mfrac>
-          </mtd>
-        </mtr>
-      </mtable>
-    </mrow>
-  </mstyle>
-</math>
-<br>
-<ins>Example</ins>
-<br>
-When the input signal is on V- and V+ is grounded the formula for Vout is.
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
-    <mrow data-mjx-texclass="ORD">
-      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
-        <mtr>
-          <mtd>
-            <msub>
-              <mi>V</mi>
-              <mrow data-mjx-texclass="ORD">
-                <mi>o</mi>
-                <mi>u</mi>
-                <mi>t</mi>
-              </mrow>
-            </msub>
-            <mo>=</mo>
-            <mi>A</mi>
-            <mo>&#xD7;</mo>
-            <mo stretchy="false">(</mo>
-            <msub>
-              <mi>V</mi>
-              <mo>+</mo>
-            </msub>
-            <mo>&#x2212;</mo>
-            <msub>
-              <mi>V</mi>
-              <mo>&#x2212;</mo>
-            </msub>
-            <mo stretchy="false">)</mo>
-            <mo>=</mo>
-            <mi>A</mi>
-            <mo>&#xD7;</mo>
-            <mo stretchy="false">(</mo>
-            <mn>0</mn>
-            <mo>&#x2212;</mo>
-            <msub>
-              <mi>V</mi>
-              <mo>&#x2212;</mo>
-            </msub>
-            <mo stretchy="false">)</mo>
-            <mo>=</mo>
-            <mi>A</mi>
-            <mo>&#xD7;</mo>
-            <mo>&#x2212;</mo>
-            <msub>
-              <mi>V</mi>
-              <mo>&#x2212;</mo>
-            </msub>
-          </mtd>
-        </mtr>
-      </mtable>
-    </mrow>
-  </mstyle>
-</math>
-<br><br>
-Which gives the given formula for gain.
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
-    <mrow data-mjx-texclass="ORD">
-      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
-        <mtr>
-          <mtd>
-            <mi>A</mi>
-            <mo>=</mo>
-            <mo>&#x2212;</mo>
-            <mfrac>
-              <msub>
-                <mi>V</mi>
                 <mrow data-mjx-texclass="ORD">
-                  <mi>o</mi>
-                  <mi>u</mi>
-                  <mi>t</mi>
+                  <mi>i</mi>
+                  <mi>n</mi>
                 </mrow>
               </msub>
-              <msub>
-                <mi>V</mi>
-                <mo>&#x2212;</mo>
-              </msub>
             </mfrac>
+            <mo>=</mo>
+            <mn>1</mn>
           </mtd>
         </mtr>
       </mtable>
     </mrow>
   </mstyle>
 </math></p>
-<h1 id='rule-for-feedback-loops'>Rule for feedback loops</h1>
-<p>For feedback loops there is one more rule.
-<br><br>
-4. When there&#39;s a difference in input voltage between V- and V+ the op-amp will try to feed back as much current or voltage to keep the difference as close to 0 as possible.</p>
-<h1 id='changelog'>Changelog</h1>
+<h1 id='practical-measurements'>Practical measurements</h1><h1 id='changelog'>Changelog</h1>
 <table><thead>
 <tr>
 <th style="text-align: left">Date</th>
@@ -559,8 +432,8 @@ Which gives the given formula for gain.
 </tr>
 </thead><tbody>
 <tr>
-<td style="text-align: left">2025-11-17</td>
-<td style="text-align: left">First version</td>
+<td style="text-align: left">2025-11-18</td>
+<td style="text-align: left">Added theory</td>
 </tr>
 </tbody></table>
 

@@ -54,3 +54,4 @@ It will take some time to document all projects and add proper documentation as 
 | Theory| [here](amplifiers/theory/) | <p style="color:orange;">In progress</p> |
 | Non-inverting| [here](amplifiers/non_inverting/) | <p style="color:green;">Completed</p> |
 | Inverting| [here](amplifiers/inverting/) | <p style="color:green;">Completed</p> |
+| Unity-gain| [here](amplifiers/unity_gain/) | <p style="color:orange;">In progress</p> |
