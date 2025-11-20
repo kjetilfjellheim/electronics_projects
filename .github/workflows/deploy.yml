@@ -32,7 +32,7 @@ jobs:
       id: deployment
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./source/build
+        path: ./github-pages/source/build
   deploy:
     permissions:
       pages: write
