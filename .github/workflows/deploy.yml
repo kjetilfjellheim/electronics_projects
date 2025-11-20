@@ -6,7 +6,7 @@ on:
     branches: [ 'main' ]
 
 jobs:
-  deploy:
+  build:
     permissions:
       contents: write
     runs-on: ubuntu-latest
@@ -28,9 +28,21 @@ jobs:
     - run: bundle install --jobs 4 --retry 3
     - run: cp -R ../projects ./source/
     - run: bundle exec middleman build
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Upload static files as artifact
+      id: deployment
+      uses: actions/upload-pages-artifact@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./source/build
-        keep_files: true
+        path: ./source/build
+  deploy:
+    permissions:
+      pages: write
+      id-token: write
+    needs: build  
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
