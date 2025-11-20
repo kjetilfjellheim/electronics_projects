@@ -29,7 +29,7 @@ The goal is is to understand, simulate and do practical measurements on a single
 | D1 | 1N4001 | |
 
 # Schematics
-> <img src="./schematics/villard.svg">
+> <img src="./images/villard.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
 

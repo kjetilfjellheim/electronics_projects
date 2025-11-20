@@ -201,7 +201,7 @@ Calculate resistor value for a specific bandwidth.
 # Serial circuit
 ## Schematics
 > Circuit for a 1Khz bandpass filter.<br>
-> <img src="./schematics/serial_schematics.svg">
+> <img src="./images/serial_schematics.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
 
@@ -240,7 +240,7 @@ At 1kHz the simulation showed 1.04V and on oscilloscope 1.2V. This cause for the
 # Parallell circuit
 ## Schematics
 > Circuit for a 5Khz bandpass filter.<br>
-> <img src="./schematics/paralell_schematics.svg">
+> <img src="./images/paralell_schematics.svg">
 
 <aside class="notice">
     More description will come later.

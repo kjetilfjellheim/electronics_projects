@@ -165,7 +165,7 @@ To calculate the capacitor values use the value for the capacitor and calculate 
 
 # Circuits
 Circuits for 2nd and 3rd order butterworth filter.
-> <img src="./schematics/schematics.svg">
+> <img src="./images/schematics.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
 

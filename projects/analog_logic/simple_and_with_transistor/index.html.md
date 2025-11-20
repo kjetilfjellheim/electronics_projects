@@ -30,7 +30,7 @@ The goal is to implement a 2 input logic AND circuit with both a bipolar and mos
 
 # With bipolar transistor
 ## Schematics
-> <img src="./schematics/schematics.svg">
+> <img src="./images/schematics.svg">
 
 Schematics for a very simple 2 input logic and gate.
 <br>

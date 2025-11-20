@@ -29,7 +29,7 @@ The goal is is to understand, simulate and do practical measurements on a Greina
 | D1, D2 | 1N4001 | |
 
 # Schematics
-> <img src="./schematics/greinacher_circuit.svg">
+> <img src="./images/greinacher_circuit.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
 

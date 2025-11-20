@@ -60,7 +60,7 @@ Pulse duration can be calculated with the formula.
 </math>
 
 ## Circuit
-> <img src="./schematics/monostable_mode.svg">
+> <img src="./images/monostable_mode.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
 
@@ -183,7 +183,7 @@ The duty cycle is given by the formula.
 </math>
 
 ## Circuit
-> <img src="./schematics/astable_mode.svg">
+> <img src="./images/astable_mode.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
 

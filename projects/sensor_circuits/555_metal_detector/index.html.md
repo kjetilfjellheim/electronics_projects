@@ -24,7 +24,7 @@ Original source: Unknown
 - [x] Test circuit and do measurements
 
 # Schematics
-> <img src="./schematics/schematics.svg">
+> <img src="./images/schematics.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
 

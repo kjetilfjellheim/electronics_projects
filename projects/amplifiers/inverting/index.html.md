@@ -31,7 +31,7 @@ The goal is to understand an inverting amplifier.
 | 1x LM741CN | | Operational amplifier | 
 
 # Circuit
-> <img src="./schematics/schematics.svg">
+> <img src="./images/schematics.svg">
 
 The opamp works by trying to make both inputs equal because of the negative feedback. As the input voltage on Vin- increases the Vout decreases. 
 The feedback is given by the feedback network with R1 and R2. 

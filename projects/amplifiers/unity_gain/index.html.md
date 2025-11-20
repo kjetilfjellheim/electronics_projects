@@ -31,7 +31,7 @@ The goal is to understand a unity gain amplifier.
 | 1x LM741CN | | Operational amplifier | 
 
 # Circuit
-> <img src="schematics/schematics.svg">
+> <img src="./images/schematics.svg">
 
 # Formulas
 Using rule 4 from the theory that the difference between V- and V+ is 0. This would mean that Vout=V- and Vin=V+.

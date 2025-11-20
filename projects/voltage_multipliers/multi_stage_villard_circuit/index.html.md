@@ -29,7 +29,7 @@ The goal is is to understand, simulate and do practical measurements on a multi 
 | Dx | 1N4001 | Only eight needed for 4 stage |
 
 # Schematics
-> <img src="./schematics/multi_stage_villard.svg">
+> <img src="./images/multi_stage_villard.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
 

@@ -193,7 +193,7 @@ Phase shift formula.
 
 # Circuits
 Circuits for 1st to 5th order.
-> <img src="./schematics/rc_filter.svg">
+> <img src="./images/rc_filter.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
 
