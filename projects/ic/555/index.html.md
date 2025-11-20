@@ -38,7 +38,7 @@ This circuit makes a single pulse when triggered. This causes the output to held
 ## Formulas
 Pulse duration can be calculated with the formula.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
- <mstyle displaystyle="true" scriptlevel="0" >
+ <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
    <mrow data-mjx-texclass="ORD">
      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
        <mtr>
@@ -94,7 +94,7 @@ When in astable mode the circuit will self trigger and cause continous pulses ou
 ## Formulas
 The frequency of the output oscillation is given by the formula.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -133,7 +133,7 @@ The frequency of the output oscillation is given by the formula.
 
 The duty cycle is given by the formula.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -206,7 +206,7 @@ Measured values are
 
 Calculated duty cycle is 
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -280,7 +280,7 @@ The value is as close as expected.
 
 The calculated frequency is
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -372,7 +372,7 @@ Same components as astable mode, but with the following added components.
 ## Formulas
 Duty cycle formula.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
- <mstyle displaystyle="true" scriptlevel="0">
+ <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
    <mrow data-mjx-texclass="ORD">
      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
        <mtr>
@@ -440,7 +440,7 @@ Measured value for duty cycle is
 
 Calculated duty cycle is
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>

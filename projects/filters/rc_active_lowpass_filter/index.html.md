@@ -57,7 +57,7 @@ The goal is to implement, analyze and do practical measurements on an active low
 # Formulas
 Calculates minimum 60db attenuation at frequency Fs. The attenuation result is the total order number of the circuit.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -90,7 +90,7 @@ Calculates minimum 60db attenuation at frequency Fs. The attenuation result is t
 
 To calculate the resistor values in the circuit. Rxn is the normalized normalized value = 1. 
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -118,7 +118,7 @@ To calculate the resistor values in the circuit. Rxn is the normalized normalize
 
 To calculate the capacitor values use the value for the capacitor and calculate the capacitance the capacitors is to use in the circuit.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
