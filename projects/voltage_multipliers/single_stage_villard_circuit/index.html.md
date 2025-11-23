@@ -12,8 +12,8 @@ The goal is is to understand, simulate and do practical measurements on a single
 # Goals
 - [x] Document schematic of single stage in Kicad
 - [x] Do a theoretical analyis on single stage 
-- [ ] Implement single stage schematic on breadboard
-- [ ] Test single stage circuit and do measurements
+- [x] Implement single stage schematic on breadboard
+- [x] Test single stage circuit and do measurements
 
 # Equipment used
 | Equipment | Description |
@@ -25,24 +25,28 @@ The goal is is to understand, simulate and do practical measurements on a single
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
 | C1 | 1n, 10n, 100n, 1u, 10u and 100u | |
-| R1 | 1M | To simulate load |
-| D1 | 1N4001 | |
+| R1 | 4.7k | To simulate load |
+| D1 | 1N4001 or 1N4148 | |
 
 # Schematics
 > <img src="./images/villard.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
 
-<aside class="notice">
-    More description will come later.
-</aside>
+The circuit works in two phases one when the input is on the positive cycle and one when it's on the negative cycle.
+When the output goes positive the diode blocks the current in that direction, but some will be sent through the resistor in this case 
+added as a load. This causes the capacitor to hold is charge loosing only what's being sent through the load. This causes the output 
+to be shifted upwards. On the negative cycle the diode conducts which causes the capacitor to charge. 
 
-# Simulation
+# Simulation changing capacitance
 > This is a simulation done on 100Hz.
-> <img src="./images/simulation_100hz.png">
+> <img src="./images/simulation_R4.7k_100hz.png">
 <br><br>
 > This is a simulation done on 1kHz.
-> <img src="./images/simulation_1khz.png">
+> <img src="./images/simulation_R4.7k_1khz.png">
+
+I used a 4.7k resistor in paralell with the diode to simulate a load. This can be changed to any size and affects the output 
+of the circuit significantly. 
 
 Simulated values at 100Hz 
 
@@ -69,9 +73,38 @@ The lower the frequency a higher capacitance is required to reach higher voltage
 The circuit itself does not double the voltage, but moves the offset. So instead 
 of -5V to 5V it changes to -0.7V to 9.1V. 
 
+# Simulation changing resitance
+> This is a simulation done on 100Hz.
+> <img src="./images/simulation_C1u_100hz.png">
+<br><br>
+> This is a simulation done on 1kHz.
+> <img src="./images/simulation_C1u_1khz.png">
+
+In this simulation we are changing the resistance and seeing the output. 
+The values are from 1, 10, 100, 1k, 10k and 100k resistance.
+
 # Practical measurements
+
+## 10Vpp at 1khz
+> <img src="./images/measurement_10Vpp_1khz.png">
+
+This measurement was done at 1khz at 10Vpp with a 4.7k resistor and 100nF capacitor. The output of for this circuit is from 6.24V to -720mV.
+
+## 10Vpp at 5khz
+> <img src="./images/measurement_10Vpp_5khz.png">
+
+This measurement was done at 1khz at 10Vpp with a 4.7k resistor and 100nF capacitor. The output of for this circuit is from 8.6V to -800mV.  
+I had to change the vertical level for this measurements compared to the previous.
+
+## Additional
+Attempted to increase frequency to see how high I could get the output to go in this case with 800khz. This causes th output to cycle between 
+9V and -800mV to -1V. The oscilloscope could not get a conclusive reading at this frequency. 
+
+The measurements show that the ouput is pushed upwards and affects the sine curve input. The output on  the low level were falt a t the lower 
+frequencies which is supported by the simulations.
 
 # Changelog
 | Date | Change |
 | :---- | :---- |
 | 2025-11-01 | Simulation results added |
+| 2025-11-23 | Added a few practical measurements |
