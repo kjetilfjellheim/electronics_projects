@@ -12,8 +12,8 @@ The goal is is to understand, simulate and do practical measurements on a Greina
 # Goals
 - [x] Document schematic in Kicad
 - [x] Do a theoretical analyis 
-- [ ] Implement schematic on breadboard
-- [ ] Test circuit and do measurements
+- [x] Implement schematic on breadboard
+- [x] Test circuit and do measurements
 
 # Equipment used
 | Equipment | Description |
@@ -34,9 +34,9 @@ The goal is is to understand, simulate and do practical measurements on a Greina
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
 <br><br>
 In the positive cycle the D1 diode not conducting and D2 is conducting. This causes C2 to charge. The voltage over C1 becomes around 4.5V
-In the negative cycle the D1 diode will conduct and D2 will not causing C1 to charge. The voltage over C2 vecomes around 9V.
-<br>
-The resistor has been added to make the discharge of of th capacitors slower, which reduces the output ripple.
+In the negative cycle the D1 diode will conduct and D2 will not causing C1 to charge. The voltage over C2 becomes around 9V.
+<br><br>
+The resistor has been added to make the discharge of of the capacitors slower, which reduces the output ripple.
 
 
 # Simulation
@@ -71,17 +71,12 @@ output. The DC output voltage is about 8.73V for ideal output when input is 5Vpp
 Measurement done at 100hz with an input of 10Vpp. The output voltage of the circuit ended at around 9.04V. Ran the same 
 circuit at 1khz and at 10khz without any noticable difference.
 
-## Measurements with without resistor at 5Hz
+## Measurements without resistor at 5Hz
 > <img src="./images/measurement_5hz_no_resistor.png">
 
 At low frequency and no resistor the output ripples, but at all times remains at higher voltage than the input.
 
-## Measurements with without resistor at 5Hz
-> <img src="./images/measurement_5hz_no_resistor.png">
-
-At low frequency and no resistor the output ripples, but at all times remains at higher voltage than the input.
-
-## Measurements with with capacitors at 33nF
+## Measurements with capacitors at 33nF
 > <img src="./images/measurement_1khz_33nf_capacitors.png">
 
 The changes the circuit to use 33nF capacitors rather than 1uF capacitors. At 1khz the ripple is still visible because the capacitors discharge to quickly.
