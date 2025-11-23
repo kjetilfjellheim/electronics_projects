@@ -25,17 +25,19 @@ The goal is is to understand, simulate and do practical measurements on a Greina
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
 | C1, C2 | 1n, 10n, 100n, 1u | Two of each is required |
-| R1 | 1M | To simulate load |
-| D1, D2 | 1N4001 | |
+| R1 | 1M | |
+| D1, D2 | 1N4001 or 1N4148 | |
 
 # Schematics
 > <img src="./images/greinacher_circuit.svg">
 
 Schematics generated from KIcad. The schematics can be downloaded from the repository.
+<br><br>
+In the positive cycle the D1 diode not conducting and D2 is conducting. This causes C2 to charge. The voltage over C1 becomes around 4.5V
+In the negative cycle the D1 diode will conduct and D2 will not causing C1 to charge. The voltage over C2 vecomes around 9V.
+<br>
+The resistor has been added to make the discharge of of th capacitors slower, which reduces the output ripple.
 
-<aside class="notice">
-    More description will come later.
-</aside>
 
 # Simulation
 > Simulation done on 100Hz AC with multiple capacitor values.<br>
@@ -56,7 +58,6 @@ All simulations have the following capacitor values.
 | Vout3 | 100nF |
 | Vout4 | 1uF |
 
-
 <ins>Conclusion</ins><br>
 This circuit have AC as input, but output ideally is DC voltage higher than the max voltage of the input.
 The lower the frequency the higher the capacitance of the capacitors required to get a proper DC 
@@ -64,7 +65,29 @@ output. The DC output voltage is about 8.73V for ideal output when input is 5Vpp
 
 # Practical measurements
 
+## Measurements with circuit specified
+> <img src="./images/measurement_100hz.png">
+
+Measurement done at 100hz with an input of 10Vpp. The output voltage of the circuit ended at around 9.04V. Ran the same 
+circuit at 1khz and at 10khz without any noticable difference.
+
+## Measurements with without resistor at 5Hz
+> <img src="./images/measurement_5hz_no_resistor.png">
+
+At low frequency and no resistor the output ripples, but at all times remains at higher voltage than the input.
+
+## Measurements with without resistor at 5Hz
+> <img src="./images/measurement_5hz_no_resistor.png">
+
+At low frequency and no resistor the output ripples, but at all times remains at higher voltage than the input.
+
+## Measurements with with capacitors at 33nF
+> <img src="./images/measurement_1khz_33nf_capacitors.png">
+
+The changes the circuit to use 33nF capacitors rather than 1uF capacitors. At 1khz the ripple is still visible because the capacitors discharge to quickly.
+
 # Changelog
 | Date | Change |
 | :---- | :---- |
 | 2025-11-01 | Simulation results added |
+| 2025-11-23 | Added practical measurements |

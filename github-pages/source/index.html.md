@@ -44,9 +44,9 @@ It will take some time to document all projects and add proper documentation as 
 ## Voltage doublers and charge pumps
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| Single-stage Villard circuit | [here](projects/voltage_multipliers/single_stage_villard_circuit/) | <p style="color:orange;">In progress</p> |
+| Single-stage Villard circuit | [here](projects/voltage_multipliers/single_stage_villard_circuit/) | <p style="color:green;">Completed</p> |
 | Multi-stage Villard circuit | [here](projects/voltage_multipliers/multi_stage_villard_circuit/) | <p style="color:orange;">In progress</p> |
-| Single-stage Greinacher circuit | [here](projects/voltage_multipliers/single_stage_greinacher_circuit/) | <p style="color:orange;">In progress</p> |
+| Single-stage Greinacher circuit | [here](projects/voltage_multipliers/single_stage_greinacher_circuit/) | <p style="color:green;">Completed</p> |
 
 ## Amplifiers
 | Circuit | Documentation | Status |
