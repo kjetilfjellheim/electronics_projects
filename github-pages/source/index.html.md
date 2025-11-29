@@ -26,13 +26,13 @@ It will take some time to document all projects and add proper documentation as 
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
 | RC passive lowpass filter | [here](projects/filters/rc_passive_lowpass_filter/) | <p style="color:green;">Completed</p> |
+| RC passive bandstop filter | [here](projects/filters/rlc_passive_bandstop_filter) | <p style="color:orange;">In progress</p> |
 | RLC passive bandpass filter | [here](projects/filters/rlc_passive_bandpass_filter/) | <p style="color:green;">Completed</p> |
 
 ## Logic gates with transistors
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
 | Simple logic and gate | [here](projects/analog_logic/simple_and_with_transistor/) | <p style="color:orange;">In progress</p> |
-| Simple logic or gate | [here](projects/analog_logic/simple_or_with_transistor/) | <p style="color:red;">Not started</p> |
 
 ## Understanding integrated circuits
 | Circuit | Type | Documentation | Status |

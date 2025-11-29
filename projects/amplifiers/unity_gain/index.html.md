@@ -20,18 +20,17 @@ The goal is to understand a unity gain amplifier.
 | Equipment | Description |
 | :------------- | :------------- |
 | Peaktech 6075 | DC power supply |
-| RS Pro RSDS 1204X-E | Oscilloscope |
-| Uni-T UT161D | Multimeter |
+| RS Pro RSDS 1204X-E | Oscilloscope 
 
 # Components
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
-| R1 | 100k | |
-| R2 | 1k | |
 | 1x LM741CN | | Operational amplifier | 
 
 # Circuit
 > <img src="./images/schematics.svg">
+
+The opamp forces Vin+ and Vin- to as equal as can. Since there is no feedback resistor Vout becomes the same as Vin-. 
 
 # Formulas
 Using rule 4 from the theory that the difference between V- and V+ is 0. This would mean that Vout=V- and Vin=V+.
