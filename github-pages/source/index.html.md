@@ -26,7 +26,7 @@ It will take some time to document all projects and add proper documentation as 
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
 | RC passive lowpass filter | [here](projects/filters/rc_passive_lowpass_filter/) | <p style="color:green;">Completed</p> |
-| RC passive bandstop filter | [here](projects/filters/rlc_passive_bandstop_filter) | <p style="color:orange;">In progress</p> |
+| RC passive bandstop filter | [here](projects/filters/rc_passive_bandstop_filter) | <p style="color:orange;">In progress</p> |
 | RLC passive bandpass filter | [here](projects/filters/rlc_passive_bandpass_filter/) | <p style="color:green;">Completed</p> |
 
 ## Logic gates with transistors
