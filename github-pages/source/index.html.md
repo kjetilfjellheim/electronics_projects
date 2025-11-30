@@ -52,6 +52,7 @@ It will take some time to document all projects and add proper documentation as 
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
 | Theory| [here](projects/amplifiers/theory/) | <p style="color:orange;">In progress</p> |
+| Class A| [here](projects/amplifiers/class-a/) | <p style="color:orange;">In progress</p> |
 | Non-inverting| [here](projects/amplifiers/non_inverting/) | <p style="color:green;">Completed</p> |
 | Inverting| [here](projects/amplifiers/inverting/) | <p style="color:green;">Completed</p> |
 | Unity-gain| [here](projects/amplifiers/unity_gain/) | <p style="color:orange;">In progress</p> |

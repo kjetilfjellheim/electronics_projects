@@ -72,22 +72,22 @@ The analyis is done at the circuit at frequencies from 1hz to 100khz. Thoutput a
 # Simulation output at 100hz
 > <img src="images/simulation_100hz.png">
 
-Simulation is done at 100hz.
+Simulation is done at 100hz. Vout is 120mVpp.
 
 # Simulation output at 796hz
 > <img src="images/simulation_796hz.png">
 
-At 796 hz the output is blocked.
+At 796 hz the output is blocked. Vout is 0V.
 
 # Simulation output at 10khz
 > <img src="images/simulation_10khz.png">
 
-Simulation is done at 10khz.
+Simulation is done at 10khz.  Vout is 1.4Vpp.
 
 # Calculations
 Calculation for center bandstop frequency.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
