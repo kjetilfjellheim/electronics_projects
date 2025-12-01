@@ -12,8 +12,8 @@ The goal is to understand a class A common emitter amplifier.
 
 # Goals
 - [x] Document schematic in Kicad
-- [ ] Do a theoretical analyis with DC
-- [ ] Do a theoretical analyis with AC
+- [x] Do a theoretical analysis with DC
+- [x] Do a theoretical analysis with AC
 - [ ] Implement schematic on breadboard
 - [ ] Test circuit and do measurements with DC
 - [ ] Test circuit and do measurements with AC
@@ -29,8 +29,8 @@ The goal is to understand a class A common emitter amplifier.
 # Components
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
-| 4x | Capacitors | Calculated for AC |
-| 3x | Resistors | Calculated for DC and AC |
+| 3x | Capacitors | Calculated for AC |
+| 4x | Resistors | Calculated for DC and AC |
 | BC547 | Transistor |  |
 
 # DC circuit
@@ -561,7 +561,7 @@ Calculating the resistor R1.
 <br><br>
 Calculating R2.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -636,5 +636,5 @@ With an amplitude to high this causes the output to have flattened curves on top
 # Changelog
 | Date | Change |
 | :---- | :---- |
-| 2025-11-30 | Adds dc circuit and calculations for DC |
+| 2025-11-30 | Adds dc circuit and calculations |
 | 2025-12-01 | Adds ac circuit and simulations |
