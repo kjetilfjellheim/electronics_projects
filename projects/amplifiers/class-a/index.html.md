@@ -7,7 +7,7 @@ meta:
 
 ---
 
-# Unity-gain
+# Class-A (Common collector) 
 The goal is to understand a class A common emitter amplifier.
 
 # Goals
