@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "80fd03a6-880b-48dc-a242-8249a5f2b9bf")
-	(paper "A4")
+	(paper "A5")
 	(lib_symbols
 		(symbol "Connector:Screw_Terminal_01x02"
 			(pin_names
@@ -949,7 +949,7 @@
 		(uuid "45fd9126-8ba5-4006-bb5a-3efce1f83e8a")
 	)
 	(junction
-		(at 187.96 52.07)
+		(at 118.11 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4803b5e3-6541-4618-8dec-e8e76f705bd2")
@@ -967,20 +967,20 @@
 		(uuid "ad636bce-012f-4ab3-9df9-a4cf267256e6")
 	)
 	(junction
-		(at 187.96 41.91)
+		(at 118.11 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b9823096-96a0-4abc-a39e-08d6a6c8146a")
 	)
 	(junction
-		(at 187.96 49.53)
+		(at 118.11 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "beaf2445-f8c8-445c-a1e8-37ad7117a5da")
 	)
 	(wire
 		(pts
-			(xy 187.96 46.99) (xy 187.96 49.53)
+			(xy 118.11 55.88) (xy 118.11 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1000,7 +1000,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 44.45) (xy 187.96 41.91)
+			(xy 118.11 53.34) (xy 118.11 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1011,7 +1011,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 29.21) (xy 116.84 29.21)
+			(xy 62.23 29.21) (xy 73.66 29.21)
 		)
 		(stroke
 			(width 0)
@@ -1051,7 +1051,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 83.82) (xy 118.11 83.82)
+			(xy 62.23 83.82) (xy 74.93 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1061,7 +1061,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 49.53) (xy 187.96 52.07)
+			(xy 118.11 58.42) (xy 118.11 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1121,7 +1121,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 48.26) (xy 118.11 48.26)
+			(xy 62.23 48.26) (xy 74.93 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1131,7 +1131,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 49.53) (xy 187.96 49.53)
+			(xy 116.84 58.42) (xy 118.11 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1181,7 +1181,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 52.07) (xy 187.96 54.61)
+			(xy 118.11 60.96) (xy 118.11 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1221,7 +1221,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 36.83) (xy 187.96 41.91)
+			(xy 118.11 45.72) (xy 118.11 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1232,7 +1232,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 41.91) (xy 187.96 41.91)
+			(xy 111.76 50.8) (xy 118.11 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1241,7 +1241,7 @@
 		(uuid "f937b3e2-eb77-4a7f-af64-ffc2f31d9a79")
 	)
 	(label "Vout"
-		(at 118.11 48.26 0)
+		(at 74.93 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1250,9 +1250,19 @@
 		)
 		(uuid "5ac6ba57-3b09-444a-9519-13b2870b2a6e")
 	)
+	(label "Vin"
+		(at 35.56 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8989eacf-da23-420c-9ce4-63ee466cef67")
+	)
 	(global_label "Gnd"
 		(shape input)
-		(at 187.96 54.61 270)
+		(at 118.11 63.5 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1262,7 +1272,7 @@
 		)
 		(uuid "4c960a2f-aa80-4472-9ff2-a52725697fba")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.96 61.1632 90)
+			(at 118.11 70.0532 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1274,7 +1284,7 @@
 	)
 	(global_label "Vcc"
 		(shape input)
-		(at 116.84 29.21 0)
+		(at 73.66 29.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1284,7 +1294,7 @@
 		)
 		(uuid "9e07db61-e5b0-4e98-a008-5d879309a64a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.091 29.21 0)
+			(at 79.911 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1296,7 +1306,7 @@
 	)
 	(global_label "Gnd"
 		(shape input)
-		(at 118.11 83.82 0)
+		(at 74.93 83.82 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1306,7 +1316,7 @@
 		)
 		(uuid "af1562bf-c120-4f7d-82b2-989bf82c561e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.6632 83.82 0)
+			(at 81.4832 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1318,7 +1328,7 @@
 	)
 	(global_label "Vcc"
 		(shape input)
-		(at 187.96 36.83 90)
+		(at 118.11 45.72 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1328,7 +1338,7 @@
 		)
 		(uuid "b5bcb462-a691-436c-b686-26980e69b8f8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.96 30.579 90)
+			(at 118.11 39.469 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1340,7 +1350,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 193.04 44.45 0)
+		(at 123.19 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1349,7 +1359,7 @@
 		(fields_autoplaced yes)
 		(uuid "28aece4a-28ba-49ac-a632-f19862ad7932")
 		(property "Reference" "J1"
-			(at 195.58 44.4499 0)
+			(at 125.73 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1358,7 +1368,7 @@
 			)
 		)
 		(property "Value" "5V"
-			(at 195.58 46.9899 0)
+			(at 125.73 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1367,7 +1377,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal"
-			(at 193.04 44.45 0)
+			(at 123.19 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1376,7 +1386,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 193.04 44.45 0)
+			(at 123.19 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1385,7 +1395,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 193.04 44.45 0)
+			(at 123.19 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1394,7 +1404,7 @@
 			)
 		)
 		(property "Sim.Device" "V"
-			(at 193.04 44.45 0)
+			(at 123.19 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1403,7 +1413,7 @@
 			)
 		)
 		(property "Sim.Type" "DC"
-			(at 193.04 44.45 0)
+			(at 123.19 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1412,7 +1422,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 193.04 44.45 0)
+			(at 123.19 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1445,7 +1455,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3bc1c04b-b7e3-492b-83d7-81e7ea25f8fc")
-		(property "Reference" "R6"
+		(property "Reference" "R2"
 			(at 48.26 72.3899 0)
 			(effects
 				(font
@@ -1454,7 +1464,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "285"
+		(property "Value" "7600"
 			(at 48.26 74.9299 0)
 			(effects
 				(font
@@ -1499,7 +1509,7 @@
 		(instances
 			(project "schematics"
 				(path "/80fd03a6-880b-48dc-a242-8249a5f2b9bf"
-					(reference "R6")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -1507,7 +1517,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 187.96 52.07 270)
+		(at 118.11 60.96 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1516,7 +1526,7 @@
 		(fields_autoplaced yes)
 		(uuid "3d2fff4f-31cd-4c5e-8c33-6d1ad22ac4c6")
 		(property "Reference" "#FLG02"
-			(at 189.865 52.07 0)
+			(at 120.015 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1525,7 +1535,7 @@
 			)
 		)
 		(property "Value" "0V"
-			(at 191.77 52.0699 90)
+			(at 121.92 60.9599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1534,7 +1544,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 187.96 52.07 0)
+			(at 118.11 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1543,7 +1553,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 187.96 52.07 0)
+			(at 118.11 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1552,7 +1562,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 187.96 52.07 0)
+			(at 118.11 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1582,7 +1592,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5af421b6-59d3-4619-8a63-a2797568da85")
-		(property "Reference" "Q2"
+		(property "Reference" "Q1"
 			(at 64.77 54.6099 0)
 			(effects
 				(font
@@ -1678,7 +1688,7 @@
 		(instances
 			(project "schematics"
 				(path "/80fd03a6-880b-48dc-a242-8249a5f2b9bf"
-					(reference "Q2")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -1694,7 +1704,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "852e7778-b008-45a4-a0ad-38de4224bdc0")
-		(property "Reference" "R5"
+		(property "Reference" "R1"
 			(at 48.26 39.3699 0)
 			(effects
 				(font
@@ -1703,7 +1713,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1214"
+		(property "Value" "32400"
 			(at 48.26 41.9099 0)
 			(effects
 				(font
@@ -1748,7 +1758,7 @@
 		(instances
 			(project "schematics"
 				(path "/80fd03a6-880b-48dc-a242-8249a5f2b9bf"
-					(reference "R5")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -1756,7 +1766,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 181.61 41.91 90)
+		(at 111.76 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1765,7 +1775,7 @@
 		(fields_autoplaced yes)
 		(uuid "a586c452-6905-4b61-984a-705336e95762")
 		(property "Reference" "#FLG01"
-			(at 179.705 41.91 0)
+			(at 109.855 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1774,7 +1784,7 @@
 			)
 		)
 		(property "Value" "10V"
-			(at 180.34 38.1 90)
+			(at 110.49 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1782,7 +1792,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 41.91 0)
+			(at 111.76 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1791,7 +1801,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 181.61 41.91 0)
+			(at 111.76 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1800,7 +1810,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 181.61 41.91 0)
+			(at 111.76 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1830,7 +1840,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8bf151a-69a6-44f1-a01d-0d27a04e2679")
-		(property "Reference" "R8"
+		(property "Reference" "R4"
 			(at 64.77 72.3899 0)
 			(effects
 				(font
@@ -1839,7 +1849,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15"
+		(property "Value" "120"
 			(at 64.77 74.9299 0)
 			(effects
 				(font
@@ -1884,7 +1894,7 @@
 		(instances
 			(project "schematics"
 				(path "/80fd03a6-880b-48dc-a242-8249a5f2b9bf"
-					(reference "R8")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -1900,7 +1910,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd7c11ea-b269-4e20-b351-c46a902d9101")
-		(property "Reference" "V2"
+		(property "Reference" "V1"
 			(at 33.02 67.1801 0)
 			(effects
 				(font
@@ -1909,7 +1919,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3"
+		(property "Value" "5"
 			(at 33.02 69.7201 0)
 			(effects
 				(font
@@ -1982,7 +1992,7 @@
 		(instances
 			(project "schematics"
 				(path "/80fd03a6-880b-48dc-a242-8249a5f2b9bf"
-					(reference "V2")
+					(reference "V1")
 					(unit 1)
 				)
 			)
@@ -1990,7 +2000,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 186.69 49.53 270)
+		(at 116.84 58.42 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1999,7 +2009,7 @@
 		(fields_autoplaced yes)
 		(uuid "cf4d12b9-2462-46ea-a321-2f716c502f40")
 		(property "Reference" "#PWR01"
-			(at 180.34 49.53 0)
+			(at 110.49 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2008,7 +2018,7 @@
 			)
 		)
 		(property "Value" "Gnd"
-			(at 182.88 49.5299 90)
+			(at 113.03 58.4199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2017,7 +2027,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 49.53 0)
+			(at 116.84 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2026,7 +2036,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 49.53 0)
+			(at 116.84 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2035,7 +2045,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 186.69 49.53 0)
+			(at 116.84 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2063,9 +2073,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f164bc7f-9982-4f66-bc07-aaaedf12b574")
-		(property "Reference" "R7"
+		(property "Reference" "R3"
 			(at 64.77 40.6399 0)
 			(effects
 				(font
@@ -2074,7 +2083,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "62.5"
+		(property "Value" "500"
 			(at 64.77 43.1799 0)
 			(effects
 				(font
@@ -2119,7 +2128,7 @@
 		(instances
 			(project "schematics"
 				(path "/80fd03a6-880b-48dc-a242-8249a5f2b9bf"
-					(reference "R7")
+					(reference "R3")
 					(unit 1)
 				)
 			)

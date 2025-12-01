@@ -3,7 +3,7 @@ title: Electronics projects
 
 meta:
   - name: description
-    content: Class-A
+    content: Class-A (Common collector) 
 
 ---
 
@@ -29,13 +29,15 @@ The goal is to understand a class A common emitter amplifier.
 # Components
 | Reference | Value | Remarks |
 | :------------- | :------------- | :------------- |
-| 4x | Based on calculations | Calculated for DC and AC |
-| 4x | Based on calculations | Calculated for AC |
-| BC547 | transistor |  |
+| 4x | Capacitors | Calculated for AC |
+| 3x | Resistors | Calculated for DC and AC |
+| BC547 | Transistor |  |
 
 # DC circuit
 ## Circuit
 > <img src="images/dc_schematics.svg">
+
+The values given in the circuit are calculated in the calculations below. The given values 
 
 ## Formulas
 Choose a collector current through R3. The formula for R3 becomes. 
@@ -263,7 +265,7 @@ Calculating the resistor R2 is Vb divided by bias current.
 </math>
 
 ## Calculations
-Ic max for a BC547 is 800mA. We choose the Ic to be 10% of Ic max therefore 80mA. We choose a Vcc of 10V. This makes R3.
+Ic max for a BC547 is 100mA. We choose the Ic to be 10% of Ic max therefore 10mA. We choose a Vcc of 10V. This makes R3.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
@@ -277,11 +279,13 @@ Ic max for a BC547 is 800mA. We choose the Ic to be 10% of Ic max therefore 80mA
             <mo>=</mo>
             <mfrac>
               <mfrac>
-                <mrow>
+                <msub>
                   <mi>V</mi>
-                  <mi>c</mi>
-                  <mi>c</mi>
-                </mrow>
+                  <mrow data-mjx-texclass="ORD">
+                    <mi>c</mi>
+                    <mi>c</mi>
+                  </mrow>
+                </msub>
                 <mn>2</mn>
               </mfrac>
               <msub>
@@ -291,12 +295,9 @@ Ic max for a BC547 is 800mA. We choose the Ic to be 10% of Ic max therefore 80mA
             </mfrac>
             <mo>=</mo>
             <mfrac>
-              <mfrac>
-                <mn>10</mn>
-                <mn>2</mn>
-              </mfrac>
+              <mn>5</mn>
               <mrow>
-                <mn>80</mn>
+                <mn>10</mn>
                 <mo>&#xD7;</mo>
                 <msup>
                   <mn>10</mn>
@@ -305,11 +306,10 @@ Ic max for a BC547 is 800mA. We choose the Ic to be 10% of Ic max therefore 80mA
                     <mn>3</mn>
                   </mrow>
                 </msup>
-                <mo stretchy="false">]</mo>
               </mrow>
             </mfrac>
             <mo>=</mo>
-            <mn>62.5</mn>
+            <mn>500</mn>
           </mtd>
         </mtr>
       </mtable>
@@ -341,13 +341,9 @@ The emitter voltage should be around 10%-15% of Vcc. If we assume Ie=Ic the R4 i
             </mfrac>
             <mo>=</mo>
             <mfrac>
+              <mn>1.2</mn>
               <mrow>
                 <mn>10</mn>
-                <mo>&#xD7;</mo>
-                <mn>0.12</mn>
-              </mrow>
-              <mrow>
-                <mn>80</mn>
                 <mo>&#xD7;</mo>
                 <msup>
                   <mn>10</mn>
@@ -359,7 +355,7 @@ The emitter voltage should be around 10%-15% of Vcc. If we assume Ie=Ic the R4 i
               </mrow>
             </mfrac>
             <mo>=</mo>
-            <mn>15</mn>
+            <mn>120</mn>
           </mtd>
         </mtr>
       </mtable>
@@ -367,7 +363,7 @@ The emitter voltage should be around 10%-15% of Vcc. If we assume Ie=Ic the R4 i
   </mstyle>
 </math>
 <br><br>
-Calculating Ib we use use a value of 120 for the hfe as the typical value.
+Calculating Ib we use use a value of 400 for the hfe as the typical value.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
@@ -393,7 +389,7 @@ Calculating Ib we use use a value of 120 for the hfe as the typical value.
             <mo>=</mo>
             <mfrac>
               <mrow>
-                <mn>80</mn>
+                <mn>10</mn>
                 <mo>&#xD7;</mo>
                 <msup>
                   <mn>10</mn>
@@ -403,10 +399,10 @@ Calculating Ib we use use a value of 120 for the hfe as the typical value.
                   </mrow>
                 </msup>
               </mrow>
-              <mn>120</mn>
+              <mn>400</mn>
             </mfrac>
             <mo>=</mo>
-            <mn>667</mn>
+            <mn>25</mn>
             <mo>&#xD7;</mo>
             <msup>
               <mn>10</mn>
@@ -460,12 +456,20 @@ Calculating Vb we add 0.7V to the expected Ve.
 <br><br>
 Calculating current through R1 and R2.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
+  <mstyle displaystyle="true" scriptlevel="0"  style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
           <mtd>
-            <mi>I</mi>
+            <msub>
+              <mi>I</mi>
+              <mrow data-mjx-texclass="ORD">
+                <mi>r</mi>
+                <mn>1</mn>
+                <mi>r</mi>
+                <mn>2</mn>
+              </mrow>
+            </msub>
             <mo>=</mo>
             <msub>
               <mi>I</mi>
@@ -474,23 +478,13 @@ Calculating current through R1 and R2.
             <mo>&#xD7;</mo>
             <mn>10</mn>
             <mo>=</mo>
-            <mn>667</mn>
+            <mn>250</mn>
             <mo>&#xD7;</mo>
             <msup>
               <mn>10</mn>
               <mrow data-mjx-texclass="ORD">
                 <mo>&#x2212;</mo>
                 <mn>6</mn>
-              </mrow>
-            </msup>
-            <mo>&#xD7;</mo>
-            <mn>10</mn>
-            <mo>=</mo>
-            <msup>
-              <mn>6.67</mn>
-              <mrow data-mjx-texclass="ORD">
-                <mo>&#x2212;</mo>
-                <mn>3</mn>
               </mrow>
             </msup>
           </mtd>
@@ -545,7 +539,7 @@ Calculating the resistor R1.
                 <mn>1.9</mn>
               </mrow>
               <mrow>
-                <mn>6.67</mn>
+                <mn>10</mn>
                 <mo>&#xD7;</mo>
                 <msup>
                   <mn>10</mn>
@@ -557,7 +551,7 @@ Calculating the resistor R1.
               </mrow>
             </mfrac>
             <mo>=</mo>
-            <mn>1214</mn>
+            <mn>32400</mn>
           </mtd>
         </mtr>
       </mtable>
@@ -567,7 +561,7 @@ Calculating the resistor R1.
 <br><br>
 Calculating R2.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
+  <mstyle displaystyle="true" scriptlevel="0">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -596,7 +590,7 @@ Calculating R2.
             <mfrac>
               <mn>1.9</mn>
               <mrow>
-                <mn>6.67</mn>
+                <mn>10</mn>
                 <mo>&#xD7;</mo>
                 <msup>
                   <mn>10</mn>
@@ -608,7 +602,7 @@ Calculating R2.
               </mrow>
             </mfrac>
             <mo>=</mo>
-            <mn>285</mn>
+            <mn>7600</mn>
           </mtd>
         </mtr>
       </mtable>
@@ -619,15 +613,28 @@ Calculating R2.
 ## Simulation
 > <img src="images/simulation_dc.png">
 
+The output voltage decreases as the input voltage increases. As the voltage of Vbe increases this causes the resitance over
+CE to decrease which causes a greater amount of voltage to be stored on R3. So the output phase is 180 degrees of the input.
+<br><br>
+When the input voltage is 0.4V, the output is 4.9V and at 1.4V the output is 1.14V. This gives a voltage gain of 3.76.
 
 # AC
-## Formulas
-
-## Calculations
+## Circuit
+> <img src="images/ac_schematics.svg">
 
 ## Simulation
+> <img src="images/simulation_ac.png">
+
+This simulation uses the values in the circuit and gives a nice sine curve as long as it remains within 
+0.4V and 1.4V.
+
+## Too high amplitude
+> <img src="images/simulation_ac_too_high_amplitude.png">
+
+With an amplitude to high this causes the output to have flattened curves on top and bottom. 
 
 # Changelog
 | Date | Change |
 | :---- | :---- |
-| 2025-11-30 | Adds circuit and calculations for DC |
+| 2025-11-30 | Adds dc circuit and calculations for DC |
+| 2025-12-01 | Adds ac circuit and simulations |
