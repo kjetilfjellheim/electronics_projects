@@ -47,7 +47,7 @@ The values given in the circuit are calculated in the calculations below. The gi
 ## Formulas
 The theoretical voltage gain for a common emitter amplifier is.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -302,7 +302,7 @@ Calculating the resistor R2 is Vb divided by bias current.
 ## Calculations
 Calculating gain
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -700,7 +700,7 @@ When the input voltage is 0.4V, the output is 4.9V and at 1.4V the output is 1.1
 ## Formulas
 The input impedance is approximately.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -766,7 +766,7 @@ Calculating C1. This should be for the lower frequency for -3db.
 <br><br>
 C2 is used for power supply decoupling. Usually this value is between 1u and 10u. The formula for approximate it is.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -797,7 +797,7 @@ C2 is used for power supply decoupling. Usually this value is between 1u and 10u
 <br><br>
 Calculatuing C3 as a bypass capacitor. The frequency is for the lower cutoff.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -830,7 +830,7 @@ Calculatuing C3 as a bypass capacitor. The frequency is for the lower cutoff.
 <br><br>
 Calculating C4. This should be for the lower frequency for -3db.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -867,7 +867,7 @@ Calculating C4. This should be for the lower frequency for -3db.
 ## Calculations
 First calculating input impedance. 
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -975,7 +975,7 @@ We calculate C1 with a -3db at 50Hz. The input impedance of the input with R2 an
 <br><br>
 We calculate C2.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -1028,7 +1028,7 @@ We calculate C2.
 <br><br>
 Calculating the buypass capacitor, C3.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -1087,7 +1087,7 @@ Calculating the buypass capacitor, C3.
 <br><br>
 Calculating C4. We assume thout load to the circuit (external) is 10k.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
