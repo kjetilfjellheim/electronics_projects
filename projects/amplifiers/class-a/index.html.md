@@ -795,7 +795,7 @@ C2 is used for power supply decoupling. Usually this value is between 1u and 10u
   </mstyle>
 </math>
 <br><br>
-Calculatuing C3 as a bypass capacitor. The frequency is for the lower cutoff.
+Calculating C3 as a bypass capacitor. The frequency is for the lower cutoff.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
@@ -918,7 +918,7 @@ First calculating input impedance.
   </mstyle>
 </math>
 <br><br>
-We calculate C1 with a -3db at 50Hz. The input impedance of the input with R2 and C1 is approximately 7600. This will need tuning when the circuit is set up as it's only approximately.
+We calculate C1 with a -3db at 50Hz. The impedance of the input with R2 and C1 is approximately 5400. This will need tuning when the circuit is set up as it's only approximately.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
@@ -939,8 +939,8 @@ We calculate C1 with a -3db at 50Hz. The input impedance of the input with R2 an
                 <msub>
                   <mi>Z</mi>
                   <mi>i</mi>
+                  <mi>n</mi>
                 </msub>
-                <mi>n</mi>
               </mrow>
             </mfrac>
             <mo>=</mo>
@@ -1141,7 +1141,7 @@ Calculating C4. We assume thout load to the circuit (external) is 10k.
   </mstyle>
 </math>
 
-## Circuit<!-- pagebreak -->
+## Circuit
 > <img src="images/ac_schematics.svg">
 
 Compared to the DC circuit we have added four capacitors. 
@@ -1156,10 +1156,10 @@ C4 is used to define a lowpass filter with R3.<br>
 The circuits gain have now increased. Vin peak to peak is now 0.06V, but the output is between 0.88V-4.45V. The gain therefore increased 
 to around -59 (theoretical). There is a very slight distortion as the top is slightly wider than the bottom. 
 <br><br>
-The lower-than-theoretical gain occurs because:
-- C3 doesn't fully bypass R4 at 50Hz startup transient
-- Some AC voltage still appears across R4
-- Transistor output impedance reduces gain
+The lower-than-theoretical gain occurs because:<br>
+- C3 doesn't fully bypass R4 at 50Hz startup transient<br>
+- Some AC voltage still appears across R4<br>
+- Transistor output impedance reduces gain<br>
 
 ## Too high amplitude
 > <img src="images/simulation_ac_too_high_amplitude.png">
