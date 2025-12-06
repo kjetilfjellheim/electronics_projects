@@ -60,4 +60,4 @@ It will take some time to document all projects and add proper documentation as 
 ## Basics
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
-| Emitter bypass capacitor| [here](projects/basics/emitter_bypass_capacitor/) | <p style="color:orange;">In progress</p> |
+| Emitter bypass capacitor| [here](projects/basics/emitter_bypass_capacitor/) | <p style="color:green;">Completed</p> |

@@ -6,7 +6,7 @@ meta:
     content: Emitter Bypass Capacitor
 ---
 
-# Logic and with transistor
+# Emitter Bypass Capacitor
 The goal is to understand how an emitter bypass capacitor works and test a few error situations
 
 # Goals
