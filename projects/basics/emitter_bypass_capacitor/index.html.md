@@ -223,10 +223,10 @@ Using a variable resistor in series with R2 I got could increase the gain to -11
 The measured voltage over the bypass capacitor and R1 is around 0.93V.
 
 ## Practical measurements (current)
-> <img src="./images/practical measurements_ideal_current.png">
+> <img src="./images/practical_measurements_ideal_current.png">
 
 Adds a Multimeter for measuring AC and DC current to ground.
-
+<br><br>
 The DC current was always 0A for all frequencies. This is due to the capacitor being being fully charged and acts as an open circuit. 
 <br><br>
 
@@ -345,7 +345,7 @@ Increasing the bypass capacitor value makes the voltage much more stable, but ta
 for either value.
 
 ## Practical measurements
-> <img src="./images/practical_measurement_high_bypass_cap.png"
+> <img src="./images/practical_measurement_high_bypass_cap.png">
 
 With an increases bypass capacitor of 1mF the output voltage stil looks ok. The voltage over R2 is now very stable. By setting the the input to 0.01Vpp I could get the output to 2Vpp. This gives a gain of 200.
 
@@ -375,7 +375,7 @@ Used a 100nF capacitor for this test. The output still looks like a proper sine,
 Using the ideal circuit I increased the dc offset of the input. This causes the negative part of the output is now clipped so it's no longer a nice sine wave. Increasing it even further the output eventually starts clippping on the upper part as well.
 
 ## Practical measurements
-> <img src="./images/practical measurements_high_amplitude.png">
+> <img src="./images/practical_measurements_high_ampl.png">
 
 Increasing the amplitude eventually the negative part becomes cut off. 
 
