@@ -8,6 +8,7 @@ meta:
 
 # Logic and with transistor
 The goal is to understand how an emitter bypass capacitor works and test a few error situations
+
 # Goals
 - [x] Document schematic in Kicad
 - [ ] Do a theoretical analyis 
@@ -218,6 +219,50 @@ The calculated gain of the ideal circuit is -62.
 Did not have the exact values for the capacitor or resistors so I used the closest I had. 
 R1 is 3.2k, R2 is 800 ohm and the capacitor is 43uF. This gives a Vpp out 1.6V and input is 0.02V which gives a gain of -80. 
 Using a variable resistor in series with R2 I got could increase the gain to -110.
+<br><br>
+The measured voltage over the bypass capacitor and R1 is around 0.93V.
+
+## Practical measurements (current)
+> <img src="./images/practical measurements_ideal_current.png">
+
+Adds a Multimeter for measuring AC and DC current to ground.
+
+The DC current was always 0A for all frequencies. This is due to the capacitor being being fully charged and acts as an open circuit. 
+<br><br>
+
+| Frequency | Current AC |
+| :------ | :------ |
+| 10 | 42uA |
+| 20 | 50uA |
+| 30 | 57uA |
+| 40 | 61uA |
+| 50 | 63uA |
+| 60 | 65uA |
+| 70 | 66uA |
+| 80 | 67uA |
+| 90 | 68uA |
+| 100 | 68uA |
+| 200 | 70uA |
+| 300 | 70uA |
+| 400 | 70uA |
+| 500 | 70uA |
+| 1k | 70uA |
+| 7k | 70uA |
+| 8k | 69uA |
+| 9k | 69uA |
+| 10k | 69uA |
+| 20k | 68uA |
+| 30k | 67uA |
+| 40k | 67uA |
+| 50k | 66uA |
+| 60k | 65uA |
+| 70k | 64uA |
+| 80k | 63uA |
+| 90k | 62uA |
+| 100k | 61uA |
+
+<br><br>
+The AC current flows freely due to the low impedance to ground. 
 
 # No bypass capacitor
 ## Simulation
@@ -330,9 +375,10 @@ Used a 100nF capacitor for this test. The output still looks like a proper sine,
 Using the ideal circuit I increased the dc offset of the input. This causes the negative part of the output is now clipped so it's no longer a nice sine wave. Increasing it even further the output eventually starts clippping on the upper part as well.
 
 ## Practical measurements
+> <img src="./images/practical measurements_high_amplitude.png">
 
 ## Changelog
 | Date | Change |
 | :---- | :---- |
 | 2025-11-03 | Added schematics and future tests |
-| 2025-11-06 | Added multiple practical measurements and high amplituse simulation |
+| 2025-11-06 | Added multiple practical measurements and simulations |
