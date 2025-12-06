@@ -11,9 +11,9 @@ The goal is to understand how an emitter bypass capacitor works and test a few e
 
 # Goals
 - [x] Document schematic in Kicad
-- [ ] Do a theoretical analyis 
-- [ ] Implement schematic on breadboard
-- [ ] Test circuit and do measurements
+- [x] Do a theoretical analyis 
+- [x] Implement schematic on breadboard
+- [x] Test circuit and do measurements
 
 # Equipment used
 | Equipment | Description |
@@ -368,14 +368,16 @@ Used a 100nF capacitor for this test. The output still looks like a proper sine,
 
 # High input amplitude
 ## Simulation
-> <img src="./images/simulation_high_ampl2.png"
+> <img src="./images/simulation_high_ampl2.png">
 
-> <img src="./images/simulation_high_ampl.png"
+> <img src="./images/simulation_high_ampl.png">
 
 Using the ideal circuit I increased the dc offset of the input. This causes the negative part of the output is now clipped so it's no longer a nice sine wave. Increasing it even further the output eventually starts clippping on the upper part as well.
 
 ## Practical measurements
 > <img src="./images/practical measurements_high_amplitude.png">
+
+Increasing the amplitude eventually the negative part becomes cut off. 
 
 ## Changelog
 | Date | Change |
