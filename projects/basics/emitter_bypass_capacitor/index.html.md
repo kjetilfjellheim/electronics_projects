@@ -321,22 +321,18 @@ Decreasing the capacitor makes the voltage over R2/C1 more and more unstable. It
 
 Used a 100nF capacitor for this test. The output still looks like a proper sine, but the voltage over bypass capacitor and R2 is now  significantly less stable.
 
-# Wrong polarity of the capacitor
-## Simulation
-
-## Practical measurements
-
-## Behavior
-
 # High input amplitude
 ## Simulation
+> <img src="./images/simulation_high_ampl2.png"
+
+> <img src="./images/simulation_high_ampl.png"
+
+Using the ideal circuit I increased the dc offset of the input. This causes the negative part of the output is now clipped so it's no longer a nice sine wave. Increasing it even further the output eventually starts clippping on the upper part as well.
 
 ## Practical measurements
-
-## Behavior
 
 ## Changelog
 | Date | Change |
 | :---- | :---- |
 | 2025-11-03 | Added schematics and future tests |
-| 2025-11-06 | Added multiple practical measurements |
+| 2025-11-06 | Added multiple practical measurements and high amplituse simulation |
