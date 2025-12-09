@@ -133,19 +133,19 @@ Using the ideal capacitance value of 318nF the the output is between 0V and 1V. 
 
 Using a capcitor of value 330nF, since I did not have one at 318nF. The result is the same as on the simulation. 
 
-# Too low capacitor
+# Too small capacitor
 ## Simulation
 > <img src="./images/simulation_1k_1n.png">
 
 Using a significantly lower capacitor the output over the resistor becomes very attenuated.
 
 ## Practical measurements
-> <img src="./images/simulation_1k_1n.png">
+> <img src="./images/practical_measurement_1k_1n.png">
 
 Using a lower cpacitance the output is now attenuated significantly. Since the voltage is shared between the resistor and capacitor when the reactance is high it means more of the voltage is on the capacitor.
 A smaller capacitor also creates a higher cutoff frequency. With a 1nF capacitor the cutoff frequency becomes 16khz.
 
-# Too high capacitor
+# Too big capacitor
 ## Simulation
 > <img src="./images/simulation_1k_1m.png">
 
@@ -153,7 +153,7 @@ Using a significantly higher capacitor the output does not change compared to th
 to initialize the circuit.This capacitor value also changes the cutoff frequency from 50Hz to 0.016hz.
 
 ## Practical measurements
-> <img src="./images/simulation_1k_1m.png">
+> <img src="./images/practical_measurement_1k_1m.png">
 
 The measurement using a 1mF capacitor. The purple is the input and yellow is the voltage over the resistor. The DC offset have been removed and is indistinguishable from the ideal.
 
@@ -165,7 +165,7 @@ This shows the attenuation of the output as over 1hz to 100khz. At 50hz the atte
 
 ## Practical measurements
 
-Measurements
+Measurements done with multimeter. 
 
 | Frequency | Vtrms |
 | :--- | :--- |
