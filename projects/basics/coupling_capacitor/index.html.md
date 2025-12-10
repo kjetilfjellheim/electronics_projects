@@ -29,7 +29,7 @@ The goal is to understand how a coupling capacitor works.
 | C1 | 1n, 318n, 1m | |
 
 # Circuit
-> <img src="./images/Schematic.svg">
+> <img src="./images/schematics.svg">
 
 The circuit consists of a coupling capacitor (C1) in series with a load resistor (R1). The capacitor blocks DC components while allowing AC signals to pass through to the load resistor, effectively isolating the DC bias from subsequent stages.
 
@@ -127,23 +127,27 @@ All simulations are run  with a DC component of 1V and an AC amplitude of 0.5V. 
 > <img src="./images/simulation_1k_318n.png">
 
 Using the ideal capacitance value of 318nF the the output is between 0V and 1V. The DC component have been removed.
+Green is the input voltage and blue is the voltage over the resistor.
 
 ## Practical measurements
 > <img src="./images/practical_measurement_1k_318n.png">
 
 Using a capcitor of value 330nF, since I did not have one at 318nF. The result is the same as on the simulation. 
+Purple is the input voltage and yellow is the output voltage over the resistor.
 
 # Too small capacitor
 ## Simulation
 > <img src="./images/simulation_1k_1n.png">
 
 Using a significantly lower capacitor the output over the resistor becomes very attenuated.
+Green is the input voltage and blue is the voltage over the resistor.
 
 ## Practical measurements
 > <img src="./images/practical_measurement_1k_1n.png">
 
 Using a lower cpacitance the output is now attenuated significantly. Since the voltage is shared between the resistor and capacitor when the reactance is high it means more of the voltage is on the capacitor.
 A smaller capacitor also creates a higher cutoff frequency. With a 1nF capacitor the cutoff frequency becomes 16khz.
+Purple is the input voltage and yellow is the output voltage over the resistor.
 
 # Too big capacitor
 ## Simulation
@@ -151,11 +155,13 @@ A smaller capacitor also creates a higher cutoff frequency. With a 1nF capacitor
 
 Using a significantly higher capacitor the output does not change compared to the ideal. The only difference is the time it takes 
 to initialize the circuit.This capacitor value also changes the cutoff frequency from 50Hz to 0.016hz.
+Green is the input voltage and blue is the voltage over the resistor.
 
 ## Practical measurements
 > <img src="./images/practical_measurement_1k_1m.png">
 
 The measurement using a 1mF capacitor. The purple is the input and yellow is the voltage over the resistor. The DC offset have been removed and is indistinguishable from the ideal.
+Purple is the input voltage and yellow is the output voltage over the resistor.
 
 # Different frequencies
 ## Simulation
@@ -173,7 +179,7 @@ Measurements done with multimeter.
 | 20 | 0.059 | 
 | 30 | 0.081 | 
 | 40 | 0.100 |
-| 50 | 0.114 |
+| 50 | 0.114 | 
 | 60 | 0.125 |
 | 70 | 0.134 |
 | 80 | 0.141 |
@@ -197,3 +203,4 @@ This shows the measured frequency response measured using a multimeter. The calc
 | Date | Change |
 | :---- | :---- |
 | 2025-12-09 | Simulations and practical measurements added |
+| 2025-12-10 | Updated a few descriptions and fixed schecmatics image |

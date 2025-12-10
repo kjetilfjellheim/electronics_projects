@@ -26,5 +26,5 @@ set label "50 Hz (-3db)" at 40, graph 0.55 center textcolor rgb "red"
 set key autotitle columnheader
 set key bottom right
 
-plot "data.csv" using 1:2 smooth csplines linewidth 1 title "Vtrms", \
+plot "coupling_capacitor_frequency_response.csv" using 1:2 smooth csplines linewidth 1 title "Vtrms", \
      "" using 1:2 with points pointtype 3 pointsize 0 linecolor rgb "blue" notitle

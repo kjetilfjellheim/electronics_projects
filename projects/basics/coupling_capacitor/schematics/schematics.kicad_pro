@@ -387,16 +387,8 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -409,7 +401,7 @@
   },
   "sheets": [
     [
-      "1dab1a3c-f23f-4b35-a452-85af69087746",
+      "5bf55d5f-63cc-4f6e-b088-a59ef8f520d7",
       "Root"
     ]
   ],
