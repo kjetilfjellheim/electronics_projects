@@ -170,6 +170,9 @@ Purple is the input voltage and yellow is the output voltage over the resistor.
 This shows the attenuation of the output as over 1hz to 100khz. At 50hz the attenuation is -3db. 
 
 ## Practical measurements
+> <img src="./images/coupling_capacitor_frequency_response.png">
+
+This shows the measured frequency response measured using a multimeter. The calculated attenuation at -3db is close to the measured -3db attenuation. 
 
 Measurements done with multimeter. 
 
@@ -194,10 +197,6 @@ Measurements done with multimeter.
 | 800 | 0.178 |
 | 1000 | 0.178 |
 
-Gives the following plot
-> <img src="./images/coupling_capacitor_frequency_response.png">
-
-This shows the measured frequency response measured using a multimeter. The calculated attenuation at -3db is close to the measured -3db attenuation. 
 
 # Changelog
 | Date | Change |
