@@ -40,6 +40,8 @@ It will take some time to document all projects and add proper documentation as 
 | 555 | Timer | [here](projects/ic/555/) | <p style="color:green;">Completed</p> |
 | 7555 | Timer | [here](projects/ic/555/) | <p style="color:green;">Completed</p> |
 | LM741 | Operational amplifier | [here](projects/ic/lm741/) | <p style="color:orange;">In progress</p> |
+| UM66T | Meldoy generator | [here](projects/ic/umt66t/) | <p style="color:green;">Completed</p> |
+
 
 ## Voltage doublers and charge pumps
 | Circuit | Documentation | Status |
