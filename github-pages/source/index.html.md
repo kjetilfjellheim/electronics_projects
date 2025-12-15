@@ -42,7 +42,6 @@ It will take some time to document all projects and add proper documentation as 
 | LM741 | Operational amplifier | [here](projects/ic/lm741/) | <p style="color:orange;">In progress</p> |
 | UM66T | Meldoy generator | [here](projects/ic/um66t/) | <p style="color:green;">Completed</p> |
 
-
 ## Voltage doublers and charge pumps
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
@@ -57,7 +56,7 @@ It will take some time to document all projects and add proper documentation as 
 | Class A| [here](projects/amplifiers/class-a/) | <p style="color:orange;">In progress</p> |
 | Non-inverting| [here](projects/amplifiers/non_inverting/) | <p style="color:green;">Completed</p> |
 | Inverting| [here](projects/amplifiers/inverting/) | <p style="color:green;">Completed</p> |
-| Unity-gain| [here](projects/amplifiers/unity_gain/) | <p style="color:orange;">In progress</p> |
+| Unity-gain| [here](projects/amplifiers/unity_gain/) | <p style="color:green;">Completed</p> |
 
 ## Basics
 | Circuit | Documentation | Status |
