@@ -74,14 +74,17 @@ So the formula becomes.
 # Practical measurements
 The measurements were done with a supply voltage of 10V.
 
+## Within operating range
 > <img src="./images/practical_measurement_1khz_1V_3_5V.png">
 
 With a measurement input signal of 1khz, 1V amplitude and 3.5V offset. The signal out and singal in is almost identical.
 
+## Outside operating range
 > <img src="./images/practical_measurement_1khz_1V_0_5V.png">
 
 With a measurement signal of 1khz, 1V amplitude and 0.5V offset the output signal does not match the input signal. This is beacuse the signal is outisde of the LM741 operating range.
 
+## Far outside circuits range
 > <img src="./images/practical_measurement_1khz_20V_0V.png">
 
 This is an even worse signal as above. The signal is 1khz, 20V amplitude and 0V offset. Since this is far outside the operating range and the supply voltages, the output is being cut both 
