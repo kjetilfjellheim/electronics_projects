@@ -11,10 +11,10 @@ meta:
 The goal is to understand a differential amplifier.
 
 # Goals
-- [ ]  Document schematic in Kicad
-- [ ]  Do a theoretical analyis 
-- [ ] Implement schematic on breadboard
-- [ ] Test circuit and do measurements
+- [x]  Document schematic in Kicad
+- [x]  Do a theoretical analyis 
+- [x] Implement schematic on breadboard
+- [x] Test circuit and do measurements
 
 # Equipment used
 | Equipment | Description |
@@ -37,7 +37,7 @@ This schematic returns the differential between Vin1 and Vin2. By the formulas t
 # Formulas
 This calculation calculates the differential between the input voltages. For schematic this assumes that R1=R4 and R2=R3.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -91,7 +91,7 @@ This calculation calculates the differential between the input voltages. For sch
 # Calculations
 This calculates the max output voltage. All resistors are 1k. The max input voltage is 8V for Vin2 and max input voltage for Vin1 is 4.88V.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -162,7 +162,7 @@ This calculates the max output voltage. All resistors are 1k. The max input volt
 </math>
 
 # Practical measurements
-> <img src="./images/practical_measurement_8_and_3_12.png">
+> <img src="./images/practical_measurement_6_96_and_2_96.png">
 
 For this measurement the input for Vin2 is a sine of 1khz, peak to peak voltage of 1V and offset of 6.5V. Vin1 is a dc voltage of 4V. The 
 Following measurents were done.
