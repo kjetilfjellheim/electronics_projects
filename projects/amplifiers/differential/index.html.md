@@ -168,9 +168,10 @@ For this measurement the input for Vin2 is a sine of 1khz, peak to peak voltage 
 Following measurents were done.
 
 | | Vin2 | Vin1 | Calculated Vout | Measured Vout |
-| | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
 | Min | 5.84V | 3.92V | 2.00 | 1.92V |
 | Max | 6.96V | 4.08V | 3.00 | 2.88V |
+
 <br><br>
 The measurement is close to the theoretical calculations. The difference is can be explained by inaccurate resistor values and inaccurate equipment.
 
