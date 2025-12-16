@@ -49,14 +49,17 @@ It will take some time to document all projects and add proper documentation as 
 | Multi-stage Villard circuit | [here](projects/voltage_multipliers/multi_stage_villard_circuit/) | <p style="color:orange;">In progress</p> |
 | Single-stage Greinacher circuit | [here](projects/voltage_multipliers/single_stage_greinacher_circuit/) | <p style="color:green;">Completed</p> |
 
-## Amplifiers
+## Effect amplifiers
+| Class A| [here](projects/amplifiers/class-a/) | <p style="color:orange;">In progress</p> |
+
+## Operational Amplifiers
 | Circuit | Documentation | Status |
 | :--- | :--- | :--- |
 | Theory| [here](projects/amplifiers/theory/) | <p style="color:orange;">In progress</p> |
-| Class A| [here](projects/amplifiers/class-a/) | <p style="color:orange;">In progress</p> |
 | Non-inverting| [here](projects/amplifiers/non_inverting/) | <p style="color:green;">Completed</p> |
 | Inverting| [here](projects/amplifiers/inverting/) | <p style="color:green;">Completed</p> |
 | Unity-gain| [here](projects/amplifiers/unity_gain/) | <p style="color:green;">Completed</p> |
+| Differential| [here](projects/amplifiers/differential/) | <p style="color:green;">Completed</p> |
 
 ## Basics
 | Circuit | Documentation | Status |
