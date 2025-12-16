@@ -50,6 +50,8 @@ It will take some time to document all projects and add proper documentation as 
 | Single-stage Greinacher circuit | [here](projects/voltage_multipliers/single_stage_greinacher_circuit/) | <p style="color:green;">Completed</p> |
 
 ## Effect amplifiers
+| Circuit | Documentation | Status |
+| :--- | :--- | :--- |
 | Class A| [here](projects/amplifiers/class-a/) | <p style="color:orange;">In progress</p> |
 
 ## Operational Amplifiers
@@ -60,6 +62,7 @@ It will take some time to document all projects and add proper documentation as 
 | Inverting| [here](projects/amplifiers/inverting/) | <p style="color:green;">Completed</p> |
 | Unity-gain| [here](projects/amplifiers/unity_gain/) | <p style="color:green;">Completed</p> |
 | Differential| [here](projects/amplifiers/differential/) | <p style="color:green;">Completed</p> |
+| Integrator| [here](projects/amplifiers/integrator/) | <p style="color:orange;">In progress</p> |
 
 ## Basics
 | Circuit | Documentation | Status |
