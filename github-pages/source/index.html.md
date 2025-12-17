@@ -62,7 +62,7 @@ It will take some time to document all projects and add proper documentation as 
 | Inverting| [here](projects/amplifiers/inverting/) | <p style="color:green;">Completed</p> |
 | Unity-gain| [here](projects/amplifiers/unity_gain/) | <p style="color:green;">Completed</p> |
 | Differential| [here](projects/amplifiers/differential/) | <p style="color:green;">Completed</p> |
-| Integrator| [here](projects/amplifiers/integrator/) | <p style="color:orange;">In progress</p> |
+| Integrator| [here](projects/amplifiers/integrator/) | <p style="color:green;">Completed</p> |
 
 ## Basics
 | Circuit | Documentation | Status |
