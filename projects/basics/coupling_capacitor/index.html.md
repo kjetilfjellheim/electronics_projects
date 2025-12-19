@@ -36,7 +36,7 @@ The circuit consists of a coupling capacitor (C1) in series with a load resistor
 # Formulas
 This formula calculates the required capacitance (C) given the desired cutoff frequency (fc) at -3dB and the load resistance (RL).
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -68,7 +68,7 @@ This formula calculates the required capacitance (C) given the desired cutoff fr
 # Calculations
 Calculates the capacitance (C1) for a load of 10k and a cutoff frequency at 50hz.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>

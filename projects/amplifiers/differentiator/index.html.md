@@ -11,8 +11,8 @@ meta:
 The goal is to understand a differentiator amplifier.
 
 # Goals
-- [x]  Document schematic in Kicad
-- [x]  Do a theoretical analyis 
+- [x] Document schematic in Kicad
+- [x] Do a theoretical analyis 
 - [x] Implement schematic on breadboard
 - [x] Test circuit and do measurements
 
@@ -39,7 +39,7 @@ The goal is to understand a differentiator amplifier.
 Calculating the C1 capacitor value. From this site https://www.ti.com/lit/an/sboa276c/sboa276c.pdf?ts=1766042111356 the value should be
 set the minimum differentiation frequency at least half a decade below the minimum operating frequency.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -77,7 +77,7 @@ set the minimum differentiation frequency at least half a decade below the minim
 </math>
 Using the same site as above the set the upper cutoff frequency at least half a decade above the maximum operating frequency.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -117,7 +117,7 @@ Using the same site as above the set the upper cutoff frequency at least half a 
 </math>
 Calculate the bandwidth.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -169,7 +169,7 @@ Calculate the bandwidth.
 </math>
 If C2 is placed in paralell with R2 then calculate cutoff frequency using this formula.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -205,7 +205,7 @@ If C2 is placed in paralell with R2 then calculate cutoff frequency using this f
 # Calculations
 Choose a high resistance value for R2. This is so that we later when calculating C1 the value is manageable. In this case I arbitrarily used a 470k resistor.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -223,7 +223,7 @@ Choose a high resistance value for R2. This is so that we later when calculating
 </math>
 Calculated the C1 capacitor value. Chose the value I had that was closest greater than the calculated value.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -296,7 +296,7 @@ Calculated the C1 capacitor value. Chose the value I had that was closest greate
 </math>
 Calculating the resistor value for R1 for a max frequency of 100khz.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
@@ -367,7 +367,7 @@ Calculating the resistor value for R1 for a max frequency of 100khz.
 </math>
 Calculate C2 0000
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mstyle displaystyle="true" scriptlevel="0">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
     <mrow data-mjx-texclass="ORD">
       <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
         <mtr>
