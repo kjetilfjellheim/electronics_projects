@@ -13,7 +13,7 @@ meta:
 This calculates the current for a star system with two input power supplies and one output. This is a calculation for two unknowns.
 
 ## Schematics
-> <img src="./images/Schematic.svg">
+> <img src="./images/schematics.svg">
 
 ## Calculations
 Using the following formulas for a two branch solution.
@@ -587,11 +587,10 @@ Calculating the values for I1 and I2.
             <mo>=</mo>
             <mo>&#x2212;</mo>
             <mfrac>
-              <mn>231</mn>
+              <mn>-231</mn>
               <mn>45680</mn>
             </mfrac>
             <mo>=</mo>
-            <mo>&#x2212;</mo>
             <mn>21.4</mn>
             <mi>m</mi>
             <mi>A</mi>
