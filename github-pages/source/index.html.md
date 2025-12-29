@@ -70,3 +70,8 @@ It will take some time to document all projects and add proper documentation as 
 | :--- | :--- | :--- |
 | Coupling capacitor| [here](projects/basics/coupling_capacitor/) | <p style="color:green;">Completed</p> |
 | Emitter bypass capacitor| [here](projects/basics/emitter_bypass_capacitor/) | <p style="color:green;">Completed</p> |
+
+## Network analysis
+| Circuit | Documentation | Status | 
+| :--- | :--- | :--- |
+| Kirchoffs law (Two unknowns )| [here](projects/network_analysis/kirchoffs_laws/) | <p style="color:orange;">In progress</p> |
