@@ -616,31 +616,67 @@ Practical measurements current.
 This code calculates the currents using Rust.
 
 ```rust
-ndarray = { version = "0.17.1", default-features = true }
-ndarray-linalg = { version = "0.18.0", features = ["openblas-static"] }
-clap = { version = "4.3.14", features = ["derive"] }
-```
+use clap::Parser;
+use ndarray::array;
+use ndarray_linalg::Determinant;
 
-These are trhe dependencies. narray and ndarray-linalg are libraries used for matrices and determinate calculation. 
-clap is used for converting the arguments to a data struct.
-<br>
+/**
+ * This calculates the currents in a simple electrical circuit with two unknown currents.
+ * The circuit is defined by two equations based on Kirchhoff's laws.
+ */
+fn main() {
+    let args = Args::parse();
 
-```rust
+    let d_x: ndarray::Array2<f64> = array![
+        [args.r1 + args.r3, -args.v1],
+        [args.r3, -args.v2]
+    ];
+    let d_y: ndarray::Array2<f64> = array![
+        [args.r3, -args.v1],
+        [args.r2 + args.r3, -args.v2]
+    ];
+    let d: ndarray::Array2<f64> = array![
+        [args.r1 + args.r3, args.r3],
+        [args.r3, args.r2 + args.r3]
+    ];
+
+    println!("D:\n{}", d);
+    println!("Dx:\n{}", d_x);
+    println!("Dy:\n{}", d_y);
+
+    let determinant_dx = -d_x.det().unwrap();
+    let determinant_dy = d_y.det().unwrap();
+    let determinant_d = d.det().unwrap();
+    
+    println!("I1: {}", determinant_dx / determinant_d);
+    println!("I2: {}", determinant_dy / determinant_d);
+    println!("I3: {}", (determinant_dx + determinant_dy) / determinant_d);
+}
+
 #[derive(clap::Parser)]
 struct Args {
+    // Voltage source 1
     #[arg(long, value_parser = clap::value_parser!(f64))]
     v1: f64,
+    // Voltage source 2
     #[arg(long, value_parser = clap::value_parser!(f64))]
     v2: f64,
+    // Resistance source 1
     #[arg(long, value_parser = clap::value_parser!(f64))]
     r1: f64,
+    // Resistance source 2
     #[arg(long, value_parser = clap::value_parser!(f64))]
     r2: f64,
+    // Resistance source 3 to ground
     #[arg(long, value_parser = clap::value_parser!(f64))]
     r3: f64,
 }
 ```
 
+This code uses the clap, narray and ndarray-linalg libraries. 
+narray libraries are used for the matrix initialization and determinants calculation.
+clap is used for converting the arguments to a data struct.
+<br>
 This is the argument struct.<br>
 V1 is the voltage of power supply 1.<br>
 V2 is the voltage of power supply 2.<br>
@@ -648,22 +684,6 @@ R1 is the resistance for the current only from power supply 1.<br>
 R2 is the resistance for the current only from power supply 2.<br>
 R3 is the resistance for the current after combining 1 and two and going towards ground.<br>
 <br>
-
-```rust
-let d_x: ndarray::Array2<f64> = array![
-    [args.r1 + args.r3, -args.v1],
-    [args.r3, -args.v2]
-];
-let d_y: ndarray::Array2<f64> = array![
-    [args.r3, -args.v1],
-    [args.r2 + args.r3, -args.v2]
-];
-let d: ndarray::Array2<f64> = array![
-    [args.r1 + args.r3, args.r3],
-    [args.r3, args.r2 + args.r3]
-];
-```
-
 Sets up the matrices.<br>
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
@@ -812,34 +832,22 @@ Sets up the matrices.<br>
   </mstyle>
 </math>
 <br>
-
-```rust
-let determinant_dx = -d_x.det().unwrap();
-let determinant_dy = d_y.det().unwrap();
-let determinant_d = d.det().unwrap();
-```
-
 Calculate the determinants. I have ignored proper error handling, but complete code
 should handle any determinant calculation error.
 <br>
 
-```rust
-println!("I1: {}", determinant_dx / determinant_d);
-println!("I2: {}", determinant_dy / determinant_d);
-println!("I3: {}", (determinant_dx + determinant_dy) / determinant_d);
-```
-
-Calculates the current through each resistor.
+In the end we calculate the current through each resistor.
 <br>
 <br>
 Full code can be found in the Github repository.
 <br>
 <br>
 With the following input arguments the following is returned. (Args: --v1=7 --v2=9 --r1=47 --r2=100 --r3=280)
+The values have been changed toi only have four decimal places.
 <br>
-I1: 0.021434801569995634<br>
-I2: 0.0030527692978630596<br>
-I3: 0.02448757086785869<br>
+I1: 0.0214<br>
+I2: 0.0030<br>
+I3: 0.0244<br>
 <br>
 These are the same as the practical measurements and the calculations.
 
