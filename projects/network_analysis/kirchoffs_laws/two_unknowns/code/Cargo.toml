@@ -1,0 +1,10 @@
+[package]
+name = "two_unknowns"
+version = "0.1.0"
+edition = "2024"
+description = ""
+
+[dependencies]
+ndarray = { version = "0.17.1", default-features = true }
+ndarray-linalg = { version = "0.18.0", features = ["openblas-static"] }
+clap = { version = "4.3.14", features = ["derive"] }

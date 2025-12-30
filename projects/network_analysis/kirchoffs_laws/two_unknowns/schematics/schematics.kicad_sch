@@ -886,7 +886,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "50c75355-a3dc-4064-8e24-660073ef33e2")
 		(property "Reference" "R2"
 			(at 54.61 36.8299 0)

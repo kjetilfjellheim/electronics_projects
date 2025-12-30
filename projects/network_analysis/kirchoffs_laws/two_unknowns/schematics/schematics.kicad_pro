@@ -242,7 +242,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "schematics_1.kicad_pro",
+    "filename": "schematics.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -394,7 +394,7 @@
         "version": 0
       },
       "model_mode": 4,
-      "workbook_filename": ""
+      "workbook_filename": "schematics.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "./",

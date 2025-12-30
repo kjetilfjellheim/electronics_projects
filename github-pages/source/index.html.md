@@ -74,4 +74,4 @@ It will take some time to document all projects and add proper documentation as 
 ## Network analysis
 | Circuit | Documentation | Status | 
 | :--- | :--- | :--- |
-| Kirchoffs law (Two unknowns )| [here](projects/network_analysis/kirchoffs_laws/) | <p style="color:orange;">In progress</p> |
+| Kirchoffs law (Two unknowns )| [here](projects/network_analysis/kirchoffs_laws/two_unknowns/) | <p style="color:green;">Completed</p> |

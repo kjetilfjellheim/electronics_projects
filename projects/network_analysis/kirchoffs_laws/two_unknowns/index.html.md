@@ -612,4 +612,229 @@ Practical measurements current.
 | I1+I2 | 24.65mA | - | 24.4mA |
 
 ## Code
-This code calculates the values using Rust.
+This code calculates the currents using Rust.
+```rust
+ndarray = { version = "0.17.1", default-features = true }
+ndarray-linalg = { version = "0.18.0", features = ["openblas-static"] }
+clap = { version = "4.3.14", features = ["derive"] }
+```
+These are trhe dependencies. narray and ndarray-linalg are libraries used for matrices and determinate calculation. 
+clap is used for converting the arguments to a data struct.
+<br>
+```rust
+#[derive(clap::Parser)]
+struct Args {
+    #[arg(long, value_parser = clap::value_parser!(f64))]
+    v1: f64,
+    #[arg(long, value_parser = clap::value_parser!(f64))]
+    v2: f64,
+    #[arg(long, value_parser = clap::value_parser!(f64))]
+    r1: f64,
+    #[arg(long, value_parser = clap::value_parser!(f64))]
+    r2: f64,
+    #[arg(long, value_parser = clap::value_parser!(f64))]
+    r3: f64,
+}
+```
+This is the argument struct.<br>
+V1 is the voltage of power supply 1.<br>
+V2 is the voltage of power supply 2.<br>
+R1 is the resistance for the current only from power supply 1.<br>
+R2 is the resistance for the current only from power supply 2.<br>
+R3 is the resistance for the current after combining 1 and two and going towards ground.<br>
+<br>
+```rust
+let d_x: ndarray::Array2<f64> = array![
+    [args.r1 + args.r3, -args.v1],
+    [args.r3, -args.v2]
+];
+let d_y: ndarray::Array2<f64> = array![
+    [args.r3, -args.v1],
+    [args.r2 + args.r3, -args.v2]
+];
+let d: ndarray::Array2<f64> = array![
+    [args.r1 + args.r3, args.r3],
+    [args.r3, args.r2 + args.r3]
+];
+```
+Sets up the matrices.<br>
+dx matrix.
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
+    <mrow data-mjx-texclass="ORD">
+      <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+        <mtr>
+          <mtd>
+            <mi>d</mi>
+            <mi>x</mi>
+            <mo>=</mo>
+            <mrow data-mjx-texclass="INNER">
+              <mo data-mjx-texclass="OPEN">[</mo>
+              <mtable columnspacing="1em" rowspacing="4pt">
+                <mtr>
+                  <mtd>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>1</mn>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>3</mn>
+                    </msub>
+                  </mtd>
+                  <mtd>
+                    <mo>&#x2212;</mo>
+                    <mi>V</mi>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>3</mn>
+                    </msub>
+                  </mtd>
+                  <mtd>
+                    <mo>&#x2212;</mo>
+                    <mi>V</mi>
+                    <mn>2</mn>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo data-mjx-texclass="CLOSE">]</mo>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mi>d</mi>
+            <mi>y</mi>
+            <mo>=</mo>
+            <mrow data-mjx-texclass="INNER">
+              <mo data-mjx-texclass="OPEN">[</mo>
+              <mtable columnspacing="1em" rowspacing="4pt">
+                <mtr>
+                  <mtd>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>3</mn>
+                    </msub>
+                  </mtd>
+                  <mtd>
+                    <mo>&#x2212;</mo>
+                    <mi>V</mi>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>2</mn>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>3</mn>
+                    </msub>
+                  </mtd>
+                  <mtd>
+                    <mo>&#x2212;</mo>
+                    <mi>V</mi>
+                    <mn>2</mn>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo data-mjx-texclass="CLOSE">]</mo>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mi>d</mi>
+            <mo>=</mo>
+            <mrow data-mjx-texclass="INNER">
+              <mo data-mjx-texclass="OPEN">[</mo>
+              <mtable columnspacing="1em" rowspacing="4pt">
+                <mtr>
+                  <mtd>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>1</mn>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>3</mn>
+                    </msub>
+                  </mtd>
+                  <mtd>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>3</mn>
+                    </msub>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>3</mn>
+                    </msub>
+                  </mtd>
+                  <mtd>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>2</mn>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>3</mn>
+                    </msub>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo data-mjx-texclass="CLOSE">]</mo>
+            </mrow>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mrow>
+  </mstyle>
+</math>
+<br>
+```rust
+let determinant_dx = -d_x.det().unwrap();
+let determinant_dy = d_y.det().unwrap();
+let determinant_d = d.det().unwrap();
+```
+Calculate the determinants. I have ignored proper error handling, but complete code
+should handle any determinant calculation error.
+<br>
+```rust
+println!("I1: {}", determinant_dx / determinant_d);
+println!("I2: {}", determinant_dy / determinant_d);
+println!("I3: {}", (determinant_dx + determinant_dy) / determinant_d);
+```
+Calculates the current through each resistor.
+<br>
+<br>
+Full code can be found in the Github repository.
+<br>
+<br>
+With the following input arguments the following is returned. (Args: --v1=7 --v2=9 --r1=47 --r2=100 --r3=280)
+<br>
+I1: 0.021434801569995634<br>
+I2: 0.0030527692978630596<br>
+I3: 0.02448757086785869<br>
+<br>
+These are the same as the practical measurements and the calculations.
+
+# Changelog
+| Date | Change |
+| :---- | :---- |
+| 2025-12-29 | Added calculations and practical measurements |
+| 2025-12-30 | Added code |
