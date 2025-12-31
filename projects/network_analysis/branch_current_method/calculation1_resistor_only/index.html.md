@@ -12,10 +12,13 @@ meta:
 # Goal
 This calculates the current for a star system with two input power supplies and one output. This is a calculation for two unknowns.
 
-## Schematics
+# Schematics
 > <img src="./images/schematics.svg">
 
-## Calculations
+The schematics have four resistors although resistors R2 and R3 can be considered as one. Resistor R1 and R4 are connected to 
+the power supplies each having voltages of 7V and 9V.
+
+# Calculation 1
 Using the following formulas for a two branch solution.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
@@ -601,7 +604,283 @@ Calculating the values for I1 and I2.
   </mstyle>
 </math>
 
-## Practical measurement
+# Calculation 2
+Calculating voltage Vb at junction between R1, R4 and R2.
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <semantics>
+    <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
+      <mrow data-mjx-texclass="ORD">
+        <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+          <mtr>
+            <mtd>
+              <mfrac>
+                <msub>
+                  <mi>V</mi>
+                  <mi>b</mi>
+                </msub>
+                <mrow>
+                  <msub>
+                    <mi>R</mi>
+                    <mn>2</mn>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>R</mi>
+                    <mn>3</mn>
+                  </msub>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <msub>
+                    <mi>V</mi>
+                    <mn>1</mn>
+                  </msub>
+                  <mo>&#x2212;</mo>
+                  <msub>
+                    <mi>V</mi>
+                    <mi>b</mi>
+                  </msub>
+                </mrow>
+                <msub>
+                  <mi>R</mi>
+                  <mn>1</mn>
+                </msub>
+              </mfrac>
+              <mo>+</mo>
+              <mfrac>
+                <mrow>
+                  <msub>
+                    <mi>V</mi>
+                    <mn>2</mn>
+                  </msub>
+                  <mo>&#x2212;</mo>
+                  <msub>
+                    <mi>V</mi>
+                    <mi>b</mi>
+                  </msub>
+                </mrow>
+                <msub>
+                  <mi>R</mi>
+                  <mn>4</mn>
+                </msub>
+              </mfrac>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mfrac>
+                <msub>
+                  <mi>V</mi>
+                  <mi>b</mi>
+                </msub>
+                <mrow>
+                  <mn>100</mn>
+                  <mo>+</mo>
+                  <mn>180</mn>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mn>7</mn>
+                  <mo>&#x2212;</mo>
+                  <msub>
+                    <mi>V</mi>
+                    <mi>b</mi>
+                  </msub>
+                </mrow>
+                <mn>47</mn>
+              </mfrac>
+              <mo>+</mo>
+              <mfrac>
+                <mrow>
+                  <mn>9</mn>
+                  <mo>&#x2212;</mo>
+                  <msub>
+                    <mi>V</mi>
+                    <mi>b</mi>
+                  </msub>
+                </mrow>
+                <mn>100</mn>
+              </mfrac>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <msub>
+                <mi>V</mi>
+                <mi>b</mi>
+              </msub>
+              <mo>=</mo>
+              <mn>41.7</mn>
+              <mo>&#x2212;</mo>
+              <mn>5.96</mn>
+              <mo>&#xD7;</mo>
+              <msub>
+                <mi>V</mi>
+                <mi>b</mi>
+              </msub>
+              <mo>+</mo>
+              <mn>25.2</mn>
+              <mo>&#x2212;</mo>
+              <mn>2.8</mn>
+              <mo>&#xD7;</mo>
+              <msub>
+                <mi>V</mi>
+                <mi>b</mi>
+              </msub>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mn>9.76</mn>
+              <mo>&#xD7;</mo>
+              <msub>
+                <mi>V</mi>
+                <mi>b</mi>
+              </msub>
+              <mo>=</mo>
+              <mn>66.9</mn>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <msub>
+                <mi>V</mi>
+                <mi>b</mi>
+              </msub>
+              <mo>=</mo>
+              <mn>6.85</mn>
+            </mtd>
+          </mtr>
+        </mtable>
+      </mrow>
+    </mstyle>
+    <annotation encoding="application/x-tex">\displaystyle{\displaylines{\frac{V_b}{R_2+R_3}=\frac{V_1-V_b}{R_1}+\frac{V_2-V_b}{R_4}\newline
+\frac{V_b}{100+180}=\frac{7-V_b}{47}+\frac{9-V_b}{100}\newline
+V_b=41.7-5.96\times V_b+25.2-2.8\times V_b\newline
+9.76\times V_b=66.9\newline
+V_b=6.85}}</annotation>
+  </semantics>
+</math>
+<br>
+Calculating currents.
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <semantics>
+    <mstyle displaystyle="true" scriptlevel="0" style="font-size: 0.7em">
+      <mrow data-mjx-texclass="ORD">
+        <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+          <mtr>
+            <mtd>
+              <msub>
+                <mi>I</mi>
+                <mn>1</mn>
+              </msub>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <msub>
+                    <mi>V</mi>
+                    <mn>1</mn>
+                  </msub>
+                  <mo>&#x2212;</mo>
+                  <msub>
+                    <mi>V</mi>
+                    <mi>b</mi>
+                  </msub>
+                </mrow>
+                <mrow>
+                  <mi>R</mi>
+                  <mn>1</mn>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mn>7</mn>
+                  <mo>&#x2212;</mo>
+                  <mn>6.85</mn>
+                </mrow>
+                <mn>47</mn>
+              </mfrac>
+              <mo>=</mo>
+              <mn>3.2</mn>
+              <mi>m</mi>
+              <mi>A</mi>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <msub>
+                <mi>I</mi>
+                <mn>2</mn>
+              </msub>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <msub>
+                    <mi>V</mi>
+                    <mn>2</mn>
+                  </msub>
+                  <mo>&#x2212;</mo>
+                  <msub>
+                    <mi>V</mi>
+                    <mi>b</mi>
+                  </msub>
+                </mrow>
+                <mrow>
+                  <mi>R</mi>
+                  <mn>1</mn>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mn>9</mn>
+                  <mo>&#x2212;</mo>
+                  <mn>6.85</mn>
+                </mrow>
+                <mn>100</mn>
+              </mfrac>
+              <mo>=</mo>
+              <mn>21.5</mn>
+              <mi>m</mi>
+              <mi>A</mi>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <mi>I</mi>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mi>I</mi>
+              <mn>2</mn>
+              <mo>=</mo>
+              <mn>3.2</mn>
+              <mi>m</mi>
+              <mi>A</mi>
+              <mo>+</mo>
+              <mn>21.5</mn>
+              <mi>m</mi>
+              <mi>A</mi>
+              <mo>=</mo>
+              <mn>24.7</mn>
+              <mi>m</mi>
+              <mi>A</mi>
+            </mtd>
+          </mtr>
+        </mtable>
+      </mrow>
+    </mstyle>
+    <annotation encoding="application/x-tex">\displaystyle{\displaylines{I_1=\frac{V_1-V_b}{R1}=\frac{7-6.85}{47}=3.2mA\newline
+I_2=\frac{V_2-V_b}{R1}=\frac{9-6.85}{100}=21.5mA\newline
+I1+I2=3.2mA + 21.5mA=24.7mA}}</annotation>
+  </semantics>
+</math>
+
+# Practical measurement
 
 Practical measurements current.
 
@@ -611,7 +890,7 @@ Practical measurements current.
 | I2 | 21.52mA | 23mA | 21.4mA |
 | I1+I2 | 24.65mA | - | 24.4mA |
 
-## Code
+# Code
 
 This code calculates the currents using Rust.
 

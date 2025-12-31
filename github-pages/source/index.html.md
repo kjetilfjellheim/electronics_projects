@@ -72,7 +72,9 @@ It will take some time to document all projects and add proper documentation as 
 | Emitter bypass capacitor| [here](projects/basics/emitter_bypass_capacitor/) | <p style="color:green;">Completed</p> |
 
 ## Network analysis
+
+### Node voltage method
 | Circuit | Documentation | Status | 
 | :--- | :--- | :--- |
-| Kirchoffs law (Two unknowns )| [here](projects/network_analysis/kirchoffs_laws/two_unknowns/) | <p style="color:green;">Completed</p> |
-| Node voltage method| [here](projects/network_analysis/node_voltage_method/) | <p style="color:orange;">In progress</p> |
+| Two unknowns with matrix solution| [here](projects/network_analysis/branch_current_method/calculation1_resistor_only/) | <p style="color:green;">Completed</p> |
+| Four unknowns | [here](projects/network_analysis/branch_current_method/calculation2_resistor_only) | <p style="color:orange;">In progress</p> |

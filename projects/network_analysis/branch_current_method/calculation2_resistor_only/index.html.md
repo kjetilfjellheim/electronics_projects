@@ -15,6 +15,9 @@ This calculates the currents using the node voltage method for four unknowns.
 # Schematics
 > <img src="./images/schematics.svg">
 
+The schematics contain 5 resistors. R1 through to R4 are connected each to voltage sources V1 to V4. R5 is are then connected to
+ground.
+
 # Formula
 This the formula for calculating the voltage Vr5.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
@@ -617,7 +620,7 @@ We can now calculate the currents through the resistors using ohms law.
       </mtable>
     </mrow>
   </mstyle>
-</math>
+</math> 
 
 # Simulation
 Simulation using Kicad gives the following values.
@@ -634,8 +637,7 @@ Gives the following values.
 | Ir5 | 22.7mA |
 
 # Practical measurements
-
-# Code
+Don't have four power supplies so cannot test it.
 
 # Changelog
 | Date | Change |
