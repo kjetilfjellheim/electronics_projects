@@ -7,7 +7,7 @@ meta:
 
 ---
 
-# Node voltage method
+# Network analysis (Branch current method)
 
 # Goal
 This calculates the currents using the node voltage method for four unknowns.

@@ -73,8 +73,9 @@ It will take some time to document all projects and add proper documentation as 
 
 ## Network analysis
 
-### Node voltage method
-| Circuit | Documentation | Status | 
+### Branch current method
+| Circuit | Documentation | Status | Remarks |
 | :--- | :--- | :--- |
-| Two unknowns with matrix solution| [here](projects/network_analysis/branch_current_method/calculation1_resistor_only/) | <p style="color:green;">Completed</p> |
-| Four unknowns | [here](projects/network_analysis/branch_current_method/calculation2_resistor_only) | <p style="color:orange;">In progress</p> |
+| Simple two voltage sources | [here](projects/network_analysis/branch_current_method/calculation1_resistor_only/) | <p style="color:green;">Completed</p> | Contains matrix solution |
+| Four voltage sources  | [here](projects/network_analysis/branch_current_method/calculation2_resistor_only/) | <p style="color:green;">Completed</p> | No practical measurements |
+| Voltage and current source | [here](projects/network_analysis/branch_current_method/current_and_voltage_source/) | <p style="color:green;">Completed</p> | |

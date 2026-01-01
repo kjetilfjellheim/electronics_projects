@@ -7,7 +7,7 @@ meta:
 
 ---
 
-# Network analysis
+# Network analysis (Branch current method)
 
 # Goal
 This calculates the current for a star system with two input power supplies and one output. This is a calculation for two unknowns.
